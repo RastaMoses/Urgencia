@@ -1,0 +1,142 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2919598588425627855
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2919598588425627848}
+  - component: {fileID: 2919598588425627850}
+  - component: {fileID: 2919598588425627849}
+  m_Layer: 0
+  m_Name: EmptyDoor
+  m_TagString: RPG Creation Kit/Door
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2919598588425627848
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2919598588425627855}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.083, y: 1.659, z: 3.98}
+  m_LocalScale: {x: 2.1311939, y: 3.4119, z: 1}
+  m_Children:
+  - {fileID: 2919598589722996711}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2919598588425627850
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2919598588425627855}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2919598588425627849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2919598588425627855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2106e3942eb4eac4db58a50bca81b4a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allDoors:
+  - MainDoorToCityExterior
+  - CityInteriorToArmorShop
+  - CityInteriorToGeneralGoodsStore
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - CityInteriorToBlacksmithShop
+  objReference: CountsHouseDoor1ToCityExterior
+  persistentReference: 0
+  persistentReferenceID: 
+  anim: {fileID: 0}
+  groundPivot: {fileID: 0}
+  locked: 0
+  lockLevel: 0
+  key: {fileID: 0}
+  teleports: 1
+  toCell: {fileID: 11400000, guid: 0119b7d9157355c43bae98874dd185fb, type: 2}
+  linkedDoorObjRef: 
+  onDoorOpen: {fileID: 0}
+  onDoorOpenLocked: {fileID: 0}
+  onDoorOpenUnlocked: {fileID: 0}
+  onDoorClose: {fileID: 0}
+  teleportMarker: {fileID: 2919598589722996711}
+  isOpened: 0
+--- !u!1 &2919598589722996710
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2919598589722996711}
+  - component: {fileID: 2919598589722996704}
+  m_Layer: 0
+  m_Name: DoorTeleportMarker
+  m_TagString: RPG Creation Kit/DoorTeleportMarker
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2919598589722996711
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2919598589722996710}
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0.0000029504295}
+  m_LocalPosition: {x: 0, y: -0.19, z: -1.25}
+  m_LocalScale: {x: 1, y: 2, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2919598588425627848}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
+--- !u!114 &2919598589722996704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2919598589722996710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dcdef0e2acfe064d8a1aecbe12fe2a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  owner: {fileID: 2919598588425627849}

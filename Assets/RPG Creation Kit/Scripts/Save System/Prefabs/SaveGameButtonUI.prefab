@@ -1,0 +1,957 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6679305283020198268
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6679305283020198267}
+  - component: {fileID: 6679305283020198265}
+  - component: {fileID: 6679305283020198266}
+  m_Layer: 5
+  m_Name: SaveName
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &6679305283020198267
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6679305283020198268}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6679305283594712381}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.00086975, y: -0.5523}
+  m_SizeDelta: {x: 667.81, y: 70.6934}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &6679305283020198265
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6679305283020198268}
+  m_CullTransparentMesh: 1
+--- !u!114 &6679305283020198266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6679305283020198268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Save 001
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: ee7a4160fdd624f4a877746f29f41a49, type: 2}
+  m_sharedMaterial: {fileID: -6219476175125186450, guid: ee7a4160fdd624f4a877746f29f41a49,
+    type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 1
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &6679305283594712382
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6679305283594712381}
+  - component: {fileID: 6679305283594712377}
+  - component: {fileID: 6679305283594712378}
+  - component: {fileID: 6679305283594712379}
+  - component: {fileID: 6679305283594712380}
+  - component: {fileID: 7827495500825156964}
+  - component: {fileID: -5857359019904351953}
+  m_Layer: 5
+  m_Name: SaveGameButtonUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &6679305283594712381
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6679305283594712382}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6679305283020198267}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 667.8133, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &6679305283594712377
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6679305283594712382}
+  m_CullTransparentMesh: 1
+--- !u!114 &6679305283594712378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6679305283594712382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.23584908, g: 0.23584908, b: 0.23584908, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6679305283594712379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6679305283594712382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 2
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 1, g: 0, b: 0, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 6679305283594712378}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &6679305283594712380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6679305283594712382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreLayout: 0
+  m_MinWidth: -1
+  m_MinHeight: -1
+  m_PreferredWidth: -1
+  m_PreferredHeight: 60
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: -1
+  m_LayoutPriority: 1
+--- !u!114 &7827495500825156964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6679305283594712382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 375cd93f3d4604943822ff4a7309fa8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  saveFile:
+    SaveFileData:
+      saveType: 
+      fileVersion: 
+      saveDate: 
+      saveNumber: 0
+    PlayerData:
+      playerName: 
+      playerLevel: 0
+      playerSex: 0
+      playerRace: 
+      playerLocation: 
+      playerWorldspaceID: 
+      playerCellID: 
+      playerPos: {x: 0, y: 0, z: 0}
+      playerRot: {x: 0, y: 0, z: 0, w: 0}
+      playerFactions: []
+      mouseRotX: 0
+      playerCrouched: 0
+      weaponDrawn: 0
+      playerAttributes:
+        attributes:
+          Strength: 50
+          Dexterity: 50
+          Agility: 50
+          Constitution: 50
+          Speed: 50
+          Endurance: 50
+          Charisma: 50
+        derivedAttributes:
+          maxHealth: 100
+          curHealth: 100
+          maxStamina: 100
+          curStamina: 100
+          maxEncumbrance: 150
+          walkSpeed: 1.4
+          runSpeed: 2.5
+          rangedCombatAccuracy: 70
+          rangedCombatPrediction: 70
+        activeEffects: []
+      playerInventory:
+        items: []
+      hairType: 0
+      eyesType: 0
+      faceData:
+        allShapes: []
+    QuestData:
+      currentActiveQuestID: 
+      allActiveQuests:
+        _Buckets: ffffffffffffffffffffffff
+        _HashCodes: 000000000000000000000000
+        _Next: 000000000000000000000000
+        _Count: 0
+        _Version: 0
+        _FreeList: -1
+        _FreeCount: 0
+        _Keys:
+        - 
+        - 
+        - 
+        _Values:
+        - questScriptExecutionDelay: 0
+          currentQuestStage: 0
+          questCompleted: 0
+          questFailed: 0
+          allStagesActive: 
+          allStagesCompleted: 
+          allStagesFailed: 
+        - questScriptExecutionDelay: 0
+          currentQuestStage: 0
+          questCompleted: 0
+          questFailed: 0
+          allStagesActive: 
+          allStagesCompleted: 
+          allStagesFailed: 
+        - questScriptExecutionDelay: 0
+          currentQuestStage: 0
+          questCompleted: 0
+          questFailed: 0
+          allStagesActive: 
+          allStagesCompleted: 
+          allStagesFailed: 
+      allCompletedQuests:
+        _Buckets: ffffffffffffffffffffffff
+        _HashCodes: 000000000000000000000000
+        _Next: 000000000000000000000000
+        _Count: 0
+        _Version: 0
+        _FreeList: -1
+        _FreeCount: 0
+        _Keys:
+        - 
+        - 
+        - 
+        _Values:
+        - questScriptExecutionDelay: 0
+          currentQuestStage: 0
+          questCompleted: 0
+          questFailed: 0
+          allStagesActive: 
+          allStagesCompleted: 
+          allStagesFailed: 
+        - questScriptExecutionDelay: 0
+          currentQuestStage: 0
+          questCompleted: 0
+          questFailed: 0
+          allStagesActive: 
+          allStagesCompleted: 
+          allStagesFailed: 
+        - questScriptExecutionDelay: 0
+          currentQuestStage: 0
+          questCompleted: 0
+          questFailed: 0
+          allStagesActive: 
+          allStagesCompleted: 
+          allStagesFailed: 
+    LootingPointsData:
+      allLootingPoints:
+        _Buckets: ffffffffffffffffffffffff
+        _HashCodes: 000000000000000000000000
+        _Next: 000000000000000000000000
+        _Count: 0
+        _Version: 0
+        _FreeList: -1
+        _FreeCount: 0
+        _Keys:
+        - 
+        - 
+        - 
+        _Values:
+        - lootingID: 
+          allItems: []
+        - lootingID: 
+          allItems: []
+        - lootingID: 
+          allItems: []
+    ItemsInWorldData:
+      allItemsInWorld:
+        _Buckets: ffffffffffffffffffffffff
+        _HashCodes: 000000000000000000000000
+        _Next: 000000000000000000000000
+        _Count: 0
+        _Version: 0
+        _FreeList: -1
+        _FreeCount: 0
+        _Keys:
+        - 
+        - 
+        - 
+        _Values:
+        - worldspaceID: 
+          position: {x: 0, y: 0, z: 0}
+          rotation: {x: 0, y: 0, z: 0, w: 0}
+          isPickedUp: 0
+          isKinematic: 0
+        - worldspaceID: 
+          position: {x: 0, y: 0, z: 0}
+          rotation: {x: 0, y: 0, z: 0, w: 0}
+          isPickedUp: 0
+          isKinematic: 0
+        - worldspaceID: 
+          position: {x: 0, y: 0, z: 0}
+          rotation: {x: 0, y: 0, z: 0, w: 0}
+          isPickedUp: 0
+          isKinematic: 0
+    CreatedItemsInWorldData:
+      allCreatedItemsInWorld:
+        _Buckets: ffffffffffffffffffffffff
+        _HashCodes: 000000000000000000000000
+        _Next: 000000000000000000000000
+        _Count: 0
+        _Version: 0
+        _FreeList: -1
+        _FreeCount: 0
+        _Keys:
+        - 
+        - 
+        - 
+        _Values:
+        - itemsInThis: []
+        - itemsInThis: []
+        - itemsInThis: []
+    DoorData:
+      allDoors:
+        _Buckets: ffffffffffffffffffffffff
+        _HashCodes: 000000000000000000000000
+        _Next: 000000000000000000000000
+        _Count: 0
+        _Version: 0
+        _FreeList: -1
+        _FreeCount: 0
+        _Keys:
+        - 
+        - 
+        - 
+        _Values:
+        - doorID: 
+          isLocked: 0
+          isOpened: 0
+          doorLockLevel: 0
+          currentAnimation: 
+          currentAnimationTime: 0
+        - doorID: 
+          isLocked: 0
+          isOpened: 0
+          doorLockLevel: 0
+          currentAnimation: 
+          currentAnimationTime: 0
+        - doorID: 
+          isLocked: 0
+          isOpened: 0
+          doorLockLevel: 0
+          currentAnimation: 
+          currentAnimationTime: 0
+    AIData:
+      aiDictionary:
+        _Buckets: ffffffffffffffffffffffff
+        _HashCodes: 000000000000000000000000
+        _Next: 000000000000000000000000
+        _Count: 0
+        _Version: 0
+        _FreeList: -1
+        _FreeCount: 0
+        _Keys:
+        - 
+        - 
+        - 
+        _Values:
+        - position: {x: 0, y: 0, z: 0}
+          rotation: {x: 0, y: 0, z: 0, w: 0}
+          aiAttributes:
+            attributes:
+              Strength: 50
+              Dexterity: 50
+              Agility: 50
+              Constitution: 50
+              Speed: 50
+              Endurance: 50
+              Charisma: 50
+            derivedAttributes:
+              maxHealth: 100
+              curHealth: 100
+              maxStamina: 100
+              curStamina: 100
+              maxEncumbrance: 150
+              walkSpeed: 1.4
+              runSpeed: 2.5
+              rangedCombatAccuracy: 70
+              rangedCombatPrediction: 70
+            activeEffects: []
+          aiInventory:
+            items: []
+          isAlive: 0
+          isHostile: 0
+          isHostileAgainstPC: 0
+          isInCombat: 0
+          isFleeing: 0
+          isUnconscious: 0
+          enterInCombatCalled: 0
+          isEssential: 0
+          usesRagdoll: 0
+          dialogueSystemEnabled: 0
+          currentDialogueID: 
+          previousDialogueID: 
+          defaultDialogueID: 
+          isInConversation: 0
+          isTalking: 0
+          isListening: 0
+          mustSpeakToPlayer: 0
+          mustSpeakToEntity: 0
+          speakerIndex: 0
+          usesMovements: 0
+          usesOfflineMode: 0
+          usesTlinkUnstuck: 0
+          isWalking: 1
+          canSeeTarget: 0
+          hasCompletlyLostTarget: 0
+          shouldFollowMainTarget: 0
+          shouldFollowOnlyIfCanSee: 0
+          lookAtTarget: 0
+          dialogueLookAt: 0
+          lookAtVector3IfStopped: 0
+          vector3ToLookAtIfStopped: {x: 0, y: 0, z: 0}
+          overrideShouldFollowMainTargetActive: 0
+          overrideShouldFollowMainTarget: 0
+          shouldFollowAIPath: 0
+          shouldWander: 0
+          shouldUseNPCActionPoint: 0
+          hasMainTarget: 0
+          shouldFollowTargetVector: 0
+          aiCustomPathID: 
+          fleeAtDistanceValue: 0
+          selectedSteeringBehaviour: 0
+          arriveSteeringBehaviourDeceleration: 0
+          invertAIPath: 0
+          aiPathCurrentIndex: 0
+          isFollowingAIPath: 0
+          stoppingHalt: 0
+          stoppingDistance: 0
+          generalRotationSpeed: 0
+          cachedMainTarget: 0
+          cachedMainTargetPos: {x: 0, y: 0, z: 0}
+          hasToRandomlySearchTarget: 0
+          isReachingActionPoint: 0
+          fixingInPlaceForActionPoint: 0
+          playingEnterAnimationActionPoint: 0
+          isUsingActionPoint: 0
+          allowsLootWhenDead: 0
+          allowsLootOfEquipment: 0
+          perceptionEnabled: 0
+          checkTick: 0
+          radius: 0
+          sphereYoffset: 0
+          sphereZoffset: 0
+          entityHesFighting: []
+          isDrawingWeapon: 0
+          weaponDrawn: 0
+          treeTickRate: 0
+          xFrames: 0
+          xSeconds: 0
+          useBT: 0
+          pauseBT: 0
+          curBehaviourTreeID: 
+          isUsingPurposeBehaviour: 0
+          purposeBehaviourTreeID: 
+          combatBehaviourTreeID: 
+          keepTicking: 0
+          startingCellID: 
+          saveCellID: 
+          runtimeSaveCellID: 
+          hipsPosition: {x: 0, y: 0, z: 0}
+          hipsRotation: {x: 0, y: 0, z: 0, w: 0}
+          ragdollSaveData:
+            ragdollElements: []
+          mainTargetID: 
+          mainTargetType: 0
+          isReachingDoor: 0
+          cellIDMovingTo: 
+          enteredInADoorLastTime: 0
+          enteredInADoorLastTimeOverridePos: 0
+          enteredDoorLastTimePos: {x: 0, y: 0, z: 0}
+          enteredDoorLastTimeRot: {x: 0, y: 0, z: 0, w: 0}
+          doorEnteredID: 
+          purposeState:
+            ai: {fileID: 0}
+            isAssigned: 0
+            pTarget: {fileID: 0}
+            ITargetableID: 
+            ITargetableType: 0
+            ITargetableExtraData: 
+            clearsOn: 0
+            clearsOnData:
+              stringData: 
+              intData: 0
+              floatData: 0
+            nextPurposeBehaviourID: 
+        - position: {x: 0, y: 0, z: 0}
+          rotation: {x: 0, y: 0, z: 0, w: 0}
+          aiAttributes:
+            attributes:
+              Strength: 50
+              Dexterity: 50
+              Agility: 50
+              Constitution: 50
+              Speed: 50
+              Endurance: 50
+              Charisma: 50
+            derivedAttributes:
+              maxHealth: 100
+              curHealth: 100
+              maxStamina: 100
+              curStamina: 100
+              maxEncumbrance: 150
+              walkSpeed: 1.4
+              runSpeed: 2.5
+              rangedCombatAccuracy: 70
+              rangedCombatPrediction: 70
+            activeEffects: []
+          aiInventory:
+            items: []
+          isAlive: 0
+          isHostile: 0
+          isHostileAgainstPC: 0
+          isInCombat: 0
+          isFleeing: 0
+          isUnconscious: 0
+          enterInCombatCalled: 0
+          isEssential: 0
+          usesRagdoll: 0
+          dialogueSystemEnabled: 0
+          currentDialogueID: 
+          previousDialogueID: 
+          defaultDialogueID: 
+          isInConversation: 0
+          isTalking: 0
+          isListening: 0
+          mustSpeakToPlayer: 0
+          mustSpeakToEntity: 0
+          speakerIndex: 0
+          usesMovements: 0
+          usesOfflineMode: 0
+          usesTlinkUnstuck: 0
+          isWalking: 1
+          canSeeTarget: 0
+          hasCompletlyLostTarget: 0
+          shouldFollowMainTarget: 0
+          shouldFollowOnlyIfCanSee: 0
+          lookAtTarget: 0
+          dialogueLookAt: 0
+          lookAtVector3IfStopped: 0
+          vector3ToLookAtIfStopped: {x: 0, y: 0, z: 0}
+          overrideShouldFollowMainTargetActive: 0
+          overrideShouldFollowMainTarget: 0
+          shouldFollowAIPath: 0
+          shouldWander: 0
+          shouldUseNPCActionPoint: 0
+          hasMainTarget: 0
+          shouldFollowTargetVector: 0
+          aiCustomPathID: 
+          fleeAtDistanceValue: 0
+          selectedSteeringBehaviour: 0
+          arriveSteeringBehaviourDeceleration: 0
+          invertAIPath: 0
+          aiPathCurrentIndex: 0
+          isFollowingAIPath: 0
+          stoppingHalt: 0
+          stoppingDistance: 0
+          generalRotationSpeed: 0
+          cachedMainTarget: 0
+          cachedMainTargetPos: {x: 0, y: 0, z: 0}
+          hasToRandomlySearchTarget: 0
+          isReachingActionPoint: 0
+          fixingInPlaceForActionPoint: 0
+          playingEnterAnimationActionPoint: 0
+          isUsingActionPoint: 0
+          allowsLootWhenDead: 0
+          allowsLootOfEquipment: 0
+          perceptionEnabled: 0
+          checkTick: 0
+          radius: 0
+          sphereYoffset: 0
+          sphereZoffset: 0
+          entityHesFighting: []
+          isDrawingWeapon: 0
+          weaponDrawn: 0
+          treeTickRate: 0
+          xFrames: 0
+          xSeconds: 0
+          useBT: 0
+          pauseBT: 0
+          curBehaviourTreeID: 
+          isUsingPurposeBehaviour: 0
+          purposeBehaviourTreeID: 
+          combatBehaviourTreeID: 
+          keepTicking: 0
+          startingCellID: 
+          saveCellID: 
+          runtimeSaveCellID: 
+          hipsPosition: {x: 0, y: 0, z: 0}
+          hipsRotation: {x: 0, y: 0, z: 0, w: 0}
+          ragdollSaveData:
+            ragdollElements: []
+          mainTargetID: 
+          mainTargetType: 0
+          isReachingDoor: 0
+          cellIDMovingTo: 
+          enteredInADoorLastTime: 0
+          enteredInADoorLastTimeOverridePos: 0
+          enteredDoorLastTimePos: {x: 0, y: 0, z: 0}
+          enteredDoorLastTimeRot: {x: 0, y: 0, z: 0, w: 0}
+          doorEnteredID: 
+          purposeState:
+            ai: {fileID: 0}
+            isAssigned: 0
+            pTarget: {fileID: 0}
+            ITargetableID: 
+            ITargetableType: 0
+            ITargetableExtraData: 
+            clearsOn: 0
+            clearsOnData:
+              stringData: 
+              intData: 0
+              floatData: 0
+            nextPurposeBehaviourID: 
+        - position: {x: 0, y: 0, z: 0}
+          rotation: {x: 0, y: 0, z: 0, w: 0}
+          aiAttributes:
+            attributes:
+              Strength: 50
+              Dexterity: 50
+              Agility: 50
+              Constitution: 50
+              Speed: 50
+              Endurance: 50
+              Charisma: 50
+            derivedAttributes:
+              maxHealth: 100
+              curHealth: 100
+              maxStamina: 100
+              curStamina: 100
+              maxEncumbrance: 150
+              walkSpeed: 1.4
+              runSpeed: 2.5
+              rangedCombatAccuracy: 70
+              rangedCombatPrediction: 70
+            activeEffects: []
+          aiInventory:
+            items: []
+          isAlive: 0
+          isHostile: 0
+          isHostileAgainstPC: 0
+          isInCombat: 0
+          isFleeing: 0
+          isUnconscious: 0
+          enterInCombatCalled: 0
+          isEssential: 0
+          usesRagdoll: 0
+          dialogueSystemEnabled: 0
+          currentDialogueID: 
+          previousDialogueID: 
+          defaultDialogueID: 
+          isInConversation: 0
+          isTalking: 0
+          isListening: 0
+          mustSpeakToPlayer: 0
+          mustSpeakToEntity: 0
+          speakerIndex: 0
+          usesMovements: 0
+          usesOfflineMode: 0
+          usesTlinkUnstuck: 0
+          isWalking: 1
+          canSeeTarget: 0
+          hasCompletlyLostTarget: 0
+          shouldFollowMainTarget: 0
+          shouldFollowOnlyIfCanSee: 0
+          lookAtTarget: 0
+          dialogueLookAt: 0
+          lookAtVector3IfStopped: 0
+          vector3ToLookAtIfStopped: {x: 0, y: 0, z: 0}
+          overrideShouldFollowMainTargetActive: 0
+          overrideShouldFollowMainTarget: 0
+          shouldFollowAIPath: 0
+          shouldWander: 0
+          shouldUseNPCActionPoint: 0
+          hasMainTarget: 0
+          shouldFollowTargetVector: 0
+          aiCustomPathID: 
+          fleeAtDistanceValue: 0
+          selectedSteeringBehaviour: 0
+          arriveSteeringBehaviourDeceleration: 0
+          invertAIPath: 0
+          aiPathCurrentIndex: 0
+          isFollowingAIPath: 0
+          stoppingHalt: 0
+          stoppingDistance: 0
+          generalRotationSpeed: 0
+          cachedMainTarget: 0
+          cachedMainTargetPos: {x: 0, y: 0, z: 0}
+          hasToRandomlySearchTarget: 0
+          isReachingActionPoint: 0
+          fixingInPlaceForActionPoint: 0
+          playingEnterAnimationActionPoint: 0
+          isUsingActionPoint: 0
+          allowsLootWhenDead: 0
+          allowsLootOfEquipment: 0
+          perceptionEnabled: 0
+          checkTick: 0
+          radius: 0
+          sphereYoffset: 0
+          sphereZoffset: 0
+          entityHesFighting: []
+          isDrawingWeapon: 0
+          weaponDrawn: 0
+          treeTickRate: 0
+          xFrames: 0
+          xSeconds: 0
+          useBT: 0
+          pauseBT: 0
+          curBehaviourTreeID: 
+          isUsingPurposeBehaviour: 0
+          purposeBehaviourTreeID: 
+          combatBehaviourTreeID: 
+          keepTicking: 0
+          startingCellID: 
+          saveCellID: 
+          runtimeSaveCellID: 
+          hipsPosition: {x: 0, y: 0, z: 0}
+          hipsRotation: {x: 0, y: 0, z: 0, w: 0}
+          ragdollSaveData:
+            ragdollElements: []
+          mainTargetID: 
+          mainTargetType: 0
+          isReachingDoor: 0
+          cellIDMovingTo: 
+          enteredInADoorLastTime: 0
+          enteredInADoorLastTimeOverridePos: 0
+          enteredDoorLastTimePos: {x: 0, y: 0, z: 0}
+          enteredDoorLastTimeRot: {x: 0, y: 0, z: 0, w: 0}
+          doorEnteredID: 
+          purposeState:
+            ai: {fileID: 0}
+            isAssigned: 0
+            pTarget: {fileID: 0}
+            ITargetableID: 
+            ITargetableType: 0
+            ITargetableExtraData: 
+            clearsOn: 0
+            clearsOnData:
+              stringData: 
+              intData: 0
+              floatData: 0
+            nextPurposeBehaviourID: 
+      aiCellDictionary:
+        _Buckets: ffffffffffffffffffffffff
+        _HashCodes: 000000000000000000000000
+        _Next: 000000000000000000000000
+        _Count: 0
+        _Version: 0
+        _FreeList: -1
+        _FreeCount: 0
+        _Keys:
+        - 
+        - 
+        - 
+        _Values:
+        - allIDs: []
+        - allIDs: []
+        - allIDs: []
+    MutablesData:
+      allMutables:
+        _Buckets: ffffffffffffffffffffffff
+        _HashCodes: 000000000000000000000000
+        _Next: 000000000000000000000000
+        _Count: 0
+        _Version: 0
+        _FreeList: -1
+        _FreeCount: 0
+        _Keys:
+        - 
+        - 
+        - 
+        _Values:
+        - isMutated: 0
+        - isMutated: 0
+        - isMutated: 0
+  panel: {fileID: 0}
+  text: {fileID: 6679305283020198266}
+  isLoading: 0
+--- !u!114 &-5857359019904351953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6679305283594712382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6688c153c55b154ca47a1648262593f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inGameButton: 1
+  source: {fileID: 0}
+  onEnter: {fileID: 8300000, guid: fabbca3853732004e90cc51e0bd1a073, type: 3}
+  onClick: {fileID: 8300000, guid: 0f0aa5bf462928d4e8132b6c0538e94d, type: 3}

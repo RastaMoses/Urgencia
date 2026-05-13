@@ -1,0 +1,279 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6009894915362032405
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7294765202921388294}
+  - component: {fileID: 1758427997981721392}
+  - component: {fileID: 5430137846164275145}
+  - component: {fileID: 6274056105223559843}
+  - component: {fileID: 6274056105223559840}
+  - component: {fileID: 6274056105223559841}
+  - component: {fileID: 6274056105223559846}
+  m_Layer: 0
+  m_Name: SmallChestLootingPoint_Prefab
+  m_TagString: RPG Creation Kit/Looting Point
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7294765202921388294
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6009894915362032405}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0.24232632, z: -0, w: 0.9701948}
+  m_LocalPosition: {x: -10.980086, y: 4.6252775, z: -23.150524}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -28.048, z: 0}
+--- !u!33 &1758427997981721392
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6009894915362032405}
+  m_Mesh: {fileID: -2752950031184307663, guid: 8851f84b53aeafa4d8061146c9f9156a, type: 3}
+--- !u!23 &5430137846164275145
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6009894915362032405}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 8b50bf368b1397d46b88d317a8f6cdfe, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &6274056105223559843
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6009894915362032405}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2752950031184307663, guid: 8851f84b53aeafa4d8061146c9f9156a, type: 3}
+--- !u!114 &6274056105223559840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6009894915362032405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6627db191a25264d9297c214f0bccff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  equipment: {fileID: 0}
+  Items: []
+  CurTotalWeight: 0
+--- !u!114 &6274056105223559841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6009894915362032405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00825669220450f4cbac49e0bfd27dd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FP_Arms: {fileID: 0}
+  characterModel: {fileID: 0}
+  inv: {fileID: 0}
+  itemsEquipped:
+  - externalItemID: 
+    item: {fileID: 0}
+    metadata:
+      isOwned: 0
+      ownerID: 
+      intProperty1: 0
+    Amount: 1
+    isEquipped: 0
+  - externalItemID: 
+    item: {fileID: 0}
+    metadata:
+      isOwned: 0
+      ownerID: 
+      intProperty1: 0
+    Amount: 1
+    isEquipped: 0
+  - externalItemID: 
+    item: {fileID: 0}
+    metadata:
+      isOwned: 0
+      ownerID: 
+      intProperty1: 0
+    Amount: 1
+    isEquipped: 0
+  - externalItemID: 
+    item: {fileID: 0}
+    metadata:
+      isOwned: 0
+      ownerID: 
+      intProperty1: 0
+    Amount: 1
+    isEquipped: 0
+  - externalItemID: 
+    item: {fileID: 0}
+    metadata:
+      isOwned: 0
+      ownerID: 
+      intProperty1: 0
+    Amount: 1
+    isEquipped: 0
+  - externalItemID: 
+    item: {fileID: 0}
+    metadata:
+      isOwned: 0
+      ownerID: 
+      intProperty1: 0
+    Amount: 1
+    isEquipped: 0
+  - externalItemID: 
+    item: {fileID: 0}
+    metadata:
+      isOwned: 0
+      ownerID: 
+      intProperty1: 0
+    Amount: 1
+    isEquipped: 0
+  - externalItemID: 
+    item: {fileID: 0}
+    metadata:
+      isOwned: 0
+      ownerID: 
+      intProperty1: 0
+    Amount: 1
+    isEquipped: 0
+  - externalItemID: 
+    item: {fileID: 0}
+    metadata:
+      isOwned: 0
+      ownerID: 
+      intProperty1: 0
+    Amount: 1
+    isEquipped: 0
+  - externalItemID: 
+    item: {fileID: 0}
+    metadata:
+      isOwned: 0
+      ownerID: 
+      intProperty1: 0
+    Amount: 1
+    isEquipped: 0
+  - externalItemID: 
+    item: {fileID: 0}
+    metadata:
+      isOwned: 0
+      ownerID: 
+      intProperty1: 0
+    Amount: 1
+    isEquipped: 0
+  MeleeDamageOutput: 0
+  RangedDamageOutput: 0
+  ArmorRate: 0
+  isUsingShield: 0
+  isUsingTorch: 0
+  doingOneHWeaponSwap: 0
+  currentWeapon: {fileID: 0}
+  currentWeaponObject: {fileID: 0}
+  currentWeaponOnHip: {fileID: 0}
+  currentWeaponAnimator: {fileID: 0}
+  currentAmmo: {fileID: 0}
+  currentAmmoObject: {fileID: 0}
+  currentShield: {fileID: 0}
+  currentShieldObject: {fileID: 0}
+  currentFPShieldObject: {fileID: 0}
+  currentTorch: {fileID: 0}
+  currentTorchInHand: {fileID: 0}
+--- !u!114 &6274056105223559846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6009894915362032405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30bba1f7b72ab1b4b97e0b7ce5d4b06f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasToInitializeInventory: 1
+  ID: 
+  metadata:
+    isOwned: 0
+    ownerID: 
+  pointName: 
+  lCollider: {fileID: 6274056105223559843}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  inventory: {fileID: 6274056105223559840}
+  equipment: {fileID: 6274056105223559841}
+  items: []
+  hasToLoadAndSave: 1

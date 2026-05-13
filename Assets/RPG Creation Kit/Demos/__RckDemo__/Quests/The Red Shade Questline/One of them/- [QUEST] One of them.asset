@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45ee663e38452994ab2f4a05886c81ed, type: 3}
+  m_Name: '- [QUEST] One of them'
+  m_EditorClassIdentifier: 
+  _IS_DEMO_FILE: 1
+  questID: RSQL_OneOfThem
+  questName: One of them
+  questDescription: I've joined The Red Shade and Mack gave me the first assignment,
+    I have to assassinate The Count of Virrihiael. He told me to recover the equipment
+    of guard inside his chest at his house, and disguise myself as one of them, to
+    then assassinate the count.
+  questStages:
+  - index: 10
+    description: Take and wear the equipment in the chest near the bed and return
+      to Mack.
+    stageConditions: []
+    resultScript: 
+    completeQuest: 0
+    failQuest: 0
+    displayLogEntry: 1
+    stageCompleted: 0
+    stageFailed: 0
+  - index: 20
+    description: Infiltrate into the Count's house and kill him.
+    stageConditions: []
+    resultScript: 
+    completeQuest: 0
+    failQuest: 0
+    displayLogEntry: 1
+    stageCompleted: 0
+    stageFailed: 0
+  - index: 40
+    description: Return to Mack.
+    stageConditions: []
+    resultScript: 
+    completeQuest: 1
+    failQuest: 0
+    displayLogEntry: 1
+    stageCompleted: 0
+    stageFailed: 0
+  allStagesActive: 
+  allStagesCompleted: 
+  allStagesFailed: 
+  questPriority: 50
+  questScript: RPGCreationKit.Quests.OneOfThemQuestScript
+  allowRepeatedStages: 0
+  firstStageIsDefaultStage: 1
+  questScriptExecutionDelay: 5
+  currentQuestStage: 0
+  questCompleted: 0
+  questFailed: 0
+  questConditions: []
+  questXpReward: 250

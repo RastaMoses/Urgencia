@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f29aa53af64a33408b1464ff9e8071d, type: 3}
+  m_Name: '[WEAPON] ZombieUnarmed'
+  m_EditorClassIdentifier: 
+  ItemID: ZombieUnarmed001
+  ItemIcon: {fileID: 21300000, guid: 9813c708a5807464080caf759c91481b, type: 3}
+  ItemName: Unarmed
+  itemInWorld: {fileID: 0}
+  Weight: 0
+  Value: 0
+  QuestItem: 0
+  isCumulable: 0
+  useMesh: 1
+  usesTooltip: 0
+  tooltipValue: 
+  itemScript: 
+  sOnPickUp: {fileID: 0}
+  sOnDrop: {fileID: 0}
+  sOnAddedInInventory: {fileID: 0}
+  sOnRemovedFromInventory: {fileID: 0}
+  sOnEquipOrUse: {fileID: 0}
+  sOnUnEquip: {fileID: 0}
+  WeaponOnHand: {fileID: 0}
+  WeaponSheathed: {fileID: 0}
+  weaponClass: 0
+  weaponType: 8
+  weightType: 0
+  Health: 100
+  Reach: 2.3
+  Speed: 1
+  Damage: 3
+  BlockingMultiplier: 0.91
+  blockSound: {fileID: 0}
+  fpsAnimatorController: {fileID: 9100000, guid: 1548497e6fc456e4a89b4886f431e72c,
+    type: 2}
+  tpsAnimatorController: {fileID: 9100000, guid: 7633e74e4a6629741a22e6784aba6c04,
+    type: 2}
+  AttackTypes: 3
+  weaponAttacks:
+  - AttackTypeIndex: 0
+    BaseDamage: 24
+    StaminaAmount: 3
+    howManyHitsCanSustain: 1
+    cameraAnim: 0
+    attackSound: {fileID: 8300000, guid: ff424628081047848a77d653314e6f4b, type: 3}
+  - AttackTypeIndex: 1
+    BaseDamage: 30
+    StaminaAmount: 5
+    howManyHitsCanSustain: 1
+    cameraAnim: 0
+    attackSound: {fileID: 8300000, guid: f4b1d34b5980e5e41ad8347a01c1592a, type: 3}
+  - AttackTypeIndex: 2
+    BaseDamage: 22
+    StaminaAmount: 5
+    howManyHitsCanSustain: 1
+    cameraAnim: 0
+    attackSound: {fileID: 8300000, guid: f4b1d34b5980e5e41ad8347a01c1592a, type: 3}
+  chargedAttackTypes: 1
+  weaponChargedAttacks:
+  - AttackTypeIndex: 0
+    BaseDamage: 25
+    StaminaAmount: 15
+    howManyHitsCanSustain: 1
+    cameraAnim: 0
+    attackSound: {fileID: 8300000, guid: ffc6950e2b73e6441a7e70603674f879, type: 3}
+  attackChainTime: 1.5
+  chargedAttackChainTime: 1.5
+  aggroModifier: 1
+  fireType: 0
+  reloadType: 0
+  ammo: {fileID: 0}
+  clipRounds: 30
+  ammoPerShot: 1
+  projectilesPerShot: 1
+  fireRate: 10
+  aimSpread: 0
+  hipSpread: 0.5
+  sightFov: 60
+  criticalMultiplier: 2
+  recoilHit: 2
+  animateAim: 1
+  nAnimFireFromHip: 1
+  nAnimFireFromSight: 1
+  aimingHolderPos: {x: 0, y: 0, z: 0}
+  aimingHolderRot: {x: 0, y: 0, z: 0}
+  aimingHolderPosCrouched: {x: 0, y: 0, z: 0}
+  aimingHolderRotCrouched: {x: 0, y: 0, z: 0}
+  swayWhileAiming: 0.005
+  fireSound: {fileID: 0}
+  emptyFireSound: {fileID: 0}
+  staggeringChancePerShot: 10
+  shellCase: {fileID: 0}
+  defaultHole: {fileID: 0}
+  explodesAfter: 0
+  explosionObject: {fileID: 0}
+  explosionRadius: 0
+  explosionForce: 0
+  clippingWeapon: 0

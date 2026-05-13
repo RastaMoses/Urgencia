@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45ee663e38452994ab2f4a05886c81ed, type: 3}
+  m_Name: '- [QUEST] One Step Forward'
+  m_EditorClassIdentifier: 
+  _IS_DEMO_FILE: 1
+  questID: RSMQ_OneStepForward
+  questName: One Step Forward
+  questDescription: The City will soon be in havoc after I've killed the count. Mack
+    told me to reach Vera, another Red Shade agent. She is in a farmhouse just north
+    from the city walls. I should get there as soon as possible.
+  questStages:
+  - index: 10
+    description: Meet Vera at her farm house.
+    stageConditions: []
+    resultScript: 
+    completeQuest: 0
+    failQuest: 0
+    displayLogEntry: 1
+    stageCompleted: 0
+    stageFailed: 0
+  - index: 20
+    description: Survive the ambush.
+    stageConditions: []
+    resultScript: 
+    completeQuest: 0
+    failQuest: 0
+    displayLogEntry: 1
+    stageCompleted: 0
+    stageFailed: 0
+  - index: 30
+    description: Meet the rest of the group outside the guards outpost.
+    stageConditions: []
+    resultScript: RPGCreationKit.Quests.OneStepForwardQuestStage30Script
+    completeQuest: 0
+    failQuest: 0
+    displayLogEntry: 1
+    stageCompleted: 0
+    stageFailed: 0
+  - index: 40
+    description: Annihilate the outpost.
+    stageConditions: []
+    resultScript: 
+    completeQuest: 0
+    failQuest: 0
+    displayLogEntry: 1
+    stageCompleted: 0
+    stageFailed: 0
+  - index: 50
+    description: Speak with Martin.
+    stageConditions: []
+    resultScript: 
+    completeQuest: 1
+    failQuest: 0
+    displayLogEntry: 1
+    stageCompleted: 0
+    stageFailed: 0
+  allStagesActive: 
+  allStagesCompleted: 
+  allStagesFailed: 
+  questPriority: 50
+  questScript: RPGCreationKit.Quests.OneStepForwardQuestScript
+  allowRepeatedStages: 0
+  firstStageIsDefaultStage: 1
+  questScriptExecutionDelay: 5
+  currentQuestStage: 0
+  questCompleted: 0
+  questFailed: 0
+  questConditions: []
+  questXpReward: 500

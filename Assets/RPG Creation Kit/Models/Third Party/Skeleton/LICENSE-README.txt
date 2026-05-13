@@ -1,0 +1,1 @@
+3D Model and animations made by "KevDev", licensed under "CC0 Public Domain". Downloaded on https://opengameart.org/content/skeleton-outlaw-3d-character

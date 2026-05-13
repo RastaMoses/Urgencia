@@ -1,0 +1,257 @@
+/* Theme Color Variables - Steel Blue Theme */
+:root {
+    --theme-primary: rgb(70, 130, 180);
+    --theme-primary-dark: rgb(50, 100, 150);
+    --theme-primary-light: rgb(100, 160, 210);
+    --theme-accent: rgb(135, 206, 250);
+    --theme-accent-hover: rgb(175, 226, 255);
+    
+    --bg-primary: rgb(25, 35, 45);
+    --bg-secondary: rgb(35, 45, 60);
+    --bg-tertiary: rgb(45, 55, 70);
+    --bg-hover: rgb(55, 70, 90);
+    
+    --border-primary: rgba(70, 130, 180, 0.6);
+    --border-secondary: rgba(70, 130, 180, 0.3);
+    --border-hover: rgba(135, 206, 250, 0.9);
+    
+    --text-primary: rgb(230, 235, 240);
+    --text-secondary: rgb(180, 190, 200);
+    --text-muted: rgb(130, 140, 150);
+    
+    --overlay-dark: rgba(15, 25, 35, 0.85);
+    --overlay-medium: rgba(25, 35, 45, 0.7);
+    --overlay-light: rgba(35, 45, 60, 0.5);
+    
+    --shadow: rgba(0, 0, 0, 0.4);
+}
+
+.cell-map-view__custom-label {
+    font-size: 20px;
+    -unity-font-style: bold;
+    color: var(--theme-accent);
+}
+
+.cell-map-view__header-label {
+    font-size: 18px;
+    -unity-font-style: bold;
+    margin: 5px;
+    color: var(--theme-accent);
+}
+
+.cell-map-view__instructions-container {
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 10px;
+    border-bottom-width: 2px;
+    border-color: var(--border-secondary);
+    margin-bottom: 5px;
+    background-color: var(--bg-secondary);
+}
+
+.cell-map-view__instructions {
+    -unity-font-style: italic;
+    font-size: 12px;
+    color: var(--text-secondary);
+    flex-grow: 1;
+}
+
+.cell-map-view__selection-count {
+    color: var(--theme-accent);
+    -unity-font-style: bold;
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.cell-map-view__mode-button {
+    background-color: var(--bg-tertiary);
+    color: var(--text-primary);
+    border-color: var(--border-secondary);
+    border-width: 1px;
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-size: 11px;
+}
+
+.cell-map-view__mode-button:hover {
+    border-color: var(--border-primary);
+}
+
+.cell-map-view__mode-button--active {
+    background-color: var(--theme-primary);
+    border-color: var(--border-primary);
+}
+
+.cell-map-view__toolbar {
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 10px;
+    background-color: var(--bg-primary);
+    border-bottom-width: 2px;
+    border-color: var(--border-primary);
+}
+
+.cell-map-view__toolbar Label {
+    color: var(--text-primary);
+    margin-right: 5px;
+}
+
+.cell-map-view__toolbar Button {
+    background-color: var(--theme-primary);
+    color: var(--text-primary);
+    border-color: var(--border-primary);
+    border-width: 1px;
+    border-radius: 4px;
+    padding: 6px 12px;
+    margin-left: 5px;
+    transition-duration: 0.2s;
+}
+
+.cell-map-view__toolbar Button:hover {
+    background-color: var(--theme-primary-light);
+    border-color: var(--border-hover);
+}
+
+.cell-map-view__toolbar Button:active {
+    background-color: var(--theme-primary-dark);
+}
+
+.cell-map-view__toolbar TextField {
+    background-color: var(--bg-tertiary);
+    border-color: var(--border-secondary);
+    border-width: 1px;
+    border-radius: 4px;
+    color: var(--text-primary);
+}
+
+.cell-map-view__toolbar TextField:focus {
+    border-color: var(--border-primary);
+}
+
+.cell-map-view__dropdown {
+    min-width: 150px;
+    margin-right: 5px;
+    background-color: var(--bg-tertiary);
+    border-color: var(--border-secondary);
+    border-width: 1px;
+    border-radius: 4px;
+    color: var(--text-primary);
+}
+
+.cell-map-view__dropdown:hover {
+    border-color: var(--border-primary);
+}
+
+.cell-map-view__spacer {
+    flex-grow: 1;
+}
+
+.cell-map-view__toolbar-spacer {
+    width: 20px;
+}
+
+.cell-map-view__screenshot-path {
+    min-width: 200px;
+}
+
+.cell-map-view__scroll-view {
+    flex-grow: 1;
+    background-color: var(--bg-secondary);
+}
+
+.cell-map-view__grid {
+    position: relative;
+    min-width: 300px;
+    min-height: 300px;
+    background-color: var(--bg-secondary);
+}
+
+.cell {
+    position: absolute;
+    background-color: var(--bg-tertiary);
+    border-width: 2px;
+    border-color: var(--border-secondary);
+    border-radius: 5px;
+    overflow: hidden;
+    transition-property: border-color, border-width, background-color;
+    transition-duration: 0.15s;
+}
+
+.cell:hover {
+    border-color: var(--border-hover);
+    border-width: 3px;
+    background-color: var(--bg-hover);
+}
+
+.cell--empty {
+    background-color: var(--overlay-light);
+    border-style: dashed;
+    border-color: var(--border-secondary);
+}
+
+.cell--empty:hover {
+    border-style: dashed;
+    background-color: var(--overlay-medium);
+}
+
+.cell__image {
+    width: 100%;
+    height: 100%;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.cell__coord-label {
+    position: absolute;
+    background-color: var(--overlay-dark);
+    color: var(--text-primary);
+    padding: 3px 6px;
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: var(--border-primary);
+    font-size: 11px;
+    -unity-font-style: bold;
+    top: 4px;
+    left: 4px;
+}
+
+.cell__name-label {
+    position: absolute;
+    background-color: var(--overlay-dark);
+    color: var(--text-primary);
+    padding: 4px 6px;
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: var(--border-primary);
+    font-size: 11px;
+    -unity-font-style: bold;
+    bottom: 4px;
+    left: 4px;
+    right: 4px;
+    -unity-text-align: middle-center;
+    white-space: normal;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-height: 35px;
+}
+
+.cell__checkbox {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 16px;
+    height: 16px;
+    background-color: var(--bg-tertiary);
+    border-width: 1px;
+    border-color: var(--text-secondary);
+    border-radius: 3px;
+    display: none;
+}
+
+.cell__checkbox--visible {
+    display: flex;
+}
+
+.cell__checkbox--checked {
+    background-color: var(--theme-accent);
+    border-color: var(--theme-accent);
+}

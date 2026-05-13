@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f29aa53af64a33408b1464ff9e8071d, type: 3}
+  m_Name: '[CREATURE_WEAPON] SkeletonOutlaw001'
+  m_EditorClassIdentifier: 
+  ItemID: SkeletonsAxe001
+  ItemIcon: {fileID: 21300000, guid: 1e8d836b4fee3b34c9c55f659b52f2e6, type: 3}
+  ItemName: Skeleton's Axe
+  itemInWorld: {fileID: 0}
+  Weight: 6
+  Value: 42
+  QuestItem: 0
+  isCumulable: 0
+  useMesh: 1
+  usesTooltip: 0
+  tooltipValue: 
+  itemScript: 
+  sOnPickUp: {fileID: 8300000, guid: 956548157ab3af04fb0fce2212ac8e9d, type: 3}
+  sOnDrop: {fileID: 0}
+  sOnAddedInInventory: {fileID: 8300000, guid: 956548157ab3af04fb0fce2212ac8e9d, type: 3}
+  sOnRemovedFromInventory: {fileID: 8300000, guid: 956548157ab3af04fb0fce2212ac8e9d,
+    type: 3}
+  sOnEquipOrUse: {fileID: 8300000, guid: 298f763086d7ed042a21a7518e2a2cf6, type: 3}
+  sOnUnEquip: {fileID: 0}
+  WeaponOnHand: {fileID: 0}
+  WeaponSheathed: {fileID: 0}
+  weaponClass: 0
+  weaponType: 1
+  weightType: 1
+  Health: 100
+  Reach: 2.5
+  Speed: 1
+  Damage: 40
+  BlockingMultiplier: 0.633
+  blockSound: {fileID: 8300000, guid: 23abf239c574fb64e9ad89e3e7637f44, type: 3}
+  fpsAnimatorController: {fileID: 9100000, guid: 78d18bbaee3e66f49b59970197741a3f,
+    type: 2}
+  tpsAnimatorController: {fileID: 9100000, guid: cf0c3a0e50cd1f64389fda9267c6f315,
+    type: 2}
+  AttackTypes: 2
+  weaponAttacks:
+  - AttackTypeIndex: 0
+    BaseDamage: 28
+    StaminaAmount: 9
+    howManyHitsCanSustain: 1
+    locksMovement: 1
+    locksRotation: 1
+    cameraAnim: 0
+    attackSound: {fileID: 8300000, guid: ff424628081047848a77d653314e6f4b, type: 3}
+  - AttackTypeIndex: 1
+    BaseDamage: 32
+    StaminaAmount: 20
+    howManyHitsCanSustain: 1
+    locksMovement: 1
+    locksRotation: 1
+    cameraAnim: 0
+    attackSound: {fileID: 8300000, guid: f4b1d34b5980e5e41ad8347a01c1592a, type: 3}
+  chargedAttackTypes: 1
+  weaponChargedAttacks:
+  - AttackTypeIndex: 0
+    BaseDamage: 60
+    StaminaAmount: 15
+    howManyHitsCanSustain: 4
+    locksMovement: 1
+    locksRotation: 1
+    cameraAnim: 0
+    attackSound: {fileID: 8300000, guid: ff424628081047848a77d653314e6f4b, type: 3}
+  attackChainTime: 2
+  chargedAttackChainTime: 1.5
+  aggroModifier: 1
+  fireType: 0
+  reloadType: 0
+  ammo: {fileID: 0}
+  clipRounds: 30
+  ammoPerShot: 1
+  projectilesPerShot: 1
+  fireRate: 10
+  aimSpread: 0
+  hipSpread: 0.5
+  sightFov: 60
+  criticalMultiplier: 2
+  recoilHit: 2
+  animateAim: 1
+  nAnimFireFromHip: 1
+  nAnimFireFromSight: 1
+  aimingHolderPos: {x: 0, y: 0, z: 0}
+  aimingHolderRot: {x: 0, y: 0, z: 0}
+  aimingHolderPosCrouched: {x: 0, y: 0, z: 0}
+  aimingHolderRotCrouched: {x: 0, y: 0, z: 0}
+  swayWhileAiming: 0.005
+  fireSound: {fileID: 0}
+  emptyFireSound: {fileID: 0}
+  staggeringChancePerShot: 10
+  shellCase: {fileID: 0}
+  defaultHole: {fileID: 0}
+  explodesAfter: 0
+  explosionObject: {fileID: 0}
+  explosionRadius: 0
+  explosionForce: 0
+  clippingWeapon: 0

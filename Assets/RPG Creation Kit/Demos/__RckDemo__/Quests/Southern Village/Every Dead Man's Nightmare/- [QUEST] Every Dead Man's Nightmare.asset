@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45ee663e38452994ab2f4a05886c81ed, type: 3}
+  m_Name: '- [QUEST] Every Dead Man''s Nightmare'
+  m_EditorClassIdentifier: 
+  _IS_DEMO_FILE: 1
+  questID: SQ_EveryDeadMansNightmare
+  questName: Every Dead Man's Nightmare
+  questDescription: They say there is a man named "The Thief of The Dead" who's digging
+    graves and stealing things their families buried with them. I should speak with
+    Mother Nebivia and learn more.
+  questStages:
+  - index: 10
+    description: Speak with Mother Nebivia at the Curch.
+    stageConditions: []
+    resultScript: 
+    completeQuest: 0
+    failQuest: 0
+    displayLogEntry: 1
+    stageCompleted: 0
+    stageFailed: 0
+  - index: 20
+    description: Check the cemetery for the looter.
+    stageConditions: []
+    resultScript: RPGCreationKit.Quests.EveryDeadMansNightmareStage20Script
+    completeQuest: 0
+    failQuest: 0
+    displayLogEntry: 1
+    stageCompleted: 0
+    stageFailed: 0
+  - index: 30
+    description: Kill the looter.
+    stageConditions: []
+    resultScript: 
+    completeQuest: 0
+    failQuest: 0
+    displayLogEntry: 1
+    stageCompleted: 0
+    stageFailed: 0
+  - index: 40
+    description: Report to Mother Nebivia that the looter is dead.
+    stageConditions: []
+    resultScript: RPGCreationKit.Quests.EveryDeadMansNightmareConclusionStageScript
+    completeQuest: 1
+    failQuest: 0
+    displayLogEntry: 1
+    stageCompleted: 0
+    stageFailed: 0
+  - index: 50
+    description: Report to Mother Nebivia that the looter will never come back.
+    stageConditions: []
+    resultScript: RPGCreationKit.Quests.EveryDeadMansNightmareConclusionStageScript
+    completeQuest: 1
+    failQuest: 0
+    displayLogEntry: 1
+    stageCompleted: 0
+    stageFailed: 0
+  - index: 60
+    description: '# This stage is triggered if the player takes Thief''s bribe'
+    stageConditions: []
+    resultScript: 
+    completeQuest: 1
+    failQuest: 0
+    displayLogEntry: 0
+    stageCompleted: 0
+    stageFailed: 0
+  allStagesActive: 
+  allStagesCompleted: 
+  allStagesFailed: 
+  questPriority: 50
+  questScript: RPGCreationKit.Quests.EveryDeadMansNightmareQuestScript
+  allowRepeatedStages: 0
+  firstStageIsDefaultStage: 1
+  questScriptExecutionDelay: 5
+  currentQuestStage: 0
+  questCompleted: 0
+  questFailed: 0
+  questConditions: []
+  questXpReward: 600

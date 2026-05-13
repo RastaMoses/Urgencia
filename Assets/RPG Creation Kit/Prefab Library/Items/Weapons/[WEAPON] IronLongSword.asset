@@ -1,0 +1,134 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f29aa53af64a33408b1464ff9e8071d, type: 3}
+  m_Name: '[WEAPON] IronLongSword'
+  m_EditorClassIdentifier: 
+  _IS_DEMO_FILE: 1
+  ItemID: IronLongSword01
+  ItemIcon: {fileID: 21300000, guid: 1e8d836b4fee3b34c9c55f659b52f2e6, type: 3}
+  ItemName: Iron Longsword
+  itemInWorld: {fileID: 2769382303132524403, guid: 8c3db68d9f5eaeb40b02cf587401cff9,
+    type: 3}
+  Weight: 6
+  Value: 42
+  QuestItem: 0
+  isCumulable: 0
+  useMesh: 1
+  usesTooltip: 0
+  tooltipValue: 
+  itemScript: 
+  sOnPickUp: {fileID: 8300000, guid: 956548157ab3af04fb0fce2212ac8e9d, type: 3}
+  sOnDrop: {fileID: 0}
+  sOnAddedInInventory: {fileID: 8300000, guid: 956548157ab3af04fb0fce2212ac8e9d, type: 3}
+  sOnRemovedFromInventory: {fileID: 8300000, guid: 956548157ab3af04fb0fce2212ac8e9d,
+    type: 3}
+  sOnEquipOrUse: {fileID: 8300000, guid: 298f763086d7ed042a21a7518e2a2cf6, type: 3}
+  sOnUnEquip: {fileID: 0}
+  WeaponOnHand: {fileID: 2063805919465243042, guid: 6c2a5d014419ec446834d015916b696a,
+    type: 3}
+  WeaponSheathed: {fileID: 8456748949138995869, guid: 1c13dea4d13dec742b030d6bb904c363,
+    type: 3}
+  weaponClass: 0
+  weaponType: 1
+  weightType: 1
+  Health: 100
+  Reach: 2.5
+  Speed: 1
+  Damage: 25
+  BlockingMultiplier: 0.633
+  blockSound: {fileID: 8300000, guid: 23abf239c574fb64e9ad89e3e7637f44, type: 3}
+  fpsAnimatorController: {fileID: 9100000, guid: 78d18bbaee3e66f49b59970197741a3f,
+    type: 2}
+  tpsAnimatorController: {fileID: 9100000, guid: cf0c3a0e50cd1f64389fda9267c6f315,
+    type: 2}
+  AttackTypes: 4
+  weaponAttacks:
+  - AttackTypeIndex: 0
+    BaseDamage: 20
+    StaminaAmount: 9
+    howManyHitsCanSustain: 1
+    isFullBody: 0
+    cameraAnim: 0
+    attackSound: {fileID: 8300000, guid: ff424628081047848a77d653314e6f4b, type: 3}
+  - AttackTypeIndex: 1
+    BaseDamage: 25
+    StaminaAmount: 11
+    howManyHitsCanSustain: 1
+    isFullBody: 0
+    cameraAnim: 0
+    attackSound: {fileID: 8300000, guid: f4b1d34b5980e5e41ad8347a01c1592a, type: 3}
+  - AttackTypeIndex: 2
+    BaseDamage: 27
+    StaminaAmount: 15
+    howManyHitsCanSustain: 4
+    isFullBody: 0
+    cameraAnim: 0
+    attackSound: {fileID: 8300000, guid: ffc6950e2b73e6441a7e70603674f879, type: 3}
+  - AttackTypeIndex: 3
+    BaseDamage: 30
+    StaminaAmount: 20
+    howManyHitsCanSustain: 4
+    isFullBody: 0
+    cameraAnim: 0
+    attackSound: {fileID: 8300000, guid: ff424628081047848a77d653314e6f4b, type: 3}
+  chargedAttackTypes: 1
+  weaponChargedAttacks:
+  - AttackTypeIndex: 0
+    BaseDamage: 55
+    StaminaAmount: 25
+    howManyHitsCanSustain: 4
+    isFullBody: 0
+    cameraAnim: 0
+    attackSound: {fileID: 8300000, guid: ff424628081047848a77d653314e6f4b, type: 3}
+  - AttackTypeIndex: 1
+    BaseDamage: 70
+    StaminaAmount: 25
+    howManyHitsCanSustain: 4
+    isFullBody: 1
+    cameraAnim: 0
+    attackSound: {fileID: 8300000, guid: ff424628081047848a77d653314e6f4b, type: 3}
+  attackChainTime: 2
+  chargedAttackChainTime: 1.5
+  aggroModifier: 1
+  fireType: 0
+  reloadType: 0
+  ammo: {fileID: 0}
+  clipRounds: 30
+  ammoPerShot: 1
+  projectilesPerShot: 1
+  fireRate: 10
+  aimSpread: 0
+  hipSpread: 0.5
+  sightFov: 60
+  criticalMultiplier: 2
+  recoilHit: 2
+  animateAim: 1
+  nAnimFireFromHip: 1
+  nAnimFireFromSight: 1
+  aimingHolderPos: {x: 0, y: 0, z: 0}
+  aimingHolderRot: {x: 0, y: 0, z: 0}
+  aimingHolderPosCrouched: {x: 0, y: 0, z: 0}
+  aimingHolderRotCrouched: {x: 0, y: 0, z: 0}
+  swayWhileAiming: 0.005
+  fireSound: {fileID: 0}
+  emptyFireSound: {fileID: 0}
+  staggeringChancePerShot: 10
+  shellCase: {fileID: 0}
+  defaultHole: {fileID: 0}
+  explodesAfter: 0
+  explosionObject: {fileID: 0}
+  explosionRadius: 0
+  explosionForce: 0
+  clippingWeapon: 0
+  sneakAttackMultiplier: 1
+  sOnDraw: {fileID: 8300000, guid: aacfe28271619f841a4f131ff3e7d547, type: 3}
+  sOnSheathe: {fileID: 8300000, guid: 0bb16bab0f47bac46b773f59ca81a5dc, type: 3}

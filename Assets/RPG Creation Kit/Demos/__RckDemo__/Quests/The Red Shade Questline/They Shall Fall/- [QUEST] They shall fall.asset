@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45ee663e38452994ab2f4a05886c81ed, type: 3}
+  m_Name: '- [QUEST] They shall fall'
+  m_EditorClassIdentifier: 
+  _IS_DEMO_FILE: 1
+  questID: RSQL_TheyShallFall
+  questName: They Shall Fall
+  questDescription: We've killed every guard in Virrihael Military's outpost. Another
+    group should have already attacked the city. I need to join the battle and help
+    the cult prevail.
+  questStages:
+  - index: 10
+    description: Join the battle in the City.
+    stageConditions: []
+    resultScript: RPGCreationKit.Quests.RSQL_TheyShallFallStage10Script
+    completeQuest: 0
+    failQuest: 0
+    displayLogEntry: 1
+    stageCompleted: 0
+    stageFailed: 0
+  - index: 20
+    description: Kill the King and the last survivors.
+    stageConditions: []
+    resultScript: RPGCreationKit.Quests.TheyShallFall_Stage20Script
+    completeQuest: 0
+    failQuest: 0
+    displayLogEntry: 1
+    stageCompleted: 0
+    stageFailed: 0
+  - index: 30
+    description: Wait for Martin to arrive.
+    stageConditions: []
+    resultScript: RPGCreationKit.Quests.TheyShallFall_Stage30Script
+    completeQuest: 0
+    failQuest: 0
+    displayLogEntry: 1
+    stageCompleted: 0
+    stageFailed: 0
+  - index: 40
+    description: Speak to Martin.
+    stageConditions: []
+    resultScript: 
+    completeQuest: 1
+    failQuest: 0
+    displayLogEntry: 1
+    stageCompleted: 0
+    stageFailed: 0
+  allStagesActive: 
+  allStagesCompleted: 
+  allStagesFailed: 
+  questPriority: 50
+  questScript: RPGCreationKit.Quests.TheyShallFallQuestScript
+  allowRepeatedStages: 0
+  firstStageIsDefaultStage: 1
+  questScriptExecutionDelay: 5
+  currentQuestStage: 0
+  questCompleted: 0
+  questFailed: 0
+  questConditions: []
+  questXpReward: 1000

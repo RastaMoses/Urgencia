@@ -1,0 +1,23 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement name="toolbar" class="cell-map-view__toolbar">
+        <ui:Label name="worldspace-name-label" text="No Worldspace Selected" class="cell-map-view__header-label" />
+        <ui:VisualElement class="cell-map-view__spacer" />
+        <ui:Label text="Worldspace:" />
+        <ui:DropdownField name="worldspace-dropdown" class="cell-map-view__dropdown" />
+        <ui:Button name="refresh-button" text="↻" tooltip="Refresh worldspace list and cell screenshots" class="cell-map-view__icon-button" />
+        <ui:VisualElement class="cell-map-view__toolbar-spacer" />
+        <ui:TextField name="screenshot-path" label="Screenshot Path" value="Assets/_CellScreenshots" class="cell-map-view__screenshot-path" />
+        <ui:Button name="browse-path-button" text="📁" tooltip="Browse for folder" class="cell-map-view__icon-button" />
+        <ui:Button name="regenerate-button" text="Regenerate All" tooltip="Regenerate screenshots for all cells" />
+    </ui:VisualElement>
+    
+    <ui:VisualElement class="cell-map-view__instructions-container">
+        <ui:Label text="Cell Map by Warspawn - Hover on cells to see details. Click to open. (Ctrl+Click for additive load)" class="cell-map-view__instructions" />
+        <ui:Label name="selection-count-label" text="0 Selected" class="cell-map-view__selection-count" style="display: none;" />
+        <ui:Button name="select-mode-button" text="Select Mode" class="cell-map-view__mode-button" />
+    </ui:VisualElement>
+    
+    <ui:ScrollView name="scroll-view" class="cell-map-view__scroll-view">
+        <ui:VisualElement name="grid-container" class="cell-map-view__grid" />
+    </ui:ScrollView>
+</ui:UXML>
