@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f29aa53af64a33408b1464ff9e8071d, type: 3}
+  m_Name: '[WEAPON] BattleAxe'
+  m_EditorClassIdentifier: 
+  _IS_DEMO_FILE: 1
+  ItemID: SteelBattleAxe001
+  ItemIcon: {fileID: 21300000, guid: 1e8d836b4fee3b34c9c55f659b52f2e6, type: 3}
+  ItemName: Steel BattleAxe
+  itemInWorld: {fileID: 646029961464789968, guid: 6d69508f165422643bbee3b2093cbb0d,
+    type: 3}
+  Weight: 20
+  Value: 180
+  QuestItem: 0
+  isCumulable: 0
+  useMesh: 1
+  usesTooltip: 0
+  tooltipValue: 
+  itemScript: 
+  sOnPickUp: {fileID: 8300000, guid: 956548157ab3af04fb0fce2212ac8e9d, type: 3}
+  sOnDrop: {fileID: 0}
+  sOnAddedInInventory: {fileID: 8300000, guid: 956548157ab3af04fb0fce2212ac8e9d, type: 3}
+  sOnRemovedFromInventory: {fileID: 8300000, guid: 956548157ab3af04fb0fce2212ac8e9d,
+    type: 3}
+  sOnEquipOrUse: {fileID: 8300000, guid: 298f763086d7ed042a21a7518e2a2cf6, type: 3}
+  sOnUnEquip: {fileID: 0}
+  WeaponOnHand: {fileID: 8353472529002446833, guid: 0fa3972c3cb8dd34aa70fc5f2098d26d,
+    type: 3}
+  WeaponSheathed: {fileID: 9121800256761510644, guid: eef6d073eddf9d943908f6a7995551d0,
+    type: 3}
+  weaponClass: 0
+  weaponType: 2
+  weightType: 2
+  Health: 100
+  Reach: 2.4
+  Speed: 1
+  Damage: 50
+  BlockingMultiplier: 0.8
+  blockSound: {fileID: 8300000, guid: 298f763086d7ed042a21a7518e2a2cf6, type: 3}
+  fpsAnimatorController: {fileID: 9100000, guid: bb0ce8a7892b7ee41810e816c7ce0446,
+    type: 2}
+  tpsAnimatorController: {fileID: 0}
+  AttackTypes: 3
+  weaponAttacks:
+  - AttackTypeIndex: 0
+    BaseDamage: 48
+    StaminaAmount: 35
+    howManyHitsCanSustain: 0
+    isFullBody: 0
+    cameraAnim: 0
+    attackSound: {fileID: 8300000, guid: ff424628081047848a77d653314e6f4b, type: 3}
+  - AttackTypeIndex: 1
+    BaseDamage: 56
+    StaminaAmount: 40
+    howManyHitsCanSustain: 1
+    isFullBody: 0
+    cameraAnim: 0
+    attackSound: {fileID: 8300000, guid: f4b1d34b5980e5e41ad8347a01c1592a, type: 3}
+  - AttackTypeIndex: 2
+    BaseDamage: 70
+    StaminaAmount: 50
+    howManyHitsCanSustain: 3
+    isFullBody: 0
+    cameraAnim: 0
+    attackSound: {fileID: 8300000, guid: ffc6950e2b73e6441a7e70603674f879, type: 3}
+  chargedAttackTypes: 1
+  weaponChargedAttacks:
+  - AttackTypeIndex: 0
+    BaseDamage: 80
+    StaminaAmount: 60
+    howManyHitsCanSustain: 0
+    isFullBody: 0
+    cameraAnim: 0
+    attackSound: {fileID: 8300000, guid: ff424628081047848a77d653314e6f4b, type: 3}
+  attackChainTime: 2.4
+  chargedAttackChainTime: 1.5
+  aggroModifier: 2
+  fireType: 0
+  reloadType: 0
+  ammo: {fileID: 0}
+  clipRounds: 30
+  ammoPerShot: 1
+  projectilesPerShot: 1
+  fireRate: 10
+  aimSpread: 0
+  hipSpread: 0.5
+  sightFov: 60
+  criticalMultiplier: 2
+  recoilHit: 2
+  animateAim: 1
+  nAnimFireFromHip: 1
+  nAnimFireFromSight: 1
+  aimingHolderPos: {x: 0, y: 0, z: 0}
+  aimingHolderRot: {x: 0, y: 0, z: 0}
+  aimingHolderPosCrouched: {x: 0, y: 0, z: 0}
+  aimingHolderRotCrouched: {x: 0, y: 0, z: 0}
+  swayWhileAiming: 0.005
+  fireSound: {fileID: 0}
+  emptyFireSound: {fileID: 0}
+  staggeringChancePerShot: 10
+  shellCase: {fileID: 0}
+  defaultHole: {fileID: 0}
+  explodesAfter: 0
+  explosionObject: {fileID: 0}
+  explosionRadius: 0
+  explosionForce: 0
+  clippingWeapon: 0
+  sneakAttackMultiplier: 1
+  sOnDraw: {fileID: 8300000, guid: aacfe28271619f841a4f131ff3e7d547, type: 3}
+  sOnSheathe: {fileID: 8300000, guid: 0bb16bab0f47bac46b773f59ca81a5dc, type: 3}

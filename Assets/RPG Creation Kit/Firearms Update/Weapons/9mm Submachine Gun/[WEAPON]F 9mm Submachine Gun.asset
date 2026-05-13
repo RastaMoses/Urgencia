@@ -1,0 +1,125 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f29aa53af64a33408b1464ff9e8071d, type: 3}
+  m_Name: '[WEAPON]F 9mm Submachine Gun'
+  m_EditorClassIdentifier: 
+  ItemID: 9mmsubmachinegun001
+  ItemIcon: {fileID: 21300000, guid: ee4e4adedbeaea04d82c188c63f57956, type: 3}
+  ItemName: 9mm Submachine Gun
+  itemInWorld: {fileID: 8300706309053086219, guid: e8cca8910bf676c449df9149d3a97e6a,
+    type: 3}
+  Weight: 6
+  Value: 427
+  QuestItem: 0
+  isCumulable: 0
+  useMesh: 1
+  usesTooltip: 0
+  tooltipValue: 
+  itemScript: 
+  sOnPickUp: {fileID: 8300000, guid: 063fc381a4747c344ac5b0c56d63bd78, type: 3}
+  sOnDrop: {fileID: 8300000, guid: 063fc381a4747c344ac5b0c56d63bd78, type: 3}
+  sOnAddedInInventory: {fileID: 8300000, guid: 063fc381a4747c344ac5b0c56d63bd78, type: 3}
+  sOnRemovedFromInventory: {fileID: 8300000, guid: 063fc381a4747c344ac5b0c56d63bd78,
+    type: 3}
+  sOnEquipOrUse: {fileID: 8300000, guid: 063fc381a4747c344ac5b0c56d63bd78, type: 3}
+  sOnUnEquip: {fileID: 0}
+  WeaponOnHand: {fileID: 250507392024811504, guid: 027356c09a03c4a458e29abe14380ec3,
+    type: 3}
+  WeaponSheathed: {fileID: 5508550534449843379, guid: 9ba0dd1812704de4e923022522c2f537,
+    type: 3}
+  weaponClass: 1
+  weaponType: 9
+  weightType: 1
+  Health: 100
+  Reach: 100
+  Speed: 1
+  Damage: 10
+  BlockingMultiplier: 0.5
+  blockSound: {fileID: 0}
+  fpsAnimatorController: {fileID: 9100000, guid: 164c44c5e35da3641bfaab1e9b5e8982,
+    type: 2}
+  tpsAnimatorController: {fileID: 9100000, guid: 7dcb02527cf04754ea4de6d04ea7a101,
+    type: 2}
+  AttackTypes: 3
+  weaponAttacks:
+  - AttackTypeIndex: 0
+    BaseDamage: 0
+    StaminaAmount: 0
+    howManyHitsCanSustain: 0
+    cameraAnim: 0
+    attackSound: {fileID: 0}
+  - AttackTypeIndex: 0
+    BaseDamage: 0
+    StaminaAmount: 0
+    howManyHitsCanSustain: 0
+    cameraAnim: 0
+    attackSound: {fileID: 0}
+  - AttackTypeIndex: 0
+    BaseDamage: 0
+    StaminaAmount: 0
+    howManyHitsCanSustain: 0
+    cameraAnim: 0
+    attackSound: {fileID: 0}
+  chargedAttackTypes: 3
+  weaponChargedAttacks:
+  - AttackTypeIndex: 0
+    BaseDamage: 0
+    StaminaAmount: 0
+    howManyHitsCanSustain: 0
+    cameraAnim: 0
+    attackSound: {fileID: 0}
+  - AttackTypeIndex: 0
+    BaseDamage: 0
+    StaminaAmount: 0
+    howManyHitsCanSustain: 0
+    cameraAnim: 0
+    attackSound: {fileID: 0}
+  - AttackTypeIndex: 0
+    BaseDamage: 0
+    StaminaAmount: 0
+    howManyHitsCanSustain: 0
+    cameraAnim: 0
+    attackSound: {fileID: 0}
+  attackChainTime: 1.5
+  chargedAttackChainTime: 1.5
+  aggroModifier: 1
+  fireType: 0
+  reloadType: 0
+  ammo: {fileID: 11400000, guid: 732c6e0f8c533d74797197fc7fbd2def, type: 2}
+  clipRounds: 30
+  ammoPerShot: 1
+  projectilesPerShot: 1
+  fireRate: 0.1
+  aimSpread: 0
+  hipSpread: 0.025
+  sightFov: 40
+  criticalMultiplier: 2
+  recoilHit: 20
+  animateAim: 1
+  nAnimFireFromHip: 1
+  nAnimFireFromSight: 1
+  aimingHolderPos: {x: -0.052, y: 0.088, z: -0.008}
+  aimingHolderRot: {x: 0, y: -6.346, z: 0}
+  aimingHolderPosCrouched: {x: -0.13999, y: 0.096334, z: -0.014122}
+  aimingHolderRotCrouched: {x: 1.925, y: -6.235, z: 19.584}
+  swayWhileAiming: 0.005
+  fireSound: {fileID: 8300000, guid: db4183aa017349d44a96826adb6790a0, type: 3}
+  emptyFireSound: {fileID: 8300000, guid: a7866b8977640e54d9546d7c5157067c, type: 3}
+  staggeringChancePerShot: 10
+  shellCase: {fileID: 0}
+  defaultHole: {fileID: 7143779661947934845, guid: 14062b5d0738e1143be1ae7755215560,
+    type: 3}
+  explodesAfter: 0
+  explosionObject: {fileID: 0}
+  explosionRadius: 0
+  explosionForce: 0
+  clippingWeapon: 1

@@ -1,0 +1,287 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1243836717108472300
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2817466933576752127}
+  - component: {fileID: 6503938385295401417}
+  - component: {fileID: 684029186482150704}
+  - component: {fileID: 7089532164753715431}
+  - component: {fileID: 7089532164753715451}
+  - component: {fileID: 7089532164753715450}
+  - component: {fileID: 7089532164753715449}
+  m_Layer: 0
+  m_Name: BarrelLootingPoint_Prefab
+  m_TagString: RPG Creation Kit/Looting Point
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2817466933576752127
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243836717108472300}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: 1.9102769, y: 1.2099973, z: -2.0546768}
+  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &6503938385295401417
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243836717108472300}
+  m_Mesh: {fileID: -6195245291975648998, guid: 251b2506a72582f428f868d0ae7818b3, type: 3}
+--- !u!23 &684029186482150704
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243836717108472300}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 2fdae3746a156f34c9eb75d55cfb7c4c, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &7089532164753715431
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243836717108472300}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6195245291975648998, guid: 251b2506a72582f428f868d0ae7818b3, type: 3}
+--- !u!114 &7089532164753715451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243836717108472300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30bba1f7b72ab1b4b97e0b7ce5d4b06f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasToInitializeInventory: 1
+  ID: CHANGE_ID
+  metadata:
+    isOwned: 0
+    ownerID: 
+  pointName: Barrel
+  lCollider: {fileID: 7089532164753715431}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  inventory: {fileID: 7089532164753715450}
+  equipment: {fileID: 7089532164753715449}
+  items: []
+  hasToLoadAndSave: 1
+--- !u!114 &7089532164753715450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243836717108472300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6627db191a25264d9297c214f0bccff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  equipment: {fileID: 0}
+  Items: []
+  CurTotalWeight: 0
+--- !u!114 &7089532164753715449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243836717108472300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00825669220450f4cbac49e0bfd27dd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FP_Arms: {fileID: 0}
+  characterModel: {fileID: 0}
+  inv: {fileID: 0}
+  itemsEquipped:
+  - externalItemID: 
+    item: {fileID: 0}
+    metadata:
+      isOwned: 0
+      ownerID: 
+      intProperty1: 0
+    Amount: 1
+    isEquipped: 0
+  - externalItemID: 
+    item: {fileID: 0}
+    metadata:
+      isOwned: 0
+      ownerID: 
+      intProperty1: 0
+    Amount: 1
+    isEquipped: 0
+  - externalItemID: 
+    item: {fileID: 0}
+    metadata:
+      isOwned: 0
+      ownerID: 
+      intProperty1: 0
+    Amount: 1
+    isEquipped: 0
+  - externalItemID: 
+    item: {fileID: 0}
+    metadata:
+      isOwned: 0
+      ownerID: 
+      intProperty1: 0
+    Amount: 1
+    isEquipped: 0
+  - externalItemID: 
+    item: {fileID: 0}
+    metadata:
+      isOwned: 0
+      ownerID: 
+      intProperty1: 0
+    Amount: 1
+    isEquipped: 0
+  - externalItemID: 
+    item: {fileID: 0}
+    metadata:
+      isOwned: 0
+      ownerID: 
+      intProperty1: 0
+    Amount: 1
+    isEquipped: 0
+  - externalItemID: 
+    item: {fileID: 0}
+    metadata:
+      isOwned: 0
+      ownerID: 
+      intProperty1: 0
+    Amount: 1
+    isEquipped: 0
+  - externalItemID: 
+    item: {fileID: 0}
+    metadata:
+      isOwned: 0
+      ownerID: 
+      intProperty1: 0
+    Amount: 1
+    isEquipped: 0
+  - externalItemID: 
+    item: {fileID: 0}
+    metadata:
+      isOwned: 0
+      ownerID: 
+      intProperty1: 0
+    Amount: 1
+    isEquipped: 0
+  - externalItemID: 
+    item: {fileID: 0}
+    metadata:
+      isOwned: 0
+      ownerID: 
+      intProperty1: 0
+    Amount: 1
+    isEquipped: 0
+  - externalItemID: 
+    item: {fileID: 0}
+    metadata:
+      isOwned: 0
+      ownerID: 
+      intProperty1: 0
+    Amount: 1
+    isEquipped: 0
+  - externalItemID: 
+    item: {fileID: 0}
+    metadata:
+      isOwned: 0
+      ownerID: 
+      intProperty1: 0
+    Amount: 1
+    isEquipped: 0
+  MeleeDamageOutput: 0
+  RangedDamageOutput: 0
+  ArmorRate: 0
+  isUsingShield: 0
+  isUsingTorch: 0
+  doingOneHWeaponSwap: 0
+  currentWeapon: {fileID: 0}
+  currentWeaponObject: {fileID: 0}
+  currentWeaponOnHip: {fileID: 0}
+  currentWeaponAnimator: {fileID: 0}
+  currentAmmo: {fileID: 0}
+  currentAmmoObject: {fileID: 0}
+  currentShield: {fileID: 0}
+  currentShieldObject: {fileID: 0}
+  currentFPShieldObject: {fileID: 0}
+  currentTorch: {fileID: 0}
+  currentTorchInHand: {fileID: 0}

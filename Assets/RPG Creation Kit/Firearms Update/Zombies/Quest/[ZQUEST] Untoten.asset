@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45ee663e38452994ab2f4a05886c81ed, type: 3}
+  m_Name: '[ZQUEST] Untoten'
+  m_EditorClassIdentifier: 
+  questID: ZQ001_UNTOTEN
+  questName: Untoten
+  questDescription: I thought they were dead. I was wrong.
+  questStages:
+  - index: 10
+    description: Survive as long as you can.
+    stageConditions: []
+    resultScript: RPGCreationKit.Quests.UntotenStage10
+    completeQuest: 0
+    failQuest: 0
+    displayLogEntry: 1
+    stageCompleted: 0
+    stageFailed: 0
+  allStagesActive: 
+  allStagesCompleted: 
+  allStagesFailed: 
+  questPriority: 50
+  questScript: 
+  allowRepeatedStages: 0
+  firstStageIsDefaultStage: 1
+  questScriptExecutionDelay: 5
+  currentQuestStage: 0
+  questCompleted: 0
+  questFailed: 0
+  questConditions: []

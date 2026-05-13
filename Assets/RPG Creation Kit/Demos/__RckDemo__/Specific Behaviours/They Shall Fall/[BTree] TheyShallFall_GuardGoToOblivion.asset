@@ -1,0 +1,716 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7627101594851834715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2685ade320f7df49b0911b7f63f644e, type: 3}
+  m_Name: Sequence
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -232, y: -8}
+  ports:
+    keys:
+    - outputs
+    - input
+    values:
+    - _fieldName: outputs
+      _node: {fileID: -7627101594851834715}
+      _typeQualifiedName: RPGCreationKit.BehaviourTree.BTNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: input
+        node: {fileID: -7341355072153943545}
+        reroutePoints: []
+      - fieldName: input
+        node: {fileID: 4425311347787873142}
+        reroutePoints: []
+      - fieldName: input
+        node: {fileID: -2171875408209456041}
+        reroutePoints: []
+      - fieldName: input
+        node: {fileID: 4830066689609610551}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: input
+      _node: {fileID: -7627101594851834715}
+      _typeQualifiedName: RPGCreationKit.BehaviourTree.BTNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: firstNode
+        node: {fileID: 532005668157200202}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  guidStr: 233d1eea-3796-4a54-ba35-904a49368a3c
+  input: {fileID: 0}
+  isInCombatBehavior: 0
+  indexInSequence: -1
+  resultScript: 
+  events:
+    questDealers: []
+    questUpdaters: []
+    consequences: []
+  outputs: {fileID: 0}
+--- !u!114 &-7341355072153943545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 174872d3d7214ad4ba50575820b11b6e, type: 3}
+  m_Name: AI_Invoke
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 136, y: -40}
+  ports:
+    keys:
+    - input
+    values:
+    - _fieldName: input
+      _node: {fileID: -7341355072153943545}
+      _typeQualifiedName: RPGCreationKit.BehaviourTree.BTNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: outputs
+        node: {fileID: -7627101594851834715}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  guidStr: 349b48ad-c52e-4db0-9b03-212672f397f5
+  input: {fileID: 0}
+  isInCombatBehavior: 0
+  indexInSequence: 2
+  resultScript: 
+  events:
+    questDealers: []
+    questUpdaters: []
+    consequences: []
+  MethodToCall: SetFollowMainTarget
+  parameters:
+  - conditionType: 0
+    stringValue: 
+    stringArrayValue: []
+    intValue: 0
+    floatValue: 0
+    boolValue: 1
+    doubleValue: 0
+    longValue: 0
+    quaternionValue: {x: 0, y: 0, z: 0, w: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: 0, y: 0, z: 0}
+    vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    btVariableValue: {fileID: 0}
+--- !u!114 &-5478813158928048184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dd2571d19c1522499a97470e35da7ce, type: 3}
+  m_Name: AI_Get Field
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 824, y: 120}
+  ports:
+    keys:
+    - input
+    values:
+    - _fieldName: input
+      _node: {fileID: -5478813158928048184}
+      _typeQualifiedName: RPGCreationKit.BehaviourTree.BTNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: outputs
+        node: {fileID: 3948457562798298745}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  guidStr: b3a4626b-2811-4ab4-9bc3-6d8ee39593f8
+  input: {fileID: 0}
+  isInCombatBehavior: 0
+  indexInSequence: 1
+  resultScript: 
+  events:
+    questDealers: []
+    questUpdaters: []
+    consequences: []
+  ComponentToGet: RckAI
+  FieldToGet: distanceFromMainTarget
+  storedValue: {fileID: 3693247731680137102}
+  storedValueRuntime: {fileID: 0}
+--- !u!114 &-3377807291633258067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3306670730f09964cb7f273faf21754b, type: 3}
+  m_Name: Comment
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 1080, y: 440}
+  ports:
+    keys: []
+    values: []
+  guidStr: 959521db-4ad4-46d5-8a42-04f6d5f1a00c
+  content: FollowMainTarget
+--- !u!114 &-2171875408209456041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81fb7d50eef29be48abba03a859a9bbe, type: 3}
+  m_Name: D Repeater
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 136, y: 296}
+  ports:
+    keys:
+    - output
+    - input
+    values:
+    - _fieldName: output
+      _node: {fileID: -2171875408209456041}
+      _typeQualifiedName: RPGCreationKit.BehaviourTree.BTNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: input
+        node: {fileID: 3948457562798298745}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: input
+      _node: {fileID: -2171875408209456041}
+      _typeQualifiedName: RPGCreationKit.BehaviourTree.BTNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: outputs
+        node: {fileID: -7627101594851834715}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  guidStr: 206f7458-50c1-4c46-ba67-cb8cfeddd937
+  input: {fileID: 0}
+  isInCombatBehavior: 0
+  indexInSequence: 4
+  resultScript: 
+  events:
+    questDealers: []
+    questUpdaters: []
+    consequences: []
+  output: {fileID: 0}
+  repeatForever: 1
+  count: 1
+  endOnFail: 0
+--- !u!114 &-1022429388531936799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 174872d3d7214ad4ba50575820b11b6e, type: 3}
+  m_Name: AI_Invoke
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 824, y: 8}
+  ports:
+    keys:
+    - input
+    values:
+    - _fieldName: input
+      _node: {fileID: -1022429388531936799}
+      _typeQualifiedName: RPGCreationKit.BehaviourTree.BTNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: outputs
+        node: {fileID: 3948457562798298745}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  guidStr: 9ba79bae-6b64-4f27-a698-9c10c5a52b3c
+  input: {fileID: 0}
+  isInCombatBehavior: 0
+  indexInSequence: 0
+  resultScript: 
+  events:
+    questDealers: []
+    questUpdaters: []
+    consequences: []
+  MethodToCall: GetDistanceFromMainTarget
+  parameters:
+  - conditionType: 0
+    stringValue: 
+    stringArrayValue: []
+    intValue: 0
+    floatValue: 0
+    boolValue: 0
+    doubleValue: 0
+    longValue: 0
+    quaternionValue: {x: 0, y: 0, z: 0, w: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: 0, y: 0, z: 0}
+    vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    btVariableValue: {fileID: 0}
+  - conditionType: 0
+    stringValue: 
+    stringArrayValue: []
+    intValue: 0
+    floatValue: 0
+    boolValue: 0
+    doubleValue: 0
+    longValue: 0
+    quaternionValue: {x: 0, y: 0, z: 0, w: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: 0, y: 0, z: 0}
+    vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    btVariableValue: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: daa3dbdff7b098e4ebd88d9a48e967a1, type: 3}
+  m_Name: '[BTree] TheyShallFall_GuardGoToOblivion'
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 532005668157200202}
+  - {fileID: -7341355072153943545}
+  - {fileID: 4425311347787873142}
+  - {fileID: 5056755600467688602}
+  - {fileID: 7267276316338314910}
+  - {fileID: 610766848128307724}
+  - {fileID: -3377807291633258067}
+  - {fileID: -2171875408209456041}
+  - {fileID: -7627101594851834715}
+  - {fileID: 4830066689609610551}
+  - {fileID: 3948457562798298745}
+  - {fileID: -5478813158928048184}
+  - {fileID: 3343242577098996470}
+  - {fileID: -1022429388531936799}
+  - {fileID: 0}
+  hasBeenAsyncCopied: 0
+  ID: TheyShallFall_GuardOutsideGoToOblivion
+  IsCombatBehaviour: 0
+  isSpecificBehaviourTree: 0
+  resetVariablesUponStartResume: 0
+  graphVariables:
+  - {fileID: 3693247731680137102}
+  Description: Allows the guard to run away from the city and disappear
+--- !u!114 &532005668157200202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47e73c62acc98ab468a7a678f60e0236, type: 3}
+  m_Name: Root
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -536, y: -56}
+  ports:
+    keys:
+    - firstNode
+    - input
+    - onExitNode
+    values:
+    - _fieldName: firstNode
+      _node: {fileID: 532005668157200202}
+      _typeQualifiedName: RPGCreationKit.BehaviourTree.BTNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: input
+        node: {fileID: -7627101594851834715}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: input
+      _node: {fileID: 532005668157200202}
+      _typeQualifiedName: RPGCreationKit.BehaviourTree.BTNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: onExitNode
+      _node: {fileID: 532005668157200202}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  guidStr: d9b81553-6f3a-4844-bd9e-b535470e59ee
+  input: {fileID: 0}
+  isInCombatBehavior: 0
+  indexInSequence: -1
+  resultScript: 
+  events:
+    questDealers: []
+    questUpdaters: []
+    consequences: []
+  isNpcToNpcDialogue: 0
+  onExitNode: {fileID: 0}
+  firstNode: {fileID: -3843927834737731242, guid: f30648f70b6c6284b9039cde2d1a998b,
+    type: 2}
+--- !u!114 &610766848128307724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 174872d3d7214ad4ba50575820b11b6e, type: 3}
+  m_Name: AI_Invoke
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 824, y: 440}
+  ports:
+    keys:
+    - input
+    values:
+    - _fieldName: input
+      _node: {fileID: 610766848128307724}
+      _typeQualifiedName: RPGCreationKit.BehaviourTree.BTNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: outputs
+        node: {fileID: 3948457562798298745}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  guidStr: 3ce242c7-f7dc-47d8-9074-f667502aa88a
+  input: {fileID: 0}
+  isInCombatBehavior: 0
+  indexInSequence: 3
+  resultScript: 
+  events:
+    questDealers: []
+    questUpdaters: []
+    consequences: []
+  MethodToCall: FollowTargetThroughNavmeshPath
+  parameters: []
+--- !u!114 &3343242577098996470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39a32ce635048504185728fcb8a34349, type: 3}
+  m_Name: C Float Comparison
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 824, y: 280}
+  ports:
+    keys:
+    - input
+    values:
+    - _fieldName: input
+      _node: {fileID: 3343242577098996470}
+      _typeQualifiedName: RPGCreationKit.BehaviourTree.BTNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: outputs
+        node: {fileID: 3948457562798298745}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  guidStr: 0f5ba9f6-7657-4d64-8042-1bd300703a3f
+  input: {fileID: 0}
+  isInCombatBehavior: 0
+  indexInSequence: 2
+  resultScript: 
+  events:
+    questDealers: []
+    questUpdaters: []
+    consequences: []
+  firstUseVariable: 1
+  firstStoredValue: {fileID: 3693247731680137102}
+  firstStoredValueRuntime: {fileID: 0}
+  firstInstantValue: 0
+  operation: 3
+  secondUseVariable: 0
+  secondStoredValue: {fileID: 0}
+  secondStoredValueRuntime: {fileID: 0}
+  secondInstantValue: 15
+--- !u!114 &3693247731680137102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cdb9d4edb28105458bfe8888852c49a, type: 3}
+  m_Name: targetDistance
+  m_EditorClassIdentifier: 
+  Name: targetDistance
+  Tooltip: 
+  guidStr: e5313038-43bc-40ea-9aae-cfbba4dc8391
+  value: 9999
+--- !u!114 &3948457562798298745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2685ade320f7df49b0911b7f63f644e, type: 3}
+  m_Name: Sequence
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 408, y: 312}
+  ports:
+    keys:
+    - outputs
+    - input
+    values:
+    - _fieldName: outputs
+      _node: {fileID: 3948457562798298745}
+      _typeQualifiedName: RPGCreationKit.BehaviourTree.BTNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: input
+        node: {fileID: 3343242577098996470}
+        reroutePoints: []
+      - fieldName: input
+        node: {fileID: -5478813158928048184}
+        reroutePoints: []
+      - fieldName: input
+        node: {fileID: 610766848128307724}
+        reroutePoints: []
+      - fieldName: input
+        node: {fileID: -1022429388531936799}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: input
+      _node: {fileID: 3948457562798298745}
+      _typeQualifiedName: RPGCreationKit.BehaviourTree.BTNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: output
+        node: {fileID: -2171875408209456041}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  guidStr: 94d7862c-7661-4a6a-b2da-db835ef6d9d8
+  input: {fileID: 0}
+  isInCombatBehavior: 0
+  indexInSequence: -1
+  resultScript: 
+  events:
+    questDealers: []
+    questUpdaters: []
+    consequences: []
+  outputs: {fileID: 0}
+--- !u!114 &4425311347787873142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 174872d3d7214ad4ba50575820b11b6e, type: 3}
+  m_Name: AI_Invoke
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 136, y: -152}
+  ports:
+    keys:
+    - input
+    values:
+    - _fieldName: input
+      _node: {fileID: 4425311347787873142}
+      _typeQualifiedName: RPGCreationKit.BehaviourTree.BTNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: outputs
+        node: {fileID: -7627101594851834715}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  guidStr: 65029fd0-199c-4ac6-bdb3-fd1737dcb83f
+  input: {fileID: 0}
+  isInCombatBehavior: 0
+  indexInSequence: 1
+  resultScript: 
+  events:
+    questDealers: []
+    questUpdaters: []
+    consequences: []
+  MethodToCall: SendAIToSpeakToPlayer
+  parameters:
+  - conditionType: 0
+    stringValue: 
+    stringArrayValue: []
+    intValue: 0
+    floatValue: 0
+    boolValue: 1
+    doubleValue: 0
+    longValue: 0
+    quaternionValue: {x: 0, y: 0, z: 0, w: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: 0, y: 0, z: 0}
+    vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    btVariableValue: {fileID: 0}
+--- !u!114 &4830066689609610551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e544697bf4e4474d9dbe65980faa376, type: 3}
+  m_Name: AI_Set Field
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 136, y: -280}
+  ports:
+    keys:
+    - input
+    values:
+    - _fieldName: input
+      _node: {fileID: 4830066689609610551}
+      _typeQualifiedName: RPGCreationKit.BehaviourTree.BTNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: outputs
+        node: {fileID: -7627101594851834715}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  guidStr: ab266c75-84f3-4155-bed9-7ff71d651399
+  input: {fileID: 0}
+  isInCombatBehavior: 0
+  indexInSequence: 0
+  resultScript: 
+  events:
+    questDealers: []
+    questUpdaters: []
+    consequences: []
+  ComponentToSet: RckAI
+  FieldToSet: stoppingDistance
+  useVariable: 0
+  storedValue: {fileID: 0}
+  storedValueRuntime: {fileID: 0}
+  instantValue:
+    parameterType: 1
+    intValue: 0
+    floatValue: 2.2
+    boolValue: 0
+    stringValue: 
+    doubleValue: 0
+    longValue: 0
+    quaternionValue: {x: 0, y: 0, z: 0, w: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: 0, y: 0, z: 0}
+    vector4Value: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &5056755600467688602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3306670730f09964cb7f273faf21754b, type: 3}
+  m_Name: Comment
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 392, y: -168}
+  ports:
+    keys: []
+    values: []
+  guidStr: 78518b77-ef8f-4eff-ba12-2541fee22bd9
+  content: Switch to walk
+--- !u!114 &7267276316338314910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3306670730f09964cb7f273faf21754b, type: 3}
+  m_Name: Comment
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 392, y: -8}
+  ports:
+    keys: []
+    values: []
+  guidStr: 1764e76a-1954-4270-b4ef-1bd802740248
+  content: Set state

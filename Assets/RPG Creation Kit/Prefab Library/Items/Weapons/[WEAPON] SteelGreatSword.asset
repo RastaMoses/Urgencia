@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f29aa53af64a33408b1464ff9e8071d, type: 3}
+  m_Name: '[WEAPON] SteelGreatSword'
+  m_EditorClassIdentifier: 
+  _IS_DEMO_FILE: 1
+  ItemID: SteelGreatSword001
+  ItemIcon: {fileID: 21300000, guid: 1e8d836b4fee3b34c9c55f659b52f2e6, type: 3}
+  ItemName: Steel Great Sword
+  itemInWorld: {fileID: 1839766035231141838, guid: daf959914593608458f9d2f8c0b1faf6,
+    type: 3}
+  Weight: 16
+  Value: 180
+  QuestItem: 0
+  isCumulable: 0
+  useMesh: 1
+  usesTooltip: 0
+  tooltipValue: 
+  itemScript: 
+  sOnPickUp: {fileID: 8300000, guid: 956548157ab3af04fb0fce2212ac8e9d, type: 3}
+  sOnDrop: {fileID: 0}
+  sOnAddedInInventory: {fileID: 8300000, guid: 956548157ab3af04fb0fce2212ac8e9d, type: 3}
+  sOnRemovedFromInventory: {fileID: 8300000, guid: 956548157ab3af04fb0fce2212ac8e9d,
+    type: 3}
+  sOnEquipOrUse: {fileID: 8300000, guid: 298f763086d7ed042a21a7518e2a2cf6, type: 3}
+  sOnUnEquip: {fileID: 0}
+  WeaponOnHand: {fileID: 2138218455750777131, guid: 284045b2798cf4a4b89406996874541f,
+    type: 3}
+  WeaponSheathed: {fileID: 4342340151915550208, guid: 1f46ad1e5a70d3244abc7ec6a2134da6,
+    type: 3}
+  weaponClass: 0
+  weaponType: 2
+  weightType: 2
+  Health: 100
+  Reach: 2.5
+  Speed: 1
+  Damage: 45
+  BlockingMultiplier: 0.759
+  blockSound: {fileID: 8300000, guid: 956548157ab3af04fb0fce2212ac8e9d, type: 3}
+  fpsAnimatorController: {fileID: 9100000, guid: bb0ce8a7892b7ee41810e816c7ce0446,
+    type: 2}
+  tpsAnimatorController: {fileID: 0}
+  AttackTypes: 3
+  weaponAttacks:
+  - AttackTypeIndex: 0
+    BaseDamage: 39
+    StaminaAmount: 25
+    howManyHitsCanSustain: 1
+    isFullBody: 0
+    cameraAnim: 0
+    attackSound: {fileID: 8300000, guid: ff424628081047848a77d653314e6f4b, type: 3}
+  - AttackTypeIndex: 1
+    BaseDamage: 52
+    StaminaAmount: 29
+    howManyHitsCanSustain: 1
+    isFullBody: 0
+    cameraAnim: 0
+    attackSound: {fileID: 8300000, guid: f4b1d34b5980e5e41ad8347a01c1592a, type: 3}
+  - AttackTypeIndex: 2
+    BaseDamage: 63
+    StaminaAmount: 30
+    howManyHitsCanSustain: 3
+    isFullBody: 0
+    cameraAnim: 0
+    attackSound: {fileID: 8300000, guid: ffc6950e2b73e6441a7e70603674f879, type: 3}
+  chargedAttackTypes: 1
+  weaponChargedAttacks:
+  - AttackTypeIndex: 0
+    BaseDamage: 65
+    StaminaAmount: 49
+    howManyHitsCanSustain: 3
+    isFullBody: 0
+    cameraAnim: 0
+    attackSound: {fileID: 8300000, guid: ff424628081047848a77d653314e6f4b, type: 3}
+  attackChainTime: 2.4
+  chargedAttackChainTime: 1.5
+  aggroModifier: 5
+  fireType: 0
+  reloadType: 0
+  ammo: {fileID: 0}
+  clipRounds: 30
+  ammoPerShot: 1
+  projectilesPerShot: 1
+  fireRate: 10
+  aimSpread: 0
+  hipSpread: 0.5
+  sightFov: 60
+  criticalMultiplier: 2
+  recoilHit: 2
+  animateAim: 1
+  nAnimFireFromHip: 1
+  nAnimFireFromSight: 1
+  aimingHolderPos: {x: 0, y: 0, z: 0}
+  aimingHolderRot: {x: 0, y: 0, z: 0}
+  aimingHolderPosCrouched: {x: 0, y: 0, z: 0}
+  aimingHolderRotCrouched: {x: 0, y: 0, z: 0}
+  swayWhileAiming: 0.005
+  fireSound: {fileID: 0}
+  emptyFireSound: {fileID: 0}
+  staggeringChancePerShot: 10
+  shellCase: {fileID: 0}
+  defaultHole: {fileID: 0}
+  explodesAfter: 0
+  explosionObject: {fileID: 0}
+  explosionRadius: 0
+  explosionForce: 0
+  clippingWeapon: 0
+  sneakAttackMultiplier: 1
+  sOnDraw: {fileID: 8300000, guid: aacfe28271619f841a4f131ff3e7d547, type: 3}
+  sOnSheathe: {fileID: 8300000, guid: 0bb16bab0f47bac46b773f59ca81a5dc, type: 3}

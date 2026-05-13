@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f29aa53af64a33408b1464ff9e8071d, type: 3}
+  m_Name: Steel GreatSword
+  m_EditorClassIdentifier: 
+  _IS_DEMO_FILE: 1
+  ItemID: S1GreatSword
+  ItemIcon: {fileID: 21300000, guid: cf8a9e80eafa29b4b975fada19eb8350, type: 3}
+  ItemName: Steel GreatSword
+  itemInWorld: {fileID: 0}
+  Weight: 12
+  Value: 75
+  QuestItem: 0
+  isCumulable: 0
+  useMesh: 1
+  usesTooltip: 0
+  tooltipValue: 
+  itemScript: 
+  sOnPickUp: {fileID: 0}
+  sOnDrop: {fileID: 0}
+  sOnAddedInInventory: {fileID: 0}
+  sOnRemovedFromInventory: {fileID: 0}
+  sOnEquipOrUse: {fileID: 0}
+  sOnUnEquip: {fileID: 0}
+  WeaponOnHand: {fileID: 0}
+  WeaponSheathed: {fileID: 0}
+  weaponClass: 0
+  weaponType: 2
+  weightType: 2
+  Health: 100
+  Reach: 3.5
+  Speed: 1
+  Damage: 60
+  BlockingMultiplier: 0.5
+  blockSound: {fileID: 0}
+  fpsAnimatorController: {fileID: 0}
+  tpsAnimatorController: {fileID: 0}
+  AttackTypes: 2
+  weaponAttacks:
+  - AttackTypeIndex: 0
+    BaseDamage: 36
+    StaminaAmount: 22
+    howManyHitsCanSustain: 1
+    isFullBody: 0
+    cameraAnim: 0
+    attackSound: {fileID: 0}
+  - AttackTypeIndex: 1
+    BaseDamage: 48
+    StaminaAmount: 25
+    howManyHitsCanSustain: 1
+    isFullBody: 0
+    cameraAnim: 0
+    attackSound: {fileID: 0}
+  chargedAttackTypes: 3
+  weaponChargedAttacks: []
+  attackChainTime: 1.5
+  chargedAttackChainTime: 1.5
+  aggroModifier: 1
+  fireType: 0
+  reloadType: 0
+  ammo: {fileID: 0}
+  clipRounds: 30
+  ammoPerShot: 1
+  projectilesPerShot: 1
+  fireRate: 10
+  aimSpread: 0
+  hipSpread: 0.5
+  sightFov: 60
+  criticalMultiplier: 2
+  recoilHit: 2
+  animateAim: 1
+  nAnimFireFromHip: 1
+  nAnimFireFromSight: 1
+  aimingHolderPos: {x: 0, y: 0, z: 0}
+  aimingHolderRot: {x: 0, y: 0, z: 0}
+  aimingHolderPosCrouched: {x: 0, y: 0, z: 0}
+  aimingHolderRotCrouched: {x: 0, y: 0, z: 0}
+  swayWhileAiming: 0.005
+  fireSound: {fileID: 0}
+  emptyFireSound: {fileID: 0}
+  staggeringChancePerShot: 10
+  shellCase: {fileID: 0}
+  defaultHole: {fileID: 0}
+  explodesAfter: 0
+  explosionObject: {fileID: 0}
+  explosionRadius: 0
+  explosionForce: 0
+  clippingWeapon: 0
+  sneakAttackMultiplier: 1
+  sOnDraw: {fileID: 8300000, guid: aacfe28271619f841a4f131ff3e7d547, type: 3}
+  sOnSheathe: {fileID: 8300000, guid: 0bb16bab0f47bac46b773f59ca81a5dc, type: 3}

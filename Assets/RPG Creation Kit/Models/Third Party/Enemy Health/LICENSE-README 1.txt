@@ -1,0 +1,1 @@
+3D Model and animations made by "Paul Wortmann", licensed under "CC0 Public Domain". Downloaded on https://opengameart.org/content/enemy-health-bars

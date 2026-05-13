@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45ee663e38452994ab2f4a05886c81ed, type: 3}
+  m_Name: '- [QUEST] The Southern Harvest'
+  m_EditorClassIdentifier: 
+  _IS_DEMO_FILE: 1
+  questID: TKQL_TheSouthernHarvest
+  questName: The Southern Harvest
+  questDescription: Mack, The Red Shade's agent had a letter that said that his hideout
+    was in farm north from the City walls, The King assigned me and Ryan to go check
+    it out, and that a division was sent north few days ago, but it never came back.
+  questStages:
+  - index: 10
+    description: Meet Ryan at the door in the King's Palace
+    stageConditions: []
+    resultScript: RPGCreationKit.Quests.TheSouthernHarvestStage10Script
+    completeQuest: 0
+    failQuest: 0
+    displayLogEntry: 1
+    stageCompleted: 0
+    stageFailed: 0
+  - index: 20
+    description: Check the Farm north from the City gates.
+    stageConditions: []
+    resultScript: RPGCreationKit.Quests.TheSouthernHarvestStage20Script
+    completeQuest: 0
+    failQuest: 0
+    displayLogEntry: 1
+    stageCompleted: 0
+    stageFailed: 0
+  - index: 30
+    description: Take a look in the farmhouse for some useful information.
+    stageConditions: []
+    resultScript: 
+    completeQuest: 0
+    failQuest: 0
+    displayLogEntry: 1
+    stageCompleted: 0
+    stageFailed: 0
+  - index: 40
+    description: Reach General Phillida's outpost.
+    stageConditions: []
+    resultScript: 
+    completeQuest: 0
+    failQuest: 0
+    displayLogEntry: 1
+    stageCompleted: 0
+    stageFailed: 0
+  - index: 50
+    description: Survive the attack.
+    stageConditions: []
+    resultScript: 
+    completeQuest: 0
+    failQuest: 0
+    displayLogEntry: 1
+    stageCompleted: 0
+    stageFailed: 0
+  - index: 60
+    description: Speak to Ryan.
+    stageConditions: []
+    resultScript: RPGCreationKit.Quests.TheSouthernHarvestStage60Script
+    completeQuest: 1
+    failQuest: 0
+    displayLogEntry: 1
+    stageCompleted: 0
+    stageFailed: 0
+  allStagesActive: 
+  allStagesCompleted: 
+  allStagesFailed: 
+  questPriority: 50
+  questScript: RPGCreationKit.Quests.TheSouthernHarvestQuestScript
+  allowRepeatedStages: 0
+  firstStageIsDefaultStage: 1
+  questScriptExecutionDelay: 5
+  currentQuestStage: 0
+  questCompleted: 0
+  questFailed: 0
+  questConditions: []
+  questXpReward: 600

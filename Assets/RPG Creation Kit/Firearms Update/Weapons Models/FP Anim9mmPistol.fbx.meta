@@ -1,0 +1,290 @@
+fileFormatVersion: 2
+guid: b57ce31ee9fa724428b1e7cabf0ce32a
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      74: -5944405958044054622
+    second: Unity compliant skeleton|9mm_Submachinegun_Aim
+  - first:
+      74: 90708244339372741
+    second: Unity compliant skeleton|9mm_Submachinegun_AimEnd
+  - first:
+      74: 8573178006899936207
+    second: Unity compliant skeleton|9mm_Submachinegun_AimFire_1
+  - first:
+      74: -4441583271190425051
+    second: Unity compliant skeleton|9mm_Submachinegun_AimFire_1Empty
+  - first:
+      74: 8043238177254807557
+    second: Unity compliant skeleton|9mm_Submachinegun_AimIdle
+  - first:
+      74: -5573246267570911621
+    second: Unity compliant skeleton|9mm_Submachinegun_Airbone
+  - first:
+      74: 2803873442831150731
+    second: Unity compliant skeleton|9mm_Submachinegun_Draw
+  - first:
+      74: -5287768542531055805
+    second: Unity compliant skeleton|9mm_Submachinegun_Hipfire_2
+  - first:
+      74: 5765790799721647845
+    second: Unity compliant skeleton|9mm_Submachinegun_Hipfire_2_Empty
+  - first:
+      74: 4488782776493240375
+    second: Unity compliant skeleton|9mm_Submachinegun_Idle
+  - first:
+      74: -7761532949211008376
+    second: Unity compliant skeleton|9mm_Submachinegun_Jump
+  - first:
+      74: 232628023049811737
+    second: Unity compliant skeleton|9mm_Submachinegun_Land
+  - first:
+      74: 8393092057665730173
+    second: Unity compliant skeleton|9mm_Submachinegun_Reload.001
+  - first:
+      74: -8809125827718751340
+    second: Unity compliant skeleton|9mmPistolReload
+  - first:
+      74: 4530380574376927023
+    second: Unity compliant skeleton|9mmPistolReloadEmpty
+  - first:
+      74: -5332450474136412968
+    second: Unity compliant skeleton|9mm_Submachinegun_Run
+  - first:
+      74: -4372209112088087190
+    second: Unity compliant skeleton|9mm_Submachinegun_Undraw
+  - first:
+      74: -2542356831193754937
+    second: Unity compliant skeleton|9mm_Submachinegun_Walk
+  - first:
+      74: -5067905403487241536
+    second: Root|Reload_001
+  - first:
+      74: 7075382816393202178
+    second: Root|Reload_002
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Unity compliant skeleton|9mmPistolReloadEmpty
+      takeName: Unity compliant skeleton|9mm_Submachinegun_Reload.003
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 93
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: 0.1609756
+        functionName: PlaySoundFromDatabase
+        data: DCLIP_RELOADSOUND_1
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.53170735
+        functionName: PlaySoundFromDatabase
+        data: DCLIP_RELOADSOUND_2
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.61463416
+        functionName: FirearmReloadEvent
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.8154214
+        functionName: PlaySoundFromDatabase
+        data: DCLIP_RELOADSOUND_1
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.9804878
+        functionName: ResetAttackStateEvent
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Unity compliant skeleton|9mmPistolReload
+      takeName: Unity compliant skeleton|9mm_Submachinegun_Reload.002
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 68
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: 0.21463414
+        functionName: PlaySoundFromDatabase
+        data: DCLIP_RELOADSOUND_1
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.6444273
+        functionName: PlaySoundFromDatabase
+        data: DCLIP_RELOADSOUND_2
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.85853654
+        functionName: FirearmReloadEvent
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.9902439
+        functionName: ResetAttackStateEvent
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 359696
+  packageName: RPG Creation Kit 2
+  packageVersion: 2.0
+  assetPath: Assets/RPG Creation Kit/Firearms Update/Weapons Models/FP Anim9mmPistol.fbx
+  uploadId: 857498

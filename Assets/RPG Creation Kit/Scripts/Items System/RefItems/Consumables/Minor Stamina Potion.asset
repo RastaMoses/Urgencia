@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07c916db4fb1ace41a2712ff28d9af66, type: 3}
+  m_Name: Minor Stamina Potion
+  m_EditorClassIdentifier: 
+  _IS_DEMO_FILE: 1
+  ItemID: StaminaPot01
+  ItemIcon: {fileID: 21300000, guid: 9ee43450cc159994cb4d5881d30da201, type: 3}
+  ItemName: Minor Stamina Potion
+  itemInWorld: {fileID: 5508153322204226123, guid: 9b71904b36c6a1d4da17a7aff971c085,
+    type: 3}
+  Weight: 1.2
+  Value: 10
+  QuestItem: 0
+  isCumulable: 1
+  useMesh: 1
+  usesTooltip: 1
+  tooltipValue: + Restores 10 Stamina
+  itemScript: 
+  sOnPickUp: {fileID: 0}
+  sOnDrop: {fileID: 0}
+  sOnAddedInInventory: {fileID: 0}
+  sOnRemovedFromInventory: {fileID: 0}
+  sOnEquipOrUse: {fileID: 0}
+  sOnUnEquip: {fileID: 0}
+  effects:
+  - effectType: 8
+    onAttribute: 0
+    duration: 0
+    magnitude: 10
+    magnitudeAlreadyApplied: 0
+    effectIcon: {fileID: 21300000, guid: 2edfaa8b465d1d14e8a4e1faa4d7c77b, type: 3}
+    effectIconID: 
+    showInEffectsUI: 1
+    isOnDuration: 0
+    isFinished: 0
+  playSound: 1
+  isConsumable: 1

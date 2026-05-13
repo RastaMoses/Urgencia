@@ -1,0 +1,125 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f29aa53af64a33408b1464ff9e8071d, type: 3}
+  m_Name: '[WEAPON]F Shotgun'
+  m_EditorClassIdentifier: 
+  ItemID: Shotgun001
+  ItemIcon: {fileID: 21300000, guid: a2bc904f64ef8b04f995809e29e64a2d, type: 3}
+  ItemName: Shotgun
+  itemInWorld: {fileID: 8308709792498397793, guid: 339a3e7cb7939ce4c871fd63d9be6821,
+    type: 3}
+  Weight: 13
+  Value: 804
+  QuestItem: 0
+  isCumulable: 0
+  useMesh: 1
+  usesTooltip: 0
+  tooltipValue: 
+  itemScript: 
+  sOnPickUp: {fileID: 8300000, guid: 063fc381a4747c344ac5b0c56d63bd78, type: 3}
+  sOnDrop: {fileID: 8300000, guid: 063fc381a4747c344ac5b0c56d63bd78, type: 3}
+  sOnAddedInInventory: {fileID: 8300000, guid: 063fc381a4747c344ac5b0c56d63bd78, type: 3}
+  sOnRemovedFromInventory: {fileID: 8300000, guid: 063fc381a4747c344ac5b0c56d63bd78,
+    type: 3}
+  sOnEquipOrUse: {fileID: 8300000, guid: 063fc381a4747c344ac5b0c56d63bd78, type: 3}
+  sOnUnEquip: {fileID: 0}
+  WeaponOnHand: {fileID: 363968979087079267, guid: 9878209f966cfd44ea5cc20e3cb1c3e3,
+    type: 3}
+  WeaponSheathed: {fileID: 8169854557764766724, guid: e4fd6bd2569c12441ae34d3e4bda4cb4,
+    type: 3}
+  weaponClass: 1
+  weaponType: 10
+  weightType: 1
+  Health: 100
+  Reach: 60
+  Speed: 1
+  Damage: 10
+  BlockingMultiplier: 0.5
+  blockSound: {fileID: 0}
+  fpsAnimatorController: {fileID: 9100000, guid: 4579a959137753a42b9b22433607a138,
+    type: 2}
+  tpsAnimatorController: {fileID: 9100000, guid: 7dcb02527cf04754ea4de6d04ea7a101,
+    type: 2}
+  AttackTypes: 3
+  weaponAttacks:
+  - AttackTypeIndex: 0
+    BaseDamage: 0
+    StaminaAmount: 0
+    howManyHitsCanSustain: 0
+    cameraAnim: 0
+    attackSound: {fileID: 0}
+  - AttackTypeIndex: 0
+    BaseDamage: 0
+    StaminaAmount: 0
+    howManyHitsCanSustain: 0
+    cameraAnim: 0
+    attackSound: {fileID: 0}
+  - AttackTypeIndex: 0
+    BaseDamage: 0
+    StaminaAmount: 0
+    howManyHitsCanSustain: 0
+    cameraAnim: 0
+    attackSound: {fileID: 0}
+  chargedAttackTypes: 3
+  weaponChargedAttacks:
+  - AttackTypeIndex: 0
+    BaseDamage: 0
+    StaminaAmount: 0
+    howManyHitsCanSustain: 0
+    cameraAnim: 0
+    attackSound: {fileID: 0}
+  - AttackTypeIndex: 0
+    BaseDamage: 0
+    StaminaAmount: 0
+    howManyHitsCanSustain: 0
+    cameraAnim: 0
+    attackSound: {fileID: 0}
+  - AttackTypeIndex: 0
+    BaseDamage: 0
+    StaminaAmount: 0
+    howManyHitsCanSustain: 0
+    cameraAnim: 0
+    attackSound: {fileID: 0}
+  attackChainTime: 1.5
+  chargedAttackChainTime: 1.5
+  aggroModifier: 1
+  fireType: 1
+  reloadType: 1
+  ammo: {fileID: 11400000, guid: ac0212112d98e754ba6af162ff0ad044, type: 2}
+  clipRounds: 8
+  ammoPerShot: 1
+  projectilesPerShot: 8
+  fireRate: 1
+  aimSpread: 0.065
+  hipSpread: 0.075
+  sightFov: 40
+  criticalMultiplier: 2
+  recoilHit: 80
+  animateAim: 0
+  nAnimFireFromHip: 1
+  nAnimFireFromSight: 1
+  aimingHolderPos: {x: -0.118, y: 0.024, z: -0.117}
+  aimingHolderRot: {x: -2.556, y: -3.48, z: 0.093}
+  aimingHolderPosCrouched: {x: -0.1751987, y: 0.002573864, z: -0.1139251}
+  aimingHolderRotCrouched: {x: -1.549, y: -4.516, z: 19.637}
+  swayWhileAiming: 0.005
+  fireSound: {fileID: 8300000, guid: b77f1205a97190641977cc0e0c9c1adf, type: 3}
+  emptyFireSound: {fileID: 8300000, guid: a7866b8977640e54d9546d7c5157067c, type: 3}
+  staggeringChancePerShot: 10
+  shellCase: {fileID: 0}
+  defaultHole: {fileID: 7143779661947934845, guid: 14062b5d0738e1143be1ae7755215560,
+    type: 3}
+  explodesAfter: 0
+  explosionObject: {fileID: 0}
+  explosionRadius: 0
+  explosionForce: 0
+  clippingWeapon: 1

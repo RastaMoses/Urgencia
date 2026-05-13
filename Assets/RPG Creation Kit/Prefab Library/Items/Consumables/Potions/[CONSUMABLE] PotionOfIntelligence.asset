@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07c916db4fb1ace41a2712ff28d9af66, type: 3}
+  m_Name: '[CONSUMABLE] PotionOfIntelligence'
+  m_EditorClassIdentifier: 
+  _IS_DEMO_FILE: 1
+  ItemID: PotionOfIntelligence001
+  ItemIcon: {fileID: 21300000, guid: a138dcd6ebf2ede4783c8548e83ff306, type: 3}
+  ItemName: Potion Of Intelligence
+  itemInWorld: {fileID: 4216460017949624309, guid: e81fa9462c035ca4ea883e6381df177a,
+    type: 3}
+  Weight: 1
+  Value: 200
+  QuestItem: 0
+  isCumulable: 1
+  useMesh: 1
+  usesTooltip: 1
+  tooltipValue: + 20 Intelligence for 120 seconds.
+  itemScript: 
+  sOnPickUp: {fileID: 8300000, guid: b41ef68b270d2bb43887a7cf8f769437, type: 3}
+  sOnDrop: {fileID: 0}
+  sOnAddedInInventory: {fileID: 8300000, guid: b41ef68b270d2bb43887a7cf8f769437, type: 3}
+  sOnRemovedFromInventory: {fileID: 8300000, guid: 6f84bed1c62996647874c226629fd584,
+    type: 3}
+  sOnEquipOrUse: {fileID: 8300000, guid: 1c587a945bd3e0f4c9db078177a6a575, type: 3}
+  sOnUnEquip: {fileID: 0}
+  effects:
+  - effectType: 3
+    onAttribute: 7
+    duration: 120
+    magnitude: 20
+    magnitudeAlreadyApplied: 0
+    effectIcon: {fileID: 0}
+    effectIconID: StaminaUp
+    showInEffectsUI: 1
+    isOnDuration: 0
+    isFinished: 0
+  playSound: 1
+  isConsumable: 1
