@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45ee663e38452994ab2f4a05886c81ed, type: 3}
+  m_Name: '[QUEST] To Break The Quiet'
+  m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.Quest
+  _IS_DEMO_FILE: 1
+  questID: SQ_ToBreakTheQuiet
+  questName: To Break The Quiet
+  questDescription: I met some guy named Frank, although he is pretty weird, I accepted
+    his plea to murder some people he didn't like.
+  questStages:
+  - index: 10
+    description: Learn more about the kids that are bothering Frank
+    stageConditions: []
+    resultScript: 
+    completeQuest: 0
+    failQuest: 0
+    displayLogEntry: 1
+    stageCompleted: 0
+    stageFailed: 0
+  - index: 20
+    description: Kill all the kids in the camp West to Franks Lake
+    stageConditions: []
+    resultScript: 
+    completeQuest: 0
+    failQuest: 0
+    displayLogEntry: 1
+    stageCompleted: 0
+    stageFailed: 0
+  - index: 30
+    description: Speak to Frank to get your reward
+    stageConditions: []
+    resultScript: 
+    completeQuest: 1
+    failQuest: 0
+    displayLogEntry: 1
+    stageCompleted: 0
+    stageFailed: 0
+  allStagesActive: 
+  allStagesCompleted: 
+  allStagesFailed: 
+  questPriority: 50
+  questScript: RPGCreationKit.Quests.ToBreakTheQuietQuestScript
+  allowRepeatedStages: 0
+  firstStageIsDefaultStage: 1
+  questScriptExecutionDelay: 5
+  currentQuestStage: 0
+  questCompleted: 0
+  questFailed: 0
+  questConditions: []
+  questXpReward: 200

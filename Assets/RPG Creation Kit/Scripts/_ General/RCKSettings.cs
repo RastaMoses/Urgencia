@@ -101,12 +101,12 @@ namespace RPGCreationKit
         //public static Vector3 RCK_NEW_STARTING_POS = new Vector3(-2.543413f, 5.548239f, 297.4933f);
         //public static Vector3 RCK_NEW_STARTING_ROT = new Vector3(0, 169.825f, 0);
         public static string RCK_NEW_STARTING_LOCATION = "Cave";
-        public static string RCK_NEW_STARTING_WORLDSPACEID = "Interiors";
-        public static string RCK_NEW_STARTING_CELLID = "TutorialsCave001";
+        public static string RCK_NEW_STARTING_WORLDSPACEID = "UrgenciaWorldspace001";
+        public static string RCK_NEW_STARTING_CELLID = "UrgenciaCell(0,1)";
 
         public static uint RCK_NEW_STARTING_LEVEL = 1;
-        public static Vector3 RCK_NEW_STARTING_POS = new Vector3(1.445318f, 1.470858f, 0.2606843f);
-        public static Vector3 RCK_NEW_STARTING_ROT = new Vector3(0, 89.906f, 0);
+        public static Vector3 RCK_NEW_STARTING_POS = new Vector3(3.44963002f, 2, 104.150078f);
+        public static Vector3 RCK_NEW_STARTING_ROT = new Vector3(0, 181.53508f, 0);
 
 
         public static float ATTRIBUTES_DEF_HEALTH = 1.0f;

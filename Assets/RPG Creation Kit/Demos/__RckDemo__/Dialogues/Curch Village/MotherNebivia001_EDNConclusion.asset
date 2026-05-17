@@ -64,6 +64,7 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 1
+  guidStr: a38bcd7e-4fd9-499b-82aa-2889fb945977
   input: {fileID: 0}
   output: {fileID: 0}
   resultScript: 
@@ -128,6 +129,7 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+  guidStr: a80b0264-bfe9-4a81-8335-8b60094667fb
   input: {fileID: 0}
   output: {fileID: 0}
   resultScript: 
@@ -203,6 +205,7 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+  guidStr: 9751d698-79ce-45ce-9dac-9ad1d820c74e
   input: {fileID: 0}
   output: {fileID: 0}
   resultScript: 
@@ -303,6 +306,7 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+  guidStr: aff7a52b-c16a-4271-be12-cf5166ad83ef
   input: {fileID: 0}
   output: {fileID: 0}
   resultScript: RPGCreationKit.Game.ResultScripts.SQ_EveryDeadMan_SendThiefIntoOblivion
@@ -375,6 +379,7 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+  guidStr: 01352431-de3f-429a-b9e5-f20f8e151fe6
   input: {fileID: 0}
   output: {fileID: 0}
   resultScript: 
@@ -460,6 +465,7 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+  guidStr: f1912da9-eb2d-4a9a-b350-cf79914eaec3
   input: {fileID: 0}
   output: {fileID: 0}
   resultScript: 
@@ -531,6 +537,7 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+  guidStr: 1db88fe3-e48c-4aa6-b0e7-a1dfdfa213bd
   input: {fileID: 0}
   output: {fileID: 0}
   resultScript: 
@@ -555,7 +562,7 @@ MonoBehaviour:
   m_Name: Conditions
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 2888, y: 264}
+  position: {x: 2952, y: 264}
   ports:
     keys:
     - resultTrue
@@ -611,6 +618,7 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+  guidStr: 592928f5-06ea-4d22-9013-e156baee51cb
   input: {fileID: 0}
   output: {fileID: 0}
   resultScript: 
@@ -689,6 +697,7 @@ MonoBehaviour:
   - {fileID: -2873009722215089529}
   - {fileID: -1816750769522430346}
   - {fileID: -4881852206032856358}
+  _IS_DEMO_FILE: 1
   ID: MotherNebivia001_EDNConclusion
 --- !u!114 &8572610357757385
 MonoBehaviour:
@@ -754,6 +763,7 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+  guidStr: 61d3b3bb-4c7b-4c06-b09c-d563e5127b4d
   input: {fileID: 0}
   output: {fileID: 0}
   resultScript: 
@@ -839,6 +849,7 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+  guidStr: e61be47c-dbbc-4e0a-97ef-dc4cb02591f5
   input: {fileID: 0}
   output: {fileID: 0}
   resultScript: 
@@ -874,7 +885,7 @@ MonoBehaviour:
   m_Name: NPC Dialogue Line
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 3272, y: 456}
+  position: {x: 3224, y: 504}
   ports:
     keys:
     - nextLine
@@ -945,6 +956,7 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 1
+  guidStr: 22ab15e7-7dff-4325-9ff6-404cf63e90d1
   input: {fileID: 0}
   output: {fileID: 0}
   resultScript: 
@@ -1042,6 +1054,7 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 1
+  guidStr: d434a3ac-db2f-4552-b3f2-3f46184481b4
   input: {fileID: 0}
   output: {fileID: 0}
   resultScript: 
@@ -1141,6 +1154,7 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 1
+  guidStr: 4d1c593b-d4f0-40d1-9400-732b61384008
   input: {fileID: 0}
   output: {fileID: 0}
   resultScript: 
@@ -1166,6 +1180,7 @@ MonoBehaviour:
         metadata:
           isOwned: 0
           ownerID: 
+          intProperty1: 0
         amount: 50
       m_Parent: {fileID: 0}
       delay: 0
@@ -1222,6 +1237,8 @@ MonoBehaviour:
       doorID: 
       lockLevel: 0
       spellToLearn: {fileID: 0}
+      speakLineID: 
+      speakLineDisplayAsHeard: 0
     - type: 17
       gameObjects: []
       toInstantiate: []
@@ -1240,6 +1257,7 @@ MonoBehaviour:
         metadata:
           isOwned: 0
           ownerID: 
+          intProperty1: 0
         amount: 0
       m_Parent: {fileID: 0}
       delay: 0
@@ -1296,6 +1314,8 @@ MonoBehaviour:
       doorID: 
       lockLevel: 0
       spellToLearn: {fileID: 0}
+      speakLineID: 
+      speakLineDisplayAsHeard: 0
   speakerID: 0
   line: Here... take them...
   plainLine: 0
@@ -1405,6 +1425,7 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 1
+  guidStr: fa694cb3-e71c-4ad8-94c3-d0a4a4c46ec9
   input: {fileID: 0}
   output: {fileID: 0}
   resultScript: 
@@ -1502,6 +1523,7 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+  guidStr: 90e6d70a-dc69-480d-a449-e7d2ef7be5db
   input: {fileID: 0}
   output: {fileID: 0}
   resultScript: 
@@ -1536,7 +1558,7 @@ MonoBehaviour:
   m_Name: NPC Dialogue Line
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 3272, y: 136}
+  position: {x: 3240, y: -104}
   ports:
     keys:
     - nextLine
@@ -1607,6 +1629,7 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 1
+  guidStr: 53133f41-ab30-49e7-aaea-606b1c0c38b9
   input: {fileID: 0}
   output: {fileID: 0}
   resultScript: 
@@ -1704,6 +1727,7 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+  guidStr: 4d41661e-feb0-4dad-bfea-f934f860ea22
   input: {fileID: 0}
   output: {fileID: 0}
   resultScript: 
@@ -1739,7 +1763,7 @@ MonoBehaviour:
   m_Name: NPC Dialogue Line
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 2472, y: 376}
+  position: {x: 2200, y: 584}
   ports:
     keys:
     - nextLine
@@ -1810,6 +1834,7 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 1
+  guidStr: 1f02dc3b-77fc-45e1-af42-3699f982f84a
   input: {fileID: 0}
   output: {fileID: 0}
   resultScript: 
