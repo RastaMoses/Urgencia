@@ -43,7 +43,7 @@ namespace RPGCreationKit
         {
             movementsPanel.SetActive(true);
 
-            yield return new WaitForSeconds(17.5f);
+            yield return new WaitForSeconds(13.5f);
 
             movementsPanel.SetActive(false);
 
@@ -51,7 +51,7 @@ namespace RPGCreationKit
 
             attacksPanel.SetActive(true);
 
-            yield return new WaitForSeconds(20.0f);
+            yield return new WaitForSeconds(15.0f);
 
             attacksPanel.SetActive(false);
 

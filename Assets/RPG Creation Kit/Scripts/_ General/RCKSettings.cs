@@ -100,9 +100,9 @@ namespace RPGCreationKit
         //public static int RCK_NEW_STARTING_LEVEL = 1;
         //public static Vector3 RCK_NEW_STARTING_POS = new Vector3(-2.543413f, 5.548239f, 297.4933f);
         //public static Vector3 RCK_NEW_STARTING_ROT = new Vector3(0, 169.825f, 0);
-        public static string RCK_NEW_STARTING_LOCATION = "Cave";
-        public static string RCK_NEW_STARTING_WORLDSPACEID = "Interiors";
-        public static string RCK_NEW_STARTING_CELLID = "TutorialsCave001";
+        public static string RCK_NEW_STARTING_LOCATION = "Unknown Cave";
+        public static string RCK_NEW_STARTING_WORLDSPACEID = "UrgenciaInteriors";
+        public static string RCK_NEW_STARTING_CELLID = "TutorialsCave002";
 
         public static uint RCK_NEW_STARTING_LEVEL = 1;
         public static Vector3 RCK_NEW_STARTING_POS = new Vector3(1.445318f, 1.470858f, 0.2606843f);
