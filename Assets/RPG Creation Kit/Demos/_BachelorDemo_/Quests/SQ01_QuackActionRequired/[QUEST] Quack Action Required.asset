@@ -10,49 +10,57 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 45ee663e38452994ab2f4a05886c81ed, type: 3}
-  m_Name: '[QUEST] Late Night Early Morning'
+  m_Name: '[QUEST] Quack Action Required'
   m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.Quest
   _IS_DEMO_FILE: 1
-  questID: MQ_LateNightEarlyMorning
-  questName: Late Night Early Morning
-  questDescription: After a long night of drinking with my best friend Pellan, celebrating
-    our final day before school starts again, I woke up in a cave. I should get out
-    and find Pellan.
+  questID: SQ_QuackActionRequired
+  questName: Quack Action Required
+  questDescription: Pellan accidentally drank a frog transformation potion and I
+    need to find an antidote before it's too late.
   questStages:
   - index: 10
-    description: Get your bearings and maybe a key
+    description: Talk to the wandering merchant
     stageConditions: []
-    resultScript: RPGCreationKit.Quests.LateNightEarlyMorningStage10Script
+    resultScript: 
     completeQuest: 0
     failQuest: 0
-    displayLogEntry: 1
+    displayLogEntry: 0
     stageCompleted: 0
     stageFailed: 0
   - index: 20
-    description: Use the key to unlock the door
+    description: Talk to a priest at the temple outside the city
     stageConditions: []
     resultScript: 
     completeQuest: 0
     failQuest: 0
-    displayLogEntry: 1
+    displayLogEntry: 0
     stageCompleted: 0
     stageFailed: 0
   - index: 30
-    description: Leave the cave
+    description: Find the rare blue flower on the hill to the west of the temple
     stageConditions: []
     resultScript: 
     completeQuest: 0
     failQuest: 0
-    displayLogEntry: 1
+    displayLogEntry: 0
     stageCompleted: 0
     stageFailed: 0
   - index: 40
-    description: Talk to Pellan in the Tavern
+    description: Return to the priest with the flower.
+    stageConditions: []
+    resultScript: 
+    completeQuest: 0
+    failQuest: 0
+    displayLogEntry: 0
+    stageCompleted: 0
+    stageFailed: 0
+  - index: 50
+    description: Bring the antidote to Pellan
     stageConditions: []
     resultScript: 
     completeQuest: 1
     failQuest: 0
-    displayLogEntry: 1
+    displayLogEntry: 0
     stageCompleted: 0
     stageFailed: 0
   allStagesActive: 
@@ -67,4 +75,4 @@ MonoBehaviour:
   questCompleted: 0
   questFailed: 0
   questConditions: []
-  questXpReward: 0
+  questXpReward: 100
