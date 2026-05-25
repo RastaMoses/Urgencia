@@ -2622,7 +2622,7 @@ MonoBehaviour:
   m_Name: NPC Dialogue Line
   m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.NPCDialogueLineNode
   graph: {fileID: 11400000}
-  position: {x: 3848, y: -24}
+  position: {x: 3864, y: -104}
   ports:
     keys:
     - nextLine
@@ -2681,7 +2681,10 @@ MonoBehaviour:
   output: {fileID: 0}
   resultScript: 
   events:
-    questDealers: []
+    questDealers:
+    - newQuest: {fileID: 11400000, guid: ffedcb9a418bf144d837c5eab00195d5, type: 2}
+      atIndex: 0
+      hideAlert: 0
     questUpdaters: []
     consequences: []
   speakerID: 0
