@@ -632,7 +632,7 @@ MonoBehaviour:
   m_Name: NPC Dialogue Line
   m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.NPCDialogueLineNode
   graph: {fileID: 11400000}
-  position: {x: 1704, y: -24}
+  position: {x: 1896, y: -24}
   ports:
     keys:
     - nextLine
@@ -881,7 +881,15 @@ MonoBehaviour:
   resultScript: 
   events:
     questDealers: []
-    questUpdaters: []
+    questUpdaters:
+    - questToUpdate: {fileID: 11400000, guid: ffedcb9a418bf144d837c5eab00195d5, type: 2}
+      completed: 1
+      questStage: 10
+      hideLog: 0
+    - questToUpdate: {fileID: 11400000, guid: ffedcb9a418bf144d837c5eab00195d5, type: 2}
+      completed: 0
+      questStage: 20
+      hideLog: 0
     consequences: []
   speakerID: 0
   line: But, yeah, fine. I found a stash in the cave North-East. Smugglers got scared
