@@ -8,12 +8,11 @@ namespace RPGCreationKit.Quests
 {
     public class QuackActionRequiredQuestStage30Script : QuestStageScript
     {
-        [SerializeField] GameObject flowers;
         private void Start()
         {
             // Your code here
-            //Spawn Flower Interactive Object
-            Instantiate(flowers);
+
+
             //Disable Merchant
 
 
