@@ -16,8 +16,44 @@ MonoBehaviour:
   questID: SQ_DealingHealingCrystals
   questName: Dealing Healing Crystals
   questDescription: A merchant will trade me a very useful spell book if I can get
-    some mana crystals for them.
-  questStages: []
+    some mana crystals for her.
+  questStages:
+  - index: 10
+    description: Talk to a "Dellan" in the Tavern
+    stageConditions: []
+    resultScript: 
+    completeQuest: 0
+    failQuest: 0
+    displayLogEntry: 0
+    stageCompleted: 0
+    stageFailed: 0
+  - index: 20
+    description: Go to the cave North-East of the city.
+    stageConditions: []
+    resultScript: 
+    completeQuest: 0
+    failQuest: 0
+    displayLogEntry: 0
+    stageCompleted: 0
+    stageFailed: 0
+  - index: 30
+    description: Collect 5 mana crystals.
+    stageConditions: []
+    resultScript: 
+    completeQuest: 0
+    failQuest: 0
+    displayLogEntry: 0
+    stageCompleted: 0
+    stageFailed: 0
+  - index: 40
+    description: Bring the mana crystals to the merchant.
+    stageConditions: []
+    resultScript: 
+    completeQuest: 0
+    failQuest: 0
+    displayLogEntry: 0
+    stageCompleted: 0
+    stageFailed: 0
   allStagesActive: 
   allStagesCompleted: 
   allStagesFailed: 
