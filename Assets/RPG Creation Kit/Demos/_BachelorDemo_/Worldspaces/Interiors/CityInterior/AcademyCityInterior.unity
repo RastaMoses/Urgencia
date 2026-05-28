@@ -37172,7 +37172,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1888387945}
     m_Modifications:
     - target: {fileID: 3131533434990863014, guid: 0b0d818a29be89f4383c4b3ad26f84a2,
         type: 3}
@@ -37181,15 +37181,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7528602766291453641, guid: 0b0d818a29be89f4383c4b3ad26f84a2,
         type: 3}
+      propertyPath: startingCellID
+      value: CityInteriorCell
+      objectReference: {fileID: 0}
+    - target: {fileID: 7528602766291453641, guid: 0b0d818a29be89f4383c4b3ad26f84a2,
+        type: 3}
       propertyPath: currentDialogueGraph
       value: 
-      objectReference: {fileID: 11400000, guid: bcb23ad1db981db409f86a43f841e8ef,
+      objectReference: {fileID: 11400000, guid: 0e3f1ec8cdbe0504482752c544f04c1d,
         type: 2}
     - target: {fileID: 7528602766291453641, guid: 0b0d818a29be89f4383c4b3ad26f84a2,
         type: 3}
       propertyPath: defaultDialogueGraph
       value: 
-      objectReference: {fileID: 11400000, guid: bcb23ad1db981db409f86a43f841e8ef,
+      objectReference: {fileID: 11400000, guid: 0e3f1ec8cdbe0504482752c544f04c1d,
         type: 2}
     - target: {fileID: 8916390497302543287, guid: 0b0d818a29be89f4383c4b3ad26f84a2,
         type: 3}
@@ -37246,6 +37251,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b0d818a29be89f4383c4b3ad26f84a2, type: 3}
+--- !u!4 &1558183406 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8916390497302543287, guid: 0b0d818a29be89f4383c4b3ad26f84a2,
+    type: 3}
+  m_PrefabInstance: {fileID: 1558183405}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1558871034
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44000,7 +44011,7 @@ MonoBehaviour:
     _HashCodes: da372e5c5cd0cf7700000000
     _Next: ffffffffffffffff00000000
     _Count: 2
-    _Version: 70
+    _Version: 73
     _FreeList: -1
     _FreeCount: 0
     _Keys:
@@ -44012,11 +44023,11 @@ MonoBehaviour:
     - {fileID: 1903945401}
     - {fileID: 0}
   allDoors:
-    _Buckets: ffffffffffffffffffffffff0600000004000000ffffffff07000000ffffffff16000000ffffffff0c000000ffffffff13000000ffffffffffffffff0a000000ffffffff05000000ffffffffffffffff1200000011000000ffffffffffffffff14000000ffffffff10000000150000000e00000009000000000000000b000000ffffffffffffffffffffffff080000000f000000
-    _HashCodes: 04b05126bc0674525512d67c356f5f65ee5f7a0a1c050507b3120d71a1f0780416aeae138aa2cb03bc26992277e0eb505f19ed4e71dd210f72d9cf463b514439190c75028aee38574aa2f17e2bfcb95b6411697dbe1e3469327105280000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-    _Next: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff0200000003000000ffffffffffffffffffffffff01000000ffffffffffffffffffffffffffffffffffffffffffffffff0d0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    _Buckets: ffffffffffffffffffffffff0600000004000000ffffffff07000000ffffffff16000000ffffffff0c000000ffffffff13000000ffffffffffffffff0a000000ffffffff05000000ffffffffffffffff1200000011000000ffffffffffffffff14000000ffffffff10000000150000000e000000090000000000000003000000ffffffff0b000000ffffffff080000000f000000
+    _HashCodes: 04b05126bc0674525512d67c356f5f65ee5f7a0a1c050507b3120d71a1f0780416aeae138aa2cb03bc2699222495520f5f19ed4e71dd210f72d9cf463b514439190c75028aee38574aa2f17e2bfcb95b6411697dbe1e3469327105280000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    _Next: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff02000000ffffffffffffffffffffffffffffffff01000000ffffffffffffffffffffffffffffffffffffffffffffffff0d0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     _Count: 23
-    _Version: 461
+    _Version: 485
     _FreeList: -1
     _FreeCount: 0
     _Keys:
@@ -44031,7 +44042,7 @@ MonoBehaviour:
     - CityInteriorToBlacksmithShop
     - CityInteriorToLaniusHouse
     - CityInteriorToMackHouse
-    - CityInteriorToArmorShop
+    - AcademyCityInteriorTomsTavern
     - CityInteriorToMurieldeAyalaHouse
     - CityInteriorToGeneralGoodsStore
     - CityInteriorToVincentBergerHouse
@@ -44096,26 +44107,26 @@ MonoBehaviour:
     - {fileID: 0}
     - {fileID: 0}
   allMutables:
-    _Buckets: 03000000ffffffff0100000002000000ffffffffffffffffffffffff
-    _HashCodes: 27c1821e77a6bf0d4f3c7202449eab0f000000000000000000000000
-    _Next: ffffffff00000000ffffffffffffffff000000000000000000000000
-    _Count: 4
-    _Version: 46
+    _Buckets: 01000000ffffffffffffffff00000000ffffffffffffffffffffffff
+    _HashCodes: 4f3c7202449eab0f0000000000000000000000000000000000000000
+    _Next: ffffffffffffffff0000000000000000000000000000000000000000
+    _Count: 2
+    _Version: 49
     _FreeList: -1
     _FreeCount: 0
     _Keys:
-    - Mutable_TheyShallFall_QuestUpdateGoto
-    - Mutable_TheyShallFall_FireAndSmokeInside
     - LaniusMurielDialogueGotoMutable
     - Mutable_PlayerHouseDoor
     - 
     - 
     - 
+    - 
+    - 
     _Values:
-    - {fileID: 0}
-    - {fileID: 0}
     - {fileID: 1458673467}
     - {fileID: 1599520754}
+    - {fileID: 0}
+    - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
@@ -44140,7 +44151,7 @@ MonoBehaviour:
     _HashCodes: be3cf460e6b8fd3621aef048924835455767277f97ce8134ca663a15884dac557024fd620000000000000000000000000000000000000000000000000000000000000000
     _Next: ffffffffffffffffffffffffffffffffffffffffffffffff0200000005000000ffffffff0000000000000000000000000000000000000000000000000000000000000000
     _Count: 9
-    _Version: 301
+    _Version: 311
     _FreeList: -1
     _FreeCount: 0
     _Keys:
@@ -45656,6 +45667,7 @@ Transform:
   - {fileID: 1635419453}
   - {fileID: 141596111}
   - {fileID: 1864516705}
+  - {fileID: 1558183406}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1892229743
@@ -58265,4 +58277,3 @@ SceneRoots:
   - {fileID: 172086785}
   - {fileID: 369012078}
   - {fileID: 2097322519}
-  - {fileID: 1558183405}

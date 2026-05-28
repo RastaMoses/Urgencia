@@ -363,7 +363,7 @@ MonoBehaviour:
   m_Name: Conditions
   m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.ConditionsNode
   graph: {fileID: 11400000}
-  position: {x: -424, y: 616}
+  position: {x: -968, y: 952}
   ports:
     keys:
     - resultTrue
@@ -551,7 +551,7 @@ MonoBehaviour:
   m_Name: Player Questions
   m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.PlayerQuestionsNode
   graph: {fileID: 11400000}
-  position: {x: 552, y: 2184}
+  position: {x: 136, y: 1784}
   ports:
     keys:
     - playerQuestions
@@ -576,7 +576,7 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: resultTrue
-        node: {fileID: 5021955289685238489}
+        node: {fileID: -4406713545873452291}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -1079,7 +1079,7 @@ MonoBehaviour:
   m_Name: Player Questions
   m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.PlayerQuestionsNode
   graph: {fileID: 11400000}
-  position: {x: 547.5951, y: 1699.9769}
+  position: {x: 136, y: 1528}
   ports:
     keys:
     - playerQuestions
@@ -1105,7 +1105,7 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: resultTrue
-        node: {fileID: -4406713545873452291}
+        node: {fileID: 5021955289685238489}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -1286,7 +1286,7 @@ MonoBehaviour:
   m_Name: Conditions
   m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.ConditionsNode
   graph: {fileID: 11400000}
-  position: {x: -152, y: 1304}
+  position: {x: -504, y: 1736}
   ports:
     keys:
     - resultTrue
@@ -1300,7 +1300,7 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: input
-        node: {fileID: -5814006039798225354}
+        node: {fileID: -7961387988066174205}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -1312,7 +1312,7 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: input
-        node: {fileID: 4049477912403561264}
+        node: {fileID: 975080434073904188}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -1477,7 +1477,7 @@ MonoBehaviour:
   m_Name: Conditions
   m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.ConditionsNode
   graph: {fileID: 11400000}
-  position: {x: -440, y: 312}
+  position: {x: -968, y: 472}
   ports:
     keys:
     - resultTrue
@@ -1578,7 +1578,7 @@ MonoBehaviour:
   m_Name: Player Questions
   m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.PlayerQuestionsNode
   graph: {fileID: 11400000}
-  position: {x: 568, y: 184}
+  position: {x: 136, y: 280}
   ports:
     keys:
     - playerQuestions
@@ -1871,7 +1871,7 @@ MonoBehaviour:
   m_Name: Conditions
   m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.ConditionsNode
   graph: {fileID: 11400000}
-  position: {x: -712, y: 456}
+  position: {x: -1400, y: 648}
   ports:
     keys:
     - resultTrue
@@ -1914,7 +1914,7 @@ MonoBehaviour:
       - fieldName: nextLine
         node: {fileID: 8169229178179949825}
         reroutePoints: []
-      - fieldName: resultFalse
+      - fieldName: resultTrue
         node: {fileID: 6809704368442885131}
         reroutePoints: []
       _direction: 0
@@ -2286,7 +2286,7 @@ MonoBehaviour:
   - {fileID: -8747321900453401120}
   - {fileID: 4372238286170126227}
   _IS_DEMO_FILE: 1
-  ID: 
+  ID: DIALOGUE_MagicMerchantFirst
 --- !u!114 &975080434073904188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2300,7 +2300,7 @@ MonoBehaviour:
   m_Name: Player Questions
   m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.PlayerQuestionsNode
   graph: {fileID: 11400000}
-  position: {x: 552, y: 1432}
+  position: {x: 136, y: 1096}
   ports:
     keys:
     - playerQuestions
@@ -2324,7 +2324,7 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: resultFalse
-        node: {fileID: 5021955289685238489}
+        node: {fileID: -4406713545873452291}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -2538,7 +2538,7 @@ MonoBehaviour:
   m_Name: Player Questions
   m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.PlayerQuestionsNode
   graph: {fileID: 11400000}
-  position: {x: 552, y: 776}
+  position: {x: 136, y: 520}
   ports:
     keys:
     - playerQuestions
@@ -3370,7 +3370,7 @@ MonoBehaviour:
   m_Name: Player Questions
   m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.PlayerQuestionsNode
   graph: {fileID: 11400000}
-  position: {x: 552, y: 1112}
+  position: {x: 136, y: 712}
   ports:
     keys:
     - playerQuestions
@@ -3395,7 +3395,7 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: resultFalse
-        node: {fileID: -4406713545873452291}
+        node: {fileID: 5021955289685238489}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -3627,7 +3627,7 @@ MonoBehaviour:
   m_Name: Conditions
   m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.ConditionsNode
   graph: {fileID: 11400000}
-  position: {x: -152, y: 1064}
+  position: {x: -536, y: 1480}
   ports:
     keys:
     - resultTrue
@@ -3641,7 +3641,7 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: input
-        node: {fileID: -7961387988066174205}
+        node: {fileID: -5814006039798225354}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -3653,7 +3653,7 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: input
-        node: {fileID: 975080434073904188}
+        node: {fileID: 4049477912403561264}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -3816,7 +3816,7 @@ MonoBehaviour:
   m_Name: Conditions
   m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.ConditionsNode
   graph: {fileID: 11400000}
-  position: {x: -632, y: 856}
+  position: {x: -968, y: 1160}
   ports:
     keys:
     - resultTrue
@@ -3853,7 +3853,7 @@ MonoBehaviour:
       _typeQualifiedName: RPGCreationKit.DialogueSystem.DialogueNode, Assembly-CSharp,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
-      - fieldName: resultTrue
+      - fieldName: resultFalse
         node: {fileID: 6809704368442885131}
         reroutePoints: []
       _direction: 0
@@ -3976,7 +3976,7 @@ MonoBehaviour:
   m_Name: Conditions
   m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.ConditionsNode
   graph: {fileID: 11400000}
-  position: {x: -1016, y: 680}
+  position: {x: -1768, y: 776}
   ports:
     keys:
     - resultTrue
@@ -3990,7 +3990,7 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: input
-        node: {fileID: 6396725225719697390}
+        node: {fileID: -1688384379203223835}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -4002,7 +4002,7 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: input
-        node: {fileID: -1688384379203223835}
+        node: {fileID: 6396725225719697390}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -4039,7 +4039,7 @@ MonoBehaviour:
     consequences: []
   resultTrue: {fileID: 0}
   resultFalse: {fileID: 0}
-  comment: Not spoken to Pellan yet
+  comment: spoken to pellan for frog
   conditions:
   - MethodToCall: GetStage
     parameters:
@@ -4056,8 +4056,8 @@ MonoBehaviour:
       vector3Value: {x: 0, y: 0, z: 0}
       vector4Value: {x: 0, y: 0, z: 0, w: 0}
       btVariableValue: {fileID: 0}
-    compOperator: 1
-    customValue: 20
+    compOperator: 4
+    customValue: 10
     OR: 0
     useGlobal: 0
     propertyName: 
