@@ -2373,7 +2373,7 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 648658162}
   m_Enabled: 1
-  serializedVersion: 12
+  serializedVersion: 13
   m_Type: 2
   m_Color: {r: 0.81568635, g: 0.3372549, b: 0.03529412, a: 1}
   m_Intensity: 1
@@ -2425,7 +2425,7 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ForceVisible: 0
-  m_ShadowRadius: 0
+  m_ShapeRadius: 0
   m_ShadowAngle: 0
   m_LightUnit: 1
   m_LuxAtDistance: 1
@@ -4189,7 +4189,7 @@ PrefabInstance:
         type: 3}
       propertyPath: toCell
       value: 
-      objectReference: {fileID: 11400000, guid: 0119b7d9157355c43bae98874dd185fb,
+      objectReference: {fileID: 11400000, guid: 9a23ef635cba0cf4784e818b7cd9bcbf,
         type: 2}
     - target: {fileID: 8580709412313436503, guid: 9a5e053b4cd351942a840d3cddcec648,
         type: 3}
@@ -4224,7 +4224,7 @@ PrefabInstance:
     - target: {fileID: 8580709412313436503, guid: 9a5e053b4cd351942a840d3cddcec648,
         type: 3}
       propertyPath: allDoors.Array.size
-      value: 20
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 8580709412313436503, guid: 9a5e053b4cd351942a840d3cddcec648,
         type: 3}
@@ -4239,12 +4239,112 @@ PrefabInstance:
     - target: {fileID: 8580709412313436503, guid: 9a5e053b4cd351942a840d3cddcec648,
         type: 3}
       propertyPath: 'allDoors.Array.data[1]'
-      value: CityInteriorToWeaponShop
+      value: AcademyCityInteriorTomsTavern
+      objectReference: {fileID: 0}
+    - target: {fileID: 8580709412313436503, guid: 9a5e053b4cd351942a840d3cddcec648,
+        type: 3}
+      propertyPath: 'allDoors.Array.data[2]'
+      value: CityInteriorToGeneralGoodsStore
+      objectReference: {fileID: 0}
+    - target: {fileID: 8580709412313436503, guid: 9a5e053b4cd351942a840d3cddcec648,
+        type: 3}
+      propertyPath: 'allDoors.Array.data[3]'
+      value: CityInteriorToHartwinGilHouse
+      objectReference: {fileID: 0}
+    - target: {fileID: 8580709412313436503, guid: 9a5e053b4cd351942a840d3cddcec648,
+        type: 3}
+      propertyPath: 'allDoors.Array.data[4]'
+      value: CityInteriorToYvonneGrafHouse
+      objectReference: {fileID: 0}
+    - target: {fileID: 8580709412313436503, guid: 9a5e053b4cd351942a840d3cddcec648,
+        type: 3}
+      propertyPath: 'allDoors.Array.data[5]'
+      value: CityInteriorToFlorenceGainesHouse
+      objectReference: {fileID: 0}
+    - target: {fileID: 8580709412313436503, guid: 9a5e053b4cd351942a840d3cddcec648,
+        type: 3}
+      propertyPath: 'allDoors.Array.data[6]'
+      value: CityInteriorToMorrisonsHouse
+      objectReference: {fileID: 0}
+    - target: {fileID: 8580709412313436503, guid: 9a5e053b4cd351942a840d3cddcec648,
+        type: 3}
+      propertyPath: 'allDoors.Array.data[7]'
+      value: CityInteriorToVincentBergerHouse
+      objectReference: {fileID: 0}
+    - target: {fileID: 8580709412313436503, guid: 9a5e053b4cd351942a840d3cddcec648,
+        type: 3}
+      propertyPath: 'allDoors.Array.data[8]'
+      value: CityInteriorToManiusSharpeHouse
+      objectReference: {fileID: 0}
+    - target: {fileID: 8580709412313436503, guid: 9a5e053b4cd351942a840d3cddcec648,
+        type: 3}
+      propertyPath: 'allDoors.Array.data[9]'
+      value: CityInteriorToMackHouse
+      objectReference: {fileID: 0}
+    - target: {fileID: 8580709412313436503, guid: 9a5e053b4cd351942a840d3cddcec648,
+        type: 3}
+      propertyPath: 'allDoors.Array.data[10]'
+      value: CityInteriorToSteveWoodsHouse
+      objectReference: {fileID: 0}
+    - target: {fileID: 8580709412313436503, guid: 9a5e053b4cd351942a840d3cddcec648,
+        type: 3}
+      propertyPath: 'allDoors.Array.data[11]'
+      value: CityInteriorToMurieldeAyalaHouse
+      objectReference: {fileID: 0}
+    - target: {fileID: 8580709412313436503, guid: 9a5e053b4cd351942a840d3cddcec648,
+        type: 3}
+      propertyPath: 'allDoors.Array.data[12]'
+      value: CityInteriorToClaraStadlerHouse
+      objectReference: {fileID: 0}
+    - target: {fileID: 8580709412313436503, guid: 9a5e053b4cd351942a840d3cddcec648,
+        type: 3}
+      propertyPath: 'allDoors.Array.data[13]'
+      value: CityInteriorToTaholianVedanceHouse
+      objectReference: {fileID: 0}
+    - target: {fileID: 8580709412313436503, guid: 9a5e053b4cd351942a840d3cddcec648,
+        type: 3}
+      propertyPath: 'allDoors.Array.data[14]'
+      value: CityInteriorToCornielesdeArenaHouse
+      objectReference: {fileID: 0}
+    - target: {fileID: 8580709412313436503, guid: 9a5e053b4cd351942a840d3cddcec648,
+        type: 3}
+      propertyPath: 'allDoors.Array.data[15]'
+      value: CityInteriorToLaniusHouse
+      objectReference: {fileID: 0}
+    - target: {fileID: 8580709412313436503, guid: 9a5e053b4cd351942a840d3cddcec648,
+        type: 3}
+      propertyPath: 'allDoors.Array.data[16]'
+      value: CityInteriorToLeroyLernerHouse
+      objectReference: {fileID: 0}
+    - target: {fileID: 8580709412313436503, guid: 9a5e053b4cd351942a840d3cddcec648,
+        type: 3}
+      propertyPath: 'allDoors.Array.data[17]'
+      value: CityInteriorToHouseOnSale
+      objectReference: {fileID: 0}
+    - target: {fileID: 8580709412313436503, guid: 9a5e053b4cd351942a840d3cddcec648,
+        type: 3}
+      propertyPath: 'allDoors.Array.data[18]'
+      value: CityInteriorToAdelindeVeturiaHouse
       objectReference: {fileID: 0}
     - target: {fileID: 8580709412313436503, guid: 9a5e053b4cd351942a840d3cddcec648,
         type: 3}
       propertyPath: 'allDoors.Array.data[19]'
       value: CityInteriorToBlacksmithShop
+      objectReference: {fileID: 0}
+    - target: {fileID: 8580709412313436503, guid: 9a5e053b4cd351942a840d3cddcec648,
+        type: 3}
+      propertyPath: 'allDoors.Array.data[20]'
+      value: CityInteriorToKingsPalace
+      objectReference: {fileID: 0}
+    - target: {fileID: 8580709412313436503, guid: 9a5e053b4cd351942a840d3cddcec648,
+        type: 3}
+      propertyPath: 'allDoors.Array.data[21]'
+      value: CityExteriorToCountsHouseDoor1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8580709412313436503, guid: 9a5e053b4cd351942a840d3cddcec648,
+        type: 3}
+      propertyPath: 'allDoors.Array.data[22]'
+      value: CityExteriorToCountsHouseDoor2
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8530803860666778523, guid: 9a5e053b4cd351942a840d3cddcec648, type: 3}

@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: 6300661671478321674}
   - component: {fileID: -281676280021594587}
   - component: {fileID: 7702166795725055554}
+  - component: {fileID: 317588826366843992}
   m_Layer: 0
   m_Name: ManaRockInWorld
-  m_TagString: Untagged
+  m_TagString: RPG Creation Kit/ItemInWorld
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112,7 +113,7 @@ MeshCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -912437863721898327, guid: a5245c24a77253e44ae71aac7d41138c, type: 3}
 --- !u!54 &-281676280021594587
@@ -182,4 +183,25 @@ MonoBehaviour:
     questUpdaters: []
     consequences: []
   hasBeenTaken: 0
-  worldspaceID: 
+  worldspaceID: ManaCave001
+--- !u!65 &317588826366843992
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1664760229628344058}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.0584137, y: 1.5322475, z: 1.8179104}
+  m_Center: {x: 0.09872362, y: 0.35233846, z: -0.13588743}
