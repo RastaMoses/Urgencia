@@ -12,8 +12,10 @@ GameObject:
   - component: {fileID: 7926424014489320889}
   - component: {fileID: 4909633664596936902}
   - component: {fileID: 6300661671478321674}
+  - component: {fileID: -281676280021594587}
+  - component: {fileID: 7702166795725055554}
   m_Layer: 0
-  m_Name: ManaRock
+  m_Name: ManaRockInWorld
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2938535, y: 0.2938535, z: 0.2938535}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -113,3 +115,71 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -912437863721898327, guid: a5245c24a77253e44ae71aac7d41138c, type: 3}
+--- !u!54 &-281676280021594587
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1664760229628344058}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &7702166795725055554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1664760229628344058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87be5a068bc22854e9c172086231dc64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.ItemInWorld
+  GUIDStr: 
+  rb: {fileID: -281676280021594587}
+  Item: {fileID: 11400000, guid: dc54edce99a668e42b488588c89e866b, type: 2}
+  metadata:
+    isOwned: 0
+    ownerID: 
+    intProperty1: 0
+  Amount: 1
+  canBeDragged: 1
+  intentionalDestroy: 0
+  hasBeenTouched: 0
+  isCreatedItem: 0
+  createdData:
+    itemID: 
+    metadata:
+      isOwned: 0
+      ownerID: 
+      intProperty1: 0
+    WorldspaceID: 
+    amount: 0
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 0}
+    isKinematic: 0
+  events:
+    questDealers: []
+    questUpdaters: []
+    consequences: []
+  hasBeenTaken: 0
+  worldspaceID: 
