@@ -1,5 +1,64 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8976592468023583789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7f1357e040b05c40a508fee3349882a, type: 3}
+  m_Name: End
+  m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.EndNode
+  graph: {fileID: 11400000}
+  position: {x: 5432, y: 760}
+  ports:
+    keys:
+    - endNode
+    - input
+    - output
+    values:
+    - _fieldName: endNode
+      _node: {fileID: -8976592468023583789}
+      _typeQualifiedName: RPGCreationKit.DialogueSystem.EndNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: output
+        node: {fileID: -4706257252295472527}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: input
+      _node: {fileID: -8976592468023583789}
+      _typeQualifiedName: RPGCreationKit.DialogueSystem.DialogueNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: -8976592468023583789}
+      _typeQualifiedName: RPGCreationKit.DialogueSystem.DialogueNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  guidStr: 394dce00-a9ad-428d-b13d-6e9fb29d884e
+  input: {fileID: 0}
+  output: {fileID: 0}
+  resultScript: 
+  events:
+    questDealers: []
+    questUpdaters: []
+    consequences: []
+  endNode: {fileID: 0}
 --- !u!114 &-8817682477246330231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73,11 +132,11 @@ MonoBehaviour:
     questUpdaters: []
     consequences: []
   speakerID: 0
-  line: You've nay begot thee... ehm...thee
+  line: You've nay begot thee... ehm...thee...
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 120
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -86,6 +145,103 @@ MonoBehaviour:
   questionsToRemove: []
   playerQuestions: []
   lookAtEntityID: 0
+--- !u!114 &-8257752686332016852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64dabeeffd654d647b28c9d2a1955505, type: 3}
+  m_Name: Player Questions
+  m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.PlayerQuestionsNode
+  graph: {fileID: 11400000}
+  position: {x: 4072, y: 648}
+  ports:
+    keys:
+    - playerQuestions
+    - input
+    - output
+    - playerQuestions 0
+    - playerQuestions 1
+    values:
+    - _fieldName: playerQuestions
+      _node: {fileID: -8257752686332016852}
+      _typeQualifiedName: System.Collections.Generic.List`1[[RPGCreationKit.PlayerQuestion,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: input
+      _node: {fileID: -8257752686332016852}
+      _typeQualifiedName: RPGCreationKit.DialogueSystem.DialogueNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: nextLine
+        node: {fileID: 3974829028065108617}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: -8257752686332016852}
+      _typeQualifiedName: RPGCreationKit.DialogueSystem.DialogueNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: playerQuestions 0
+      _node: {fileID: -8257752686332016852}
+      _typeQualifiedName: RPGCreationKit.PlayerQuestion, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: input
+        node: {fileID: 4226324280148876608}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: playerQuestions 1
+      _node: {fileID: -8257752686332016852}
+      _typeQualifiedName: RPGCreationKit.PlayerQuestion, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: input
+        node: {fileID: 4226324280148876608}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+  guidStr: 7880775a-4b74-4dbc-ba74-8763cb0c0694
+  input: {fileID: 0}
+  output: {fileID: 0}
+  resultScript: 
+  events:
+    questDealers: []
+    questUpdaters: []
+    consequences: []
+  dialogueAnimationListeningStr: 
+  removePreviousQuestions: 1
+  questionsToRemove: []
+  playerQuestions:
+  - Question: Continue, please!
+    qID: 
+    Position: 0
+    DeleteAfterAnswer: 0
+  - Question: Ehm...actually I gotta..
+    qID: 
+    Position: 0
+    DeleteAfterAnswer: 0
 --- !u!114 &-8186517780014572846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,7 +373,7 @@ MonoBehaviour:
   m_Name: End
   m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.EndNode
   graph: {fileID: 11400000}
-  position: {x: 904, y: 488}
+  position: {x: 1080, y: 472}
   ports:
     keys:
     - endNode
@@ -476,7 +632,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 120
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -744,7 +900,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 120
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -842,11 +998,12 @@ MonoBehaviour:
   removePreviousQuestions: 1
   questionsToRemove: []
   playerQuestions:
-  - Question: Thanks!
+  - Question: 'Thanks and blessing to thee priest of...wait what is your goddess
+      again? '
     qID: 
     Position: 0
     DeleteAfterAnswer: 0
-  - Question: '[Just go]'
+  - Question: 'Thanks, gotta go![Just go, you don''t have time for this]'
     qID: 
     Position: 0
     DeleteAfterAnswer: 0
@@ -951,6 +1108,147 @@ MonoBehaviour:
     propertyType: 0
     propertyIntValue: 0
     propertyFloatValue: 0
+--- !u!114 &-4706257252295472527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f85b4ceefa304c46803e66f44abead2, type: 3}
+  m_Name: Change Dialogue
+  m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.ChangeDialogueNode
+  graph: {fileID: 11400000}
+  position: {x: 5096, y: 760}
+  ports:
+    keys:
+    - input
+    - output
+    values:
+    - _fieldName: input
+      _node: {fileID: -4706257252295472527}
+      _typeQualifiedName: RPGCreationKit.DialogueSystem.DialogueNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: nextLine
+        node: {fileID: 2259694049720360215}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: -4706257252295472527}
+      _typeQualifiedName: RPGCreationKit.DialogueSystem.DialogueNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: endNode
+        node: {fileID: -8976592468023583789}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  guidStr: 86532050-aa86-49c3-9ea4-1095608254d4
+  input: {fileID: 0}
+  output: {fileID: 0}
+  resultScript: 
+  events:
+    questDealers: []
+    questUpdaters: []
+    consequences: []
+  newDialogue: {fileID: 11400000, guid: d0e11be4affd55e4887e1a27ef26212f, type: 2}
+  onNPCWhosSpeaking: 1
+  npcRef: 
+  startDialogueImmediatly: 0
+--- !u!114 &-3634237477673687801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50263695e5376674192cc0b16b6ceed2, type: 3}
+  m_Name: NPC Dialogue Line
+  m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.NPCDialogueLineNode
+  graph: {fileID: 11400000}
+  position: {x: 3368, y: 632}
+  ports:
+    keys:
+    - nextLine
+    - playerQuestions
+    - input
+    - output
+    values:
+    - _fieldName: nextLine
+      _node: {fileID: -3634237477673687801}
+      _typeQualifiedName: RPGCreationKit.DialogueSystem.NPCDialogueLineNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: input
+        node: {fileID: 3974829028065108617}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: playerQuestions
+      _node: {fileID: -3634237477673687801}
+      _typeQualifiedName: System.Collections.Generic.List`1[[RPGCreationKit.PlayerQuestion,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: input
+      _node: {fileID: -3634237477673687801}
+      _typeQualifiedName: RPGCreationKit.DialogueSystem.DialogueNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: nextLine
+        node: {fileID: 7543968391196417397}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: -3634237477673687801}
+      _typeQualifiedName: RPGCreationKit.DialogueSystem.DialogueNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  guidStr: 76563e41-5f78-424f-a409-c02c1ddaa749
+  input: {fileID: 0}
+  output: {fileID: 0}
+  resultScript: 
+  events:
+    questDealers: []
+    questUpdaters: []
+    consequences: []
+  speakerID: 0
+  line: Might I interest you in the teachings of our Lady Savior?
+  plainLine: 0
+  useLenghtOfClip: 0
+  audioClip: {fileID: 0}
+  lineTime: 120
+  dialogueAnimationStr: 
+  dialogueAnimationListeningStr: 
+  afterLine: 0
+  nextLine: {fileID: 0}
+  removePreviousQuestions: 0
+  questionsToRemove: []
+  playerQuestions: []
+  lookAtEntityID: 0
 --- !u!114 &-3119779931885739653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1209,7 +1507,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 120
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -1238,7 +1536,6 @@ MonoBehaviour:
   - {fileID: -2521492016172449886}
   - {fileID: 9011743095277638926}
   - {fileID: -7354828685768152704}
-  - {fileID: 7566382945472122367}
   - {fileID: 8824266112038474396}
   - {fileID: 7033410027547169299}
   - {fileID: 7627058092850305490}
@@ -1264,6 +1561,13 @@ MonoBehaviour:
   - {fileID: -5841253553755371589}
   - {fileID: 7969057518539327460}
   - {fileID: 7543968391196417397}
+  - {fileID: -3634237477673687801}
+  - {fileID: 3974829028065108617}
+  - {fileID: -8257752686332016852}
+  - {fileID: 4226324280148876608}
+  - {fileID: 2259694049720360215}
+  - {fileID: -8976592468023583789}
+  - {fileID: -4706257252295472527}
   _IS_DEMO_FILE: 1
   ID: DIALOGUE_PriestSammy
 --- !u!114 &119764898531852351
@@ -1343,7 +1647,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 120
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -1429,7 +1733,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 120
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -1519,6 +1823,92 @@ MonoBehaviour:
     qID: 
     Position: 0
     DeleteAfterAnswer: 0
+--- !u!114 &2259694049720360215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50263695e5376674192cc0b16b6ceed2, type: 3}
+  m_Name: NPC Dialogue Line
+  m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.NPCDialogueLineNode
+  graph: {fileID: 11400000}
+  position: {x: 4792, y: 760}
+  ports:
+    keys:
+    - nextLine
+    - playerQuestions
+    - input
+    - output
+    values:
+    - _fieldName: nextLine
+      _node: {fileID: 2259694049720360215}
+      _typeQualifiedName: RPGCreationKit.DialogueSystem.NPCDialogueLineNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: input
+        node: {fileID: -4706257252295472527}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: playerQuestions
+      _node: {fileID: 2259694049720360215}
+      _typeQualifiedName: System.Collections.Generic.List`1[[RPGCreationKit.PlayerQuestion,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: input
+      _node: {fileID: 2259694049720360215}
+      _typeQualifiedName: RPGCreationKit.DialogueSystem.DialogueNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: nextLine
+        node: {fileID: 4226324280148876608}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: 2259694049720360215}
+      _typeQualifiedName: RPGCreationKit.DialogueSystem.DialogueNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  guidStr: 96bf2ea7-e999-45c4-884e-08753baa1deb
+  input: {fileID: 0}
+  output: {fileID: 0}
+  resultScript: 
+  events:
+    questDealers: []
+    questUpdaters: []
+    consequences: []
+  speakerID: 0
+  line: Now stay here and meditate with me.
+  plainLine: 0
+  useLenghtOfClip: 0
+  audioClip: {fileID: 0}
+  lineTime: 120
+  dialogueAnimationStr: 
+  dialogueAnimationListeningStr: 
+  afterLine: 0
+  nextLine: {fileID: 0}
+  removePreviousQuestions: 0
+  questionsToRemove: []
+  playerQuestions: []
+  lookAtEntityID: 0
 --- !u!114 &3591523365351094507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1532,7 +1922,7 @@ MonoBehaviour:
   m_Name: NPC Dialogue Line
   m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.NPCDialogueLineNode
   graph: {fileID: 11400000}
-  position: {x: 1544, y: 408}
+  position: {x: 1416, y: 408}
   ports:
     keys:
     - nextLine
@@ -1592,12 +1982,98 @@ MonoBehaviour:
     questUpdaters: []
     consequences: []
   speakerID: 0
-  line: Twards the suns last visit, where the land kisses it goodnight. Atop a rolling
+  line: Twards the suns first visit, where the land kisses it good day. Atop a rolling
     wave of grass.
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 120
+  dialogueAnimationStr: 
+  dialogueAnimationListeningStr: 
+  afterLine: 0
+  nextLine: {fileID: 0}
+  removePreviousQuestions: 0
+  questionsToRemove: []
+  playerQuestions: []
+  lookAtEntityID: 0
+--- !u!114 &3974829028065108617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50263695e5376674192cc0b16b6ceed2, type: 3}
+  m_Name: NPC Dialogue Line
+  m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.NPCDialogueLineNode
+  graph: {fileID: 11400000}
+  position: {x: 3704, y: 632}
+  ports:
+    keys:
+    - nextLine
+    - playerQuestions
+    - input
+    - output
+    values:
+    - _fieldName: nextLine
+      _node: {fileID: 3974829028065108617}
+      _typeQualifiedName: RPGCreationKit.DialogueSystem.NPCDialogueLineNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: input
+        node: {fileID: -8257752686332016852}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: playerQuestions
+      _node: {fileID: 3974829028065108617}
+      _typeQualifiedName: System.Collections.Generic.List`1[[RPGCreationKit.PlayerQuestion,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: input
+      _node: {fileID: 3974829028065108617}
+      _typeQualifiedName: RPGCreationKit.DialogueSystem.DialogueNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: nextLine
+        node: {fileID: -3634237477673687801}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: 3974829028065108617}
+      _typeQualifiedName: RPGCreationKit.DialogueSystem.DialogueNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  guidStr: 31f33dde-f703-448a-8321-7c45f9176d9b
+  input: {fileID: 0}
+  output: {fileID: 0}
+  resultScript: 
+  events:
+    questDealers: []
+    questUpdaters: []
+    consequences: []
+  speakerID: 0
+  line: Her grace doth illuminate the world.
+  plainLine: 0
+  useLenghtOfClip: 0
+  audioClip: {fileID: 0}
+  lineTime: 120
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -1683,7 +2159,98 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 120
+  dialogueAnimationStr: 
+  dialogueAnimationListeningStr: 
+  afterLine: 0
+  nextLine: {fileID: 0}
+  removePreviousQuestions: 0
+  questionsToRemove: []
+  playerQuestions: []
+  lookAtEntityID: 0
+--- !u!114 &4226324280148876608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50263695e5376674192cc0b16b6ceed2, type: 3}
+  m_Name: NPC Dialogue Line
+  m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.NPCDialogueLineNode
+  graph: {fileID: 11400000}
+  position: {x: 4434.086, y: 769.8749}
+  ports:
+    keys:
+    - nextLine
+    - playerQuestions
+    - input
+    - output
+    values:
+    - _fieldName: nextLine
+      _node: {fileID: 4226324280148876608}
+      _typeQualifiedName: RPGCreationKit.DialogueSystem.NPCDialogueLineNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: input
+        node: {fileID: 2259694049720360215}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: playerQuestions
+      _node: {fileID: 4226324280148876608}
+      _typeQualifiedName: System.Collections.Generic.List`1[[RPGCreationKit.PlayerQuestion,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: input
+      _node: {fileID: 4226324280148876608}
+      _typeQualifiedName: RPGCreationKit.DialogueSystem.DialogueNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: playerQuestions 0
+        node: {fileID: -8257752686332016852}
+        reroutePoints: []
+      - fieldName: playerQuestions 1
+        node: {fileID: -8257752686332016852}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: 4226324280148876608}
+      _typeQualifiedName: RPGCreationKit.DialogueSystem.DialogueNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  guidStr: 736b277b-ea39-4f1e-b4a3-eff026491f09
+  input: {fileID: 0}
+  output: {fileID: 0}
+  resultScript: 
+  events:
+    questDealers: []
+    questUpdaters: []
+    consequences: []
+  speakerID: 0
+  line: 'Her embrace forgives, so it is written.
+
+    Grand power lies with her.'
+  plainLine: 0
+  useLenghtOfClip: 0
+  audioClip: {fileID: 0}
+  lineTime: 120
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -1870,7 +2437,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 120
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -1951,7 +2518,7 @@ MonoBehaviour:
   m_Name: NPC Dialogue Line
   m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.NPCDialogueLineNode
   graph: {fileID: 11400000}
-  position: {x: 1368, y: -344}
+  position: {x: 1304, y: -344}
   ports:
     keys:
     - nextLine
@@ -2015,7 +2582,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 120
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -2050,8 +2617,8 @@ MonoBehaviour:
       _typeQualifiedName: RPGCreationKit.DialogueSystem.NPCDialogueLineNode, Assembly-CSharp,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
-      - fieldName: endNode
-        node: {fileID: 7969057518539327460}
+      - fieldName: input
+        node: {fileID: -3634237477673687801}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -2101,93 +2668,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
-  dialogueAnimationStr: 
-  dialogueAnimationListeningStr: 
-  afterLine: 0
-  nextLine: {fileID: 0}
-  removePreviousQuestions: 0
-  questionsToRemove: []
-  playerQuestions: []
-  lookAtEntityID: 0
---- !u!114 &7566382945472122367
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50263695e5376674192cc0b16b6ceed2, type: 3}
-  m_Name: NPC Dialogue Line
-  m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.NPCDialogueLineNode
-  graph: {fileID: 11400000}
-  position: {x: 840, y: -344}
-  ports:
-    keys:
-    - nextLine
-    - playerQuestions
-    - input
-    - output
-    values:
-    - _fieldName: nextLine
-      _node: {fileID: 7566382945472122367}
-      _typeQualifiedName: RPGCreationKit.DialogueSystem.NPCDialogueLineNode, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: input
-        node: {fileID: 8824266112038474396}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: playerQuestions
-      _node: {fileID: 7566382945472122367}
-      _typeQualifiedName: System.Collections.Generic.List`1[[RPGCreationKit.PlayerQuestion,
-        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
-        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: input
-      _node: {fileID: 7566382945472122367}
-      _typeQualifiedName: RPGCreationKit.DialogueSystem.DialogueNode, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: nextLine
-        node: {fileID: 9011743095277638926}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 7566382945472122367}
-      _typeQualifiedName: RPGCreationKit.DialogueSystem.DialogueNode, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  guidStr: a05022bf-f4d2-45df-86cb-3c4e0414dbfb
-  input: {fileID: 0}
-  output: {fileID: 0}
-  resultScript: 
-  events:
-    questDealers: []
-    questUpdaters: []
-    consequences: []
-  speakerID: 0
-  line: Dread not, for I know of a suiting remedy.
-  plainLine: 0
-  useLenghtOfClip: 0
-  audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 120
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -2289,7 +2770,7 @@ MonoBehaviour:
     qID: 
     Position: 0
     DeleteAfterAnswer: 0
-  - Question: What are you saying man?!
+  - Question: I really don't have time for this!
     qID: 
     Position: 0
     DeleteAfterAnswer: 0
@@ -2386,7 +2867,7 @@ MonoBehaviour:
   m_Name: End
   m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.EndNode
   graph: {fileID: 11400000}
-  position: {x: 3368, y: 1048}
+  position: {x: 3496, y: 1080}
   ports:
     keys:
     - endNode
@@ -2400,9 +2881,6 @@ MonoBehaviour:
       connections:
       - fieldName: playerQuestions 1
         node: {fileID: -5841253553755371589}
-        reroutePoints: []
-      - fieldName: nextLine
-        node: {fileID: 7543968391196417397}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -2512,7 +2990,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -2534,7 +3012,7 @@ MonoBehaviour:
   m_Name: NPC Dialogue Line
   m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.NPCDialogueLineNode
   graph: {fileID: 11400000}
-  position: {x: 2040, y: 808}
+  position: {x: 1944, y: 808}
   ports:
     keys:
     - nextLine
@@ -2598,7 +3076,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 120
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -2684,7 +3162,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 120
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -2706,7 +3184,7 @@ MonoBehaviour:
   m_Name: NPC Dialogue Line
   m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.NPCDialogueLineNode
   graph: {fileID: 11400000}
-  position: {x: 1112, y: -344}
+  position: {x: 968, y: -344}
   ports:
     keys:
     - nextLine
@@ -2742,7 +3220,7 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: nextLine
-        node: {fileID: 7566382945472122367}
+        node: {fileID: 9011743095277638926}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -2766,11 +3244,11 @@ MonoBehaviour:
     questUpdaters: []
     consequences: []
   speakerID: 0
-  line: Hither the mounds of green, a bloom doth burst out that seem,
+  line: Hither the mounds of green, a bloom doth burst out that seem.
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 120
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -2945,7 +3423,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 120
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -2981,7 +3459,7 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: input
-        node: {fileID: 7566382945472122367}
+        node: {fileID: 8824266112038474396}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -3027,11 +3505,13 @@ MonoBehaviour:
     questUpdaters: []
     consequences: []
   speakerID: 0
-  line: What misfortune begat thee...
+  line: 'What misfortune begat thee...
+
+    Dread not, for I know of a suiting remedy.'
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0

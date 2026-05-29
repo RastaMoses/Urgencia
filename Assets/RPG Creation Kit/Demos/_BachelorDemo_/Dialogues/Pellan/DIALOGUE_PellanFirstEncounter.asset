@@ -37,7 +37,7 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: nextLine
-        node: {fileID: 7654523715770267178}
+        node: {fileID: 6403223620825767655}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -257,7 +257,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -339,12 +339,12 @@ MonoBehaviour:
     questUpdaters: []
     consequences: []
   speakerID: 0
-  line: I need you to ask that merchant if there's an antidote. I hope she's still
-    in the city square. He was quacking up already. I mean packing...
+  line: I need you to ask that magic merchant if there's an antidote. I hope she's
+    still in the city square. He was quacking up already. I mean packing...
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -366,7 +366,7 @@ MonoBehaviour:
   m_Name: NPC Dialogue Line
   m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.NPCDialogueLineNode
   graph: {fileID: 11400000}
-  position: {x: 2536, y: 136}
+  position: {x: 2472, y: 72}
   ports:
     keys:
     - nextLine
@@ -434,7 +434,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -521,7 +521,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -543,7 +543,7 @@ MonoBehaviour:
   m_Name: NPC Dialogue Line
   m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.NPCDialogueLineNode
   graph: {fileID: 11400000}
-  position: {x: 2152, y: 232}
+  position: {x: 1880, y: 360}
   ports:
     keys:
     - nextLine
@@ -608,7 +608,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -694,7 +694,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 100
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -936,7 +936,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -960,7 +960,6 @@ MonoBehaviour:
   nodes:
   - {fileID: -2931739790461708747}
   - {fileID: 6403223620825767655}
-  - {fileID: 7654523715770267178}
   - {fileID: -9152365535106753278}
   - {fileID: -6933276752465284163}
   - {fileID: 8324696299987475390}
@@ -1164,7 +1163,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -1407,7 +1406,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -1579,7 +1578,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -1668,7 +1667,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -1755,7 +1754,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -1791,7 +1790,7 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: input
-        node: {fileID: 7654523715770267178}
+        node: {fileID: -9152365535106753278}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -1841,11 +1840,13 @@ MonoBehaviour:
       hideLog: 0
     consequences: []
   speakerID: 0
-  line: Holy crap, you look like absolute shit!
+  line: 'Holy crap, you look like absolute shit!
+
+    What happened to you? Quack'
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 100
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -1991,93 +1992,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
-  dialogueAnimationStr: 
-  dialogueAnimationListeningStr: 
-  afterLine: 0
-  nextLine: {fileID: 0}
-  removePreviousQuestions: 0
-  questionsToRemove: []
-  playerQuestions: []
-  lookAtEntityID: 0
---- !u!114 &7654523715770267178
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50263695e5376674192cc0b16b6ceed2, type: 3}
-  m_Name: NPC Dialogue Line
-  m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.NPCDialogueLineNode
-  graph: {fileID: 11400000}
-  position: {x: 648, y: -120}
-  ports:
-    keys:
-    - nextLine
-    - playerQuestions
-    - input
-    - output
-    values:
-    - _fieldName: nextLine
-      _node: {fileID: 7654523715770267178}
-      _typeQualifiedName: RPGCreationKit.DialogueSystem.NPCDialogueLineNode, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: input
-        node: {fileID: -9152365535106753278}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: playerQuestions
-      _node: {fileID: 7654523715770267178}
-      _typeQualifiedName: System.Collections.Generic.List`1[[RPGCreationKit.PlayerQuestion,
-        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
-        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: input
-      _node: {fileID: 7654523715770267178}
-      _typeQualifiedName: RPGCreationKit.DialogueSystem.DialogueNode, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: nextLine
-        node: {fileID: 6403223620825767655}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 7654523715770267178}
-      _typeQualifiedName: RPGCreationKit.DialogueSystem.DialogueNode, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  guidStr: 970aa48d-ed8b-4274-ae9d-9ad8e4809e1e
-  input: {fileID: 0}
-  output: {fileID: 0}
-  resultScript: 
-  events:
-    questDealers: []
-    questUpdaters: []
-    consequences: []
-  speakerID: 0
-  line: What happened to you? Quack
-  plainLine: 0
-  useLenghtOfClip: 0
-  audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -2163,7 +2078,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -2249,7 +2164,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0

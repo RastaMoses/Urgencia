@@ -35,7 +35,7 @@ namespace RPGCreationKit.DialogueSystem
 
         public bool useLenghtOfClip;
         public AudioClip audioClip;
-        public float lineTime = 5;
+        public float lineTime = 120;
         public string dialogueAnimationStr = string.Empty;
         public string dialogueAnimationListeningStr = string.Empty;
 

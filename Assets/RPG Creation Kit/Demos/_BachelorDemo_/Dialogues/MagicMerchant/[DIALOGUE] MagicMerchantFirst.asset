@@ -81,7 +81,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -248,7 +248,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -341,7 +341,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -529,7 +529,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -558,7 +558,6 @@ MonoBehaviour:
     - input
     - output
     - playerQuestions 0
-    - playerQuestions 1
     values:
     - _fieldName: playerQuestions
       _node: {fileID: -7961387988066174205}
@@ -603,18 +602,6 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 1
-    - _fieldName: playerQuestions 1
-      _node: {fileID: -7961387988066174205}
-      _typeQualifiedName: RPGCreationKit.PlayerQuestion, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: input
-        node: {fileID: 4837479639758062082}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 1
   guidStr: f2e328f2-863f-4077-975e-9da02a1ae346
   input: {fileID: 0}
   output: {fileID: 0}
@@ -628,10 +615,6 @@ MonoBehaviour:
   questionsToRemove: []
   playerQuestions:
   - Question: I brought you those, you know what.
-    qID: 
-    Position: 0
-    DeleteAfterAnswer: 0
-  - Question: I really should go.
     qID: 
     Position: 0
     DeleteAfterAnswer: 0
@@ -712,7 +695,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -977,7 +960,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -1087,7 +1070,6 @@ MonoBehaviour:
     - output
     - playerQuestions 0
     - playerQuestions 1
-    - playerQuestions 2
     values:
     - _fieldName: playerQuestions
       _node: {fileID: -5814006039798225354}
@@ -1144,18 +1126,6 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 1
-    - _fieldName: playerQuestions 2
-      _node: {fileID: -5814006039798225354}
-      _typeQualifiedName: RPGCreationKit.PlayerQuestion, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: input
-        node: {fileID: 4837479639758062082}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 1
   guidStr: f2e328f2-863f-4077-975e-9da02a1ae346
   input: {fileID: 0}
   output: {fileID: 0}
@@ -1173,10 +1143,6 @@ MonoBehaviour:
     Position: 0
     DeleteAfterAnswer: 0
   - Question: I actually need to ask about a certain frog potion you sold my friend.
-    qID: 
-    Position: 0
-    DeleteAfterAnswer: 0
-  - Question: I really should go.
     qID: 
     Position: 0
     DeleteAfterAnswer: 0
@@ -1258,13 +1224,13 @@ MonoBehaviour:
   speakerID: 0
   line: 'Too bad, champ.
 
-    But no worries, I probably have to sell it normally
-    soon. I think the guards are starting to figure out, that I don''t have a booth
-    license.'
+    But no worries, I probably have to sell it the normal
+    way soon. I think the guards are starting to figure out, that I don''t have a
+    booth license.'
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -1455,7 +1421,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -1586,7 +1552,6 @@ MonoBehaviour:
     - output
     - playerQuestions 0
     - playerQuestions 1
-    - playerQuestions 2
     values:
     - _fieldName: playerQuestions
       _node: {fileID: -2610682926436610877}
@@ -1643,18 +1608,6 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 1
-    - _fieldName: playerQuestions 2
-      _node: {fileID: -2610682926436610877}
-      _typeQualifiedName: RPGCreationKit.PlayerQuestion, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: input
-        node: {fileID: 4837479639758062082}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 1
   guidStr: 78ec8692-db5d-44fe-ab0b-95df5bf96aba
   input: {fileID: 0}
   output: {fileID: 0}
@@ -1675,10 +1628,6 @@ MonoBehaviour:
     qID: 
     Position: 0
     DeleteAfterAnswer: 1
-  - Question: I really should go.
-    qID: 
-    Position: 0
-    DeleteAfterAnswer: 0
 --- !u!114 &-2282559231759808902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1849,7 +1798,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -2042,7 +1991,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -2129,7 +2078,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -2216,7 +2165,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -2545,7 +2494,6 @@ MonoBehaviour:
     - input
     - output
     - playerQuestions 0
-    - playerQuestions 1
     values:
     - _fieldName: playerQuestions
       _node: {fileID: 1739599136442195671}
@@ -2593,18 +2541,6 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 1
-    - _fieldName: playerQuestions 1
-      _node: {fileID: 1739599136442195671}
-      _typeQualifiedName: RPGCreationKit.PlayerQuestion, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: input
-        node: {fileID: 4837479639758062082}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 1
   guidStr: 78ec8692-db5d-44fe-ab0b-95df5bf96aba
   input: {fileID: 0}
   output: {fileID: 0}
@@ -2621,10 +2557,6 @@ MonoBehaviour:
     qID: 
     Position: 0
     DeleteAfterAnswer: 1
-  - Question: I really should go.
-    qID: 
-    Position: 0
-    DeleteAfterAnswer: 0
 --- !u!114 &1936667967955296073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2998,7 +2930,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -3085,7 +3017,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -3171,7 +3103,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -3257,7 +3189,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -3279,7 +3211,7 @@ MonoBehaviour:
   m_Name: NPC Dialogue Line
   m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.NPCDialogueLineNode
   graph: {fileID: 11400000}
-  position: {x: 824, y: -120}
+  position: {x: 728, y: -120}
   ports:
     keys:
     - nextLine
@@ -3348,7 +3280,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -3377,7 +3309,6 @@ MonoBehaviour:
     - input
     - output
     - playerQuestions 0
-    - playerQuestions 1
     values:
     - _fieldName: playerQuestions
       _node: {fileID: 4049477912403561264}
@@ -3422,18 +3353,6 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 1
-    - _fieldName: playerQuestions 1
-      _node: {fileID: 4049477912403561264}
-      _typeQualifiedName: RPGCreationKit.PlayerQuestion, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: input
-        node: {fileID: 4837479639758062082}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 1
   guidStr: 78ec8692-db5d-44fe-ab0b-95df5bf96aba
   input: {fileID: 0}
   output: {fileID: 0}
@@ -3450,10 +3369,6 @@ MonoBehaviour:
     qID: 
     Position: 0
     DeleteAfterAnswer: 1
-  - Question: I really should go.
-    qID: 
-    Position: 0
-    DeleteAfterAnswer: 0
 --- !u!114 &4372238286170126227
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3561,23 +3476,8 @@ MonoBehaviour:
       _typeQualifiedName: RPGCreationKit.DialogueSystem.DialogueNode, Assembly-CSharp,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
-      - fieldName: playerQuestions 2
-        node: {fileID: -2610682926436610877}
-        reroutePoints: []
       - fieldName: playerQuestions 0
         node: {fileID: 975080434073904188}
-        reroutePoints: []
-      - fieldName: playerQuestions 1
-        node: {fileID: 4049477912403561264}
-        reroutePoints: []
-      - fieldName: playerQuestions 1
-        node: {fileID: 1739599136442195671}
-        reroutePoints: []
-      - fieldName: playerQuestions 2
-        node: {fileID: -5814006039798225354}
-        reroutePoints: []
-      - fieldName: playerQuestions 1
-        node: {fileID: -7961387988066174205}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -3605,7 +3505,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -3794,7 +3694,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -4077,7 +3977,7 @@ MonoBehaviour:
   m_Name: NPC Dialogue Line
   m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.NPCDialogueLineNode
   graph: {fileID: 11400000}
-  position: {x: 1096, y: -120}
+  position: {x: 1064, y: -168}
   ports:
     keys:
     - nextLine
@@ -4142,7 +4042,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -4308,7 +4208,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -4400,7 +4300,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -4487,7 +4387,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0

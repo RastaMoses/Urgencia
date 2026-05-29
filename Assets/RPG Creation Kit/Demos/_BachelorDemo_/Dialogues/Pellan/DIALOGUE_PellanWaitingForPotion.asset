@@ -76,11 +76,11 @@ MonoBehaviour:
     questUpdaters: []
     consequences: []
   speakerID: 0
-  line: I never should have quacksioned you! Gimme, gimme! QUACK!
+  line: I never should have quacksioned you! Gimme here! QUACK!
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -125,8 +125,8 @@ MonoBehaviour:
       _typeQualifiedName: RPGCreationKit.DialogueSystem.DialogueNode, Assembly-CSharp,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
-      - fieldName: nextLine
-        node: {fileID: 8221096064517230263}
+      - fieldName: resultFalse
+        node: {fileID: 7050616821700621474}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -249,7 +249,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -435,8 +435,8 @@ MonoBehaviour:
       _typeQualifiedName: RPGCreationKit.DialogueSystem.DialogueNode, Assembly-CSharp,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
-      - fieldName: nextLine
-        node: {fileID: 5065982130422026459}
+      - fieldName: resultTrue
+        node: {fileID: 7050616821700621474}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -495,92 +495,6 @@ MonoBehaviour:
     qID: 
     Position: 0
     DeleteAfterAnswer: 0
---- !u!114 &-4716834009970106661
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50263695e5376674192cc0b16b6ceed2, type: 3}
-  m_Name: NPC Dialogue Line
-  m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.NPCDialogueLineNode
-  graph: {fileID: 11400000}
-  position: {x: -232, y: -760}
-  ports:
-    keys:
-    - nextLine
-    - playerQuestions
-    - input
-    - output
-    values:
-    - _fieldName: nextLine
-      _node: {fileID: -4716834009970106661}
-      _typeQualifiedName: RPGCreationKit.DialogueSystem.NPCDialogueLineNode, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: input
-        node: {fileID: 8574667730687412621}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: playerQuestions
-      _node: {fileID: -4716834009970106661}
-      _typeQualifiedName: System.Collections.Generic.List`1[[RPGCreationKit.PlayerQuestion,
-        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
-        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: input
-      _node: {fileID: -4716834009970106661}
-      _typeQualifiedName: RPGCreationKit.DialogueSystem.DialogueNode, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: resultFalse
-        node: {fileID: 3615249511055949459}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: -4716834009970106661}
-      _typeQualifiedName: RPGCreationKit.DialogueSystem.DialogueNode, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  guidStr: 33525ddb-02e3-471f-b1e8-270ae198e1d6
-  input: {fileID: 0}
-  output: {fileID: 0}
-  resultScript: 
-  events:
-    questDealers: []
-    questUpdaters: []
-    consequences: []
-  speakerID: 0
-  line: You talk to the quaking merchant already?
-  plainLine: 0
-  useLenghtOfClip: 0
-  audioClip: {fileID: 0}
-  lineTime: 5
-  dialogueAnimationStr: 
-  dialogueAnimationListeningStr: 
-  afterLine: 0
-  nextLine: {fileID: 0}
-  removePreviousQuestions: 0
-  questionsToRemove: []
-  playerQuestions: []
-  lookAtEntityID: 0
 --- !u!114 &-4204435983372546402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -760,7 +674,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -782,7 +696,7 @@ MonoBehaviour:
   m_Name: NPC Dialogue Line
   m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.NPCDialogueLineNode
   graph: {fileID: 11400000}
-  position: {x: 1736, y: -1640}
+  position: {x: 1688, y: -1736}
   ports:
     keys:
     - nextLine
@@ -796,7 +710,7 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: input
-        node: {fileID: 8232761312511631437}
+        node: {fileID: 4087911025190425099}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -846,7 +760,93 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
+  dialogueAnimationStr: 
+  dialogueAnimationListeningStr: 
+  afterLine: 0
+  nextLine: {fileID: 0}
+  removePreviousQuestions: 0
+  questionsToRemove: []
+  playerQuestions: []
+  lookAtEntityID: 0
+--- !u!114 &-2738867641725847146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50263695e5376674192cc0b16b6ceed2, type: 3}
+  m_Name: NPC Dialogue Line
+  m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.NPCDialogueLineNode
+  graph: {fileID: 11400000}
+  position: {x: -824, y: -376}
+  ports:
+    keys:
+    - nextLine
+    - playerQuestions
+    - input
+    - output
+    values:
+    - _fieldName: nextLine
+      _node: {fileID: -2738867641725847146}
+      _typeQualifiedName: RPGCreationKit.DialogueSystem.NPCDialogueLineNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: input
+        node: {fileID: 1288342748490109697}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: playerQuestions
+      _node: {fileID: -2738867641725847146}
+      _typeQualifiedName: System.Collections.Generic.List`1[[RPGCreationKit.PlayerQuestion,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: input
+      _node: {fileID: -2738867641725847146}
+      _typeQualifiedName: RPGCreationKit.DialogueSystem.DialogueNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: firstNode
+        node: {fileID: 1618668101193258190}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: -2738867641725847146}
+      _typeQualifiedName: RPGCreationKit.DialogueSystem.DialogueNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  guidStr: 33525ddb-02e3-471f-b1e8-270ae198e1d6
+  input: {fileID: 0}
+  output: {fileID: 0}
+  resultScript: 
+  events:
+    questDealers: []
+    questUpdaters: []
+    consequences: []
+  speakerID: 0
+  line: You talk to the quaking merchant already?
+  plainLine: 0
+  useLenghtOfClip: 0
+  audioClip: {fileID: 0}
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -1029,7 +1029,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -1116,7 +1116,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -1208,7 +1208,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -1303,7 +1303,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -1733,7 +1733,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -1964,7 +1964,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -1988,12 +1988,10 @@ MonoBehaviour:
   nodes:
   - {fileID: 1618668101193258190}
   - {fileID: 1288342748490109697}
-  - {fileID: 8221096064517230263}
   - {fileID: -7390976180672952800}
   - {fileID: -7236415626819780496}
   - {fileID: 3310355568288072103}
   - {fileID: 7050616821700621474}
-  - {fileID: 5065982130422026459}
   - {fileID: -4927198675241105101}
   - {fileID: -2161943146047775904}
   - {fileID: 7847481378440785259}
@@ -2002,9 +2000,7 @@ MonoBehaviour:
   - {fileID: -2000795932619433889}
   - {fileID: 4701753350585583040}
   - {fileID: 3615249511055949459}
-  - {fileID: 1006965628507701921}
   - {fileID: -2725006411317447892}
-  - {fileID: -4716834009970106661}
   - {fileID: 8545722838547394687}
   - {fileID: 4531714094635319526}
   - {fileID: 4488858864218854088}
@@ -2024,7 +2020,6 @@ MonoBehaviour:
   - {fileID: -3839001255970527035}
   - {fileID: -7187924565768167130}
   - {fileID: -3807269365397734281}
-  - {fileID: 8232761312511631437}
   - {fileID: 4087911025190425099}
   - {fileID: -1686014129891619219}
   - {fileID: 2407213689584942468}
@@ -2034,6 +2029,7 @@ MonoBehaviour:
   - {fileID: 7244272658166432831}
   - {fileID: 6882645531037976238}
   - {fileID: -964100557204602301}
+  - {fileID: -2738867641725847146}
   _IS_DEMO_FILE: 1
   ID: DIALOGUE_PellanWaitingForPotion
 --- !u!114 &863904633929837043
@@ -2114,93 +2110,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
-  dialogueAnimationStr: 
-  dialogueAnimationListeningStr: 
-  afterLine: 0
-  nextLine: {fileID: 0}
-  removePreviousQuestions: 0
-  questionsToRemove: []
-  playerQuestions: []
-  lookAtEntityID: 0
---- !u!114 &1006965628507701921
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50263695e5376674192cc0b16b6ceed2, type: 3}
-  m_Name: NPC Dialogue Line
-  m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.NPCDialogueLineNode
-  graph: {fileID: 11400000}
-  position: {x: -232, y: -1032}
-  ports:
-    keys:
-    - nextLine
-    - playerQuestions
-    - input
-    - output
-    values:
-    - _fieldName: nextLine
-      _node: {fileID: 1006965628507701921}
-      _typeQualifiedName: RPGCreationKit.DialogueSystem.NPCDialogueLineNode, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: input
-        node: {fileID: 6576438819657859670}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: playerQuestions
-      _node: {fileID: 1006965628507701921}
-      _typeQualifiedName: System.Collections.Generic.List`1[[RPGCreationKit.PlayerQuestion,
-        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
-        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: input
-      _node: {fileID: 1006965628507701921}
-      _typeQualifiedName: RPGCreationKit.DialogueSystem.DialogueNode, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: resultTrue
-        node: {fileID: 3615249511055949459}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 1006965628507701921}
-      _typeQualifiedName: RPGCreationKit.DialogueSystem.DialogueNode, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  guidStr: 33525ddb-02e3-471f-b1e8-270ae198e1d6
-  input: {fileID: 0}
-  output: {fileID: 0}
-  resultScript: 
-  events:
-    questDealers: []
-    questUpdaters: []
-    consequences: []
-  speakerID: 0
-  line: You talk to the quaking merchant already?
-  plainLine: 0
-  useLenghtOfClip: 0
-  audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -2259,8 +2169,8 @@ MonoBehaviour:
       _typeQualifiedName: RPGCreationKit.DialogueSystem.DialogueNode, Assembly-CSharp,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
-      - fieldName: firstNode
-        node: {fileID: 1618668101193258190}
+      - fieldName: nextLine
+        node: {fileID: -2738867641725847146}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -2323,7 +2233,7 @@ MonoBehaviour:
   m_Name: Entry
   m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.EntryNode
   graph: {fileID: 11400000}
-  position: {x: -712, y: -248}
+  position: {x: -1128, y: -296}
   ports:
     keys:
     - firstNode
@@ -2335,7 +2245,7 @@ MonoBehaviour:
       _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: input
-        node: {fileID: 1288342748490109697}
+        node: {fileID: -2738867641725847146}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -2529,11 +2439,11 @@ MonoBehaviour:
     Quackly
     quacked the quiet quote,
 
-    Throw him back into his mote.'
+    Give me back my human mode.'
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -2619,7 +2529,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -2811,7 +2721,7 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: input
-        node: {fileID: 1006965628507701921}
+        node: {fileID: 6576438819657859670}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -2823,7 +2733,7 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: input
-        node: {fileID: -4716834009970106661}
+        node: {fileID: 8574667730687412621}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -2924,7 +2834,7 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: nextLine
-        node: {fileID: 8232761312511631437}
+        node: {fileID: -3807269365397734281}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -3076,7 +2986,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -3165,7 +3075,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -3187,7 +3097,7 @@ MonoBehaviour:
   m_Name: NPC Dialogue Line
   m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.NPCDialogueLineNode
   graph: {fileID: 11400000}
-  position: {x: 2648, y: -1944}
+  position: {x: 2632, y: -2136}
   ports:
     keys:
     - nextLine
@@ -3251,7 +3161,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -3319,92 +3229,6 @@ MonoBehaviour:
     questUpdaters: []
     consequences: []
   endNode: {fileID: 0}
---- !u!114 &5065982130422026459
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50263695e5376674192cc0b16b6ceed2, type: 3}
-  m_Name: NPC Dialogue Line
-  m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.NPCDialogueLineNode
-  graph: {fileID: 11400000}
-  position: {x: 40, y: -168}
-  ports:
-    keys:
-    - nextLine
-    - playerQuestions
-    - input
-    - output
-    values:
-    - _fieldName: nextLine
-      _node: {fileID: 5065982130422026459}
-      _typeQualifiedName: RPGCreationKit.DialogueSystem.NPCDialogueLineNode, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: input
-        node: {fileID: -4927198675241105101}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: playerQuestions
-      _node: {fileID: 5065982130422026459}
-      _typeQualifiedName: System.Collections.Generic.List`1[[RPGCreationKit.PlayerQuestion,
-        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
-        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: input
-      _node: {fileID: 5065982130422026459}
-      _typeQualifiedName: RPGCreationKit.DialogueSystem.DialogueNode, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: resultTrue
-        node: {fileID: 7050616821700621474}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 5065982130422026459}
-      _typeQualifiedName: RPGCreationKit.DialogueSystem.DialogueNode, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  guidStr: 33525ddb-02e3-471f-b1e8-270ae198e1d6
-  input: {fileID: 0}
-  output: {fileID: 0}
-  resultScript: 
-  events:
-    questDealers: []
-    questUpdaters: []
-    consequences: []
-  speakerID: 0
-  line: You talk to the quaking merchant already?
-  plainLine: 0
-  useLenghtOfClip: 0
-  audioClip: {fileID: 0}
-  lineTime: 5
-  dialogueAnimationStr: 
-  dialogueAnimationListeningStr: 
-  afterLine: 0
-  nextLine: {fileID: 0}
-  removePreviousQuestions: 0
-  questionsToRemove: []
-  playerQuestions: []
-  lookAtEntityID: 0
 --- !u!114 &6576438819657859670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3455,8 +3279,8 @@ MonoBehaviour:
       _typeQualifiedName: RPGCreationKit.DialogueSystem.DialogueNode, Assembly-CSharp,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
-      - fieldName: nextLine
-        node: {fileID: 1006965628507701921}
+      - fieldName: resultTrue
+        node: {fileID: 3615249511055949459}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -3519,7 +3343,7 @@ MonoBehaviour:
   m_Name: NPC Dialogue Line
   m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.NPCDialogueLineNode
   graph: {fileID: 11400000}
-  position: {x: 3272, y: -1928}
+  position: {x: 3256, y: -2120}
   ports:
     keys:
     - nextLine
@@ -3583,7 +3407,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -3619,7 +3443,7 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: input
-        node: {fileID: 5065982130422026459}
+        node: {fileID: -4927198675241105101}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -3631,7 +3455,7 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: input
-        node: {fileID: 8221096064517230263}
+        node: {fileID: -7390976180672952800}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -3706,7 +3530,7 @@ MonoBehaviour:
   m_Name: NPC Dialogue Line
   m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.NPCDialogueLineNode
   graph: {fileID: 11400000}
-  position: {x: 2984, y: -1944}
+  position: {x: 2968, y: -2136}
   ports:
     keys:
     - nextLine
@@ -3766,11 +3590,11 @@ MonoBehaviour:
     questUpdaters: []
     consequences: []
   speakerID: 0
-  line: I should just move to the -quack- pond.
+  line: I should just move to the quack pond.
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -3856,179 +3680,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
-  dialogueAnimationStr: 
-  dialogueAnimationListeningStr: 
-  afterLine: 0
-  nextLine: {fileID: 0}
-  removePreviousQuestions: 0
-  questionsToRemove: []
-  playerQuestions: []
-  lookAtEntityID: 0
---- !u!114 &8221096064517230263
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50263695e5376674192cc0b16b6ceed2, type: 3}
-  m_Name: NPC Dialogue Line
-  m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.NPCDialogueLineNode
-  graph: {fileID: 11400000}
-  position: {x: 24, y: 152}
-  ports:
-    keys:
-    - nextLine
-    - playerQuestions
-    - input
-    - output
-    values:
-    - _fieldName: nextLine
-      _node: {fileID: 8221096064517230263}
-      _typeQualifiedName: RPGCreationKit.DialogueSystem.NPCDialogueLineNode, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: input
-        node: {fileID: -7390976180672952800}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: playerQuestions
-      _node: {fileID: 8221096064517230263}
-      _typeQualifiedName: System.Collections.Generic.List`1[[RPGCreationKit.PlayerQuestion,
-        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
-        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: input
-      _node: {fileID: 8221096064517230263}
-      _typeQualifiedName: RPGCreationKit.DialogueSystem.DialogueNode, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: resultFalse
-        node: {fileID: 7050616821700621474}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 8221096064517230263}
-      _typeQualifiedName: RPGCreationKit.DialogueSystem.DialogueNode, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  guidStr: 33525ddb-02e3-471f-b1e8-270ae198e1d6
-  input: {fileID: 0}
-  output: {fileID: 0}
-  resultScript: 
-  events:
-    questDealers: []
-    questUpdaters: []
-    consequences: []
-  speakerID: 0
-  line: You talk to the quaking merchant already?
-  plainLine: 0
-  useLenghtOfClip: 0
-  audioClip: {fileID: 0}
-  lineTime: 5
-  dialogueAnimationStr: 
-  dialogueAnimationListeningStr: 
-  afterLine: 0
-  nextLine: {fileID: 0}
-  removePreviousQuestions: 0
-  questionsToRemove: []
-  playerQuestions: []
-  lookAtEntityID: 0
---- !u!114 &8232761312511631437
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50263695e5376674192cc0b16b6ceed2, type: 3}
-  m_Name: NPC Dialogue Line
-  m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.NPCDialogueLineNode
-  graph: {fileID: 11400000}
-  position: {x: 2024, y: -1624}
-  ports:
-    keys:
-    - nextLine
-    - playerQuestions
-    - input
-    - output
-    values:
-    - _fieldName: nextLine
-      _node: {fileID: 8232761312511631437}
-      _typeQualifiedName: RPGCreationKit.DialogueSystem.NPCDialogueLineNode, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: input
-        node: {fileID: 4087911025190425099}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: playerQuestions
-      _node: {fileID: 8232761312511631437}
-      _typeQualifiedName: System.Collections.Generic.List`1[[RPGCreationKit.PlayerQuestion,
-        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
-        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: input
-      _node: {fileID: 8232761312511631437}
-      _typeQualifiedName: RPGCreationKit.DialogueSystem.DialogueNode, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: nextLine
-        node: {fileID: -3807269365397734281}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 8232761312511631437}
-      _typeQualifiedName: RPGCreationKit.DialogueSystem.DialogueNode, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  guidStr: 2c00d594-6a6b-4301-8cb5-d05467e3d718
-  input: {fileID: 0}
-  output: {fileID: 0}
-  resultScript: 
-  events:
-    questDealers: []
-    questUpdaters: []
-    consequences: []
-  speakerID: 0
-  line: You quack me to quack around for you?! Quack's so meaan!!
-  plainLine: 0
-  useLenghtOfClip: 0
-  audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0
@@ -4167,8 +3819,8 @@ MonoBehaviour:
       _typeQualifiedName: RPGCreationKit.DialogueSystem.DialogueNode, Assembly-CSharp,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
-      - fieldName: nextLine
-        node: {fileID: -4716834009970106661}
+      - fieldName: resultFalse
+        node: {fileID: 3615249511055949459}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -4298,7 +3950,7 @@ MonoBehaviour:
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 110
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
   afterLine: 0

@@ -21,7 +21,7 @@ MonoBehaviour:
   - index: 10
     description: Talk to the wandering merchant
     stageConditions: []
-    resultScript: 
+    resultScript: RPGCreationKit.Quests.QuackActionRequiredQuestStage10Script
     completeQuest: 0
     failQuest: 0
     displayLogEntry: 0
@@ -51,7 +51,7 @@ MonoBehaviour:
     resultScript: 
     completeQuest: 0
     failQuest: 0
-    displayLogEntry: 0
+    displayLogEntry: 1
     stageCompleted: 0
     stageFailed: 0
   - index: 50
@@ -60,6 +60,15 @@ MonoBehaviour:
     resultScript: 
     completeQuest: 1
     failQuest: 0
+    displayLogEntry: 0
+    stageCompleted: 0
+    stageFailed: 0
+  - index: 60
+    description: Check on Pellan.
+    stageConditions: []
+    resultScript: 
+    completeQuest: 0
+    failQuest: 1
     displayLogEntry: 0
     stageCompleted: 0
     stageFailed: 0

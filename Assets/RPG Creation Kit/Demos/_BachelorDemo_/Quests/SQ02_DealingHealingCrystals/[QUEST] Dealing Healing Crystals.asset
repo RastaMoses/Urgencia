@@ -48,9 +48,18 @@ MonoBehaviour:
   - index: 40
     description: Bring the mana crystals to the merchant.
     stageConditions: []
-    resultScript: 
+    resultScript: RPGCreationKit.Quests.DealingHealingCrystalsStage40StageScript
     completeQuest: 1
     failQuest: 0
+    displayLogEntry: 0
+    stageCompleted: 0
+    stageFailed: 0
+  - index: 50
+    description: Check on the merchant.
+    stageConditions: []
+    resultScript: 
+    completeQuest: 0
+    failQuest: 1
     displayLogEntry: 0
     stageCompleted: 0
     stageFailed: 0
