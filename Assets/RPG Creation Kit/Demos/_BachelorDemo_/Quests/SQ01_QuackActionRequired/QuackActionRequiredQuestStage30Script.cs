@@ -14,7 +14,9 @@ namespace RPGCreationKit.Quests
 
 
             //Disable Merchant
-
+            //Get certain cell
+            
+            
 
             // Use this line to destroy the script if it is not longer needed.
             Destroy(this);

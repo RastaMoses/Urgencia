@@ -20,6 +20,13 @@ namespace RPGCreationKit.Quests
             base.CustomUpdate();
 
             // Your code here
+            if (RCKFunctions.GetStage("SQ_QuackActionRequired") >= 30 && RCKFunctions.GetQuest("SQ_DealingHealingCrystals").currentQuestStage < 60)
+            {
+                RCKFunctions.FailQuestStage("SQ_DealingHealingCrystals", RCKFunctions.GetStage("SQ_DealingHealingCrystals"));
+                CellInformation.TryToGetAI("MagicMerchant001", out RckAI merchant);
+                if (merchant != null) { merchant.DestroyThis(); }
+                RCKFunctions.MutateMutable("Mutable_MagicMerchantFailedQuest", false);
+            }
         }
     }
 }

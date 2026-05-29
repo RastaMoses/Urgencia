@@ -3309,6 +3309,7 @@ MonoBehaviour:
     - input
     - output
     - playerQuestions 0
+    - playerQuestions 1
     values:
     - _fieldName: playerQuestions
       _node: {fileID: 4049477912403561264}
@@ -3353,6 +3354,18 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 1
+    - _fieldName: playerQuestions 1
+      _node: {fileID: 4049477912403561264}
+      _typeQualifiedName: RPGCreationKit.PlayerQuestion, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: input
+        node: {fileID: 4837479639758062082}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
   guidStr: 78ec8692-db5d-44fe-ab0b-95df5bf96aba
   input: {fileID: 0}
   output: {fileID: 0}
@@ -3366,6 +3379,10 @@ MonoBehaviour:
   questionsToRemove: []
   playerQuestions:
   - Question: I actually need to ask about a certain frog potion you sold my friend.
+    qID: 
+    Position: 0
+    DeleteAfterAnswer: 1
+  - Question: I really should go.
     qID: 
     Position: 0
     DeleteAfterAnswer: 1
@@ -3478,6 +3495,9 @@ MonoBehaviour:
       connections:
       - fieldName: playerQuestions 0
         node: {fileID: 975080434073904188}
+        reroutePoints: []
+      - fieldName: playerQuestions 1
+        node: {fileID: 4049477912403561264}
         reroutePoints: []
       _direction: 0
       _connectionType: 0

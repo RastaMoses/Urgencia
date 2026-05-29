@@ -449,6 +449,7 @@ MonoBehaviour:
   nextLvlXP: 60
   curAttributePoints: 0
   xpMultiplierOnDeath: 0.15
+  skipAttributesCalculationOnStart: 0
   activeEffects: []
 --- !u!114 &5891729785669994168
 MonoBehaviour:
@@ -609,9 +610,11 @@ MonoBehaviour:
   currentWeaponAnimator: {fileID: 0}
   currentAmmo: {fileID: 0}
   currentAmmoObject: {fileID: 0}
+  preventShieldDrop: 0
   currentShield: {fileID: 0}
   currentShieldObject: {fileID: 0}
   currentFPShieldObject: {fileID: 0}
+  preventTorchDrop: 0
   currentTorch: {fileID: 0}
   currentTorchInHand: {fileID: 0}
 --- !u!82 &2761281194808446776
@@ -1123,6 +1126,7 @@ MonoBehaviour:
   isDismounting: 0
   isMounted: 0
   isMountedButUnloadedPREF: 0
+  goToSleepLogicEnabled: 0
   teleportIfUnloadedWhileGoingToDoor: 1
   teleportIfWalkableSurfaceEnds: 1
   isReachingDoor: 0
@@ -1134,6 +1138,7 @@ MonoBehaviour:
   enteredDoorLastTimeRot: {x: 0, y: 0, z: 0, w: 0}
   doorEnteredID: 
   aiwuhje: 
+  forceRagdollEveryFrame: 0
   mountUsingPreviously: {fileID: 0}
   toDoorTransform: {fileID: 0}
   followTargetOutsideOfCell: 0

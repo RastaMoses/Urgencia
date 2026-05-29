@@ -1529,7 +1529,7 @@ MonoBehaviour:
     crouchSpeed: 2.5
     rangedCombatAccuracy: 200
     rangedCombatPrediction: 70
-    firearmSpreadMultipier: 1
+    firearmSpreadMultiplier: 1
   bleeds: 1
   bloodPrefab: {fileID: 8045514887497637187, guid: 8469bb54d3584494ea6e0076635b4858,
     type: 3}
@@ -1537,6 +1537,8 @@ MonoBehaviour:
   curXP: 0
   nextLvlXP: 60
   curAttributePoints: 0
+  xpMultiplierOnDeath: 1
+  skipAttributesCalculationOnStart: 0
   activeEffects: []
 --- !u!114 &9219098013405716969
 MonoBehaviour:
@@ -1580,7 +1582,6 @@ MonoBehaviour:
       intProperty1: 0
     Amount: 3
     isEquipped: 0
-  Encumbrance: 100
   CurTotalWeight: 0
 --- !u!114 &7118558827894556624
 MonoBehaviour:
@@ -1698,9 +1699,11 @@ MonoBehaviour:
   currentWeaponAnimator: {fileID: 0}
   currentAmmo: {fileID: 0}
   currentAmmoObject: {fileID: 0}
+  preventShieldDrop: 0
   currentShield: {fileID: 0}
   currentShieldObject: {fileID: 0}
   currentFPShieldObject: {fileID: 0}
+  preventTorchDrop: 0
   currentTorch: {fileID: 0}
   currentTorchInHand: {fileID: 0}
 --- !u!82 &8423480738936215173
@@ -2197,6 +2200,9 @@ MonoBehaviour:
     xFrames: 8
   keepTicking: 1
   forwardRckAI: {fileID: 0}
+  ignoreVisionWhenAlertedKillNPC: 0
+  spawnOnAggroAlertEvent: 0
+  ignoreVisionWhenAlertedAggroNPC: 0
   hasARangedWeapon: 0
   hasAMeleeWeapon: 0
   distanceFromMainTarget: 0
@@ -2209,6 +2215,7 @@ MonoBehaviour:
   isDismounting: 0
   isMounted: 0
   isMountedButUnloadedPREF: 0
+  goToSleepLogicEnabled: 0
   teleportIfUnloadedWhileGoingToDoor: 1
   teleportIfWalkableSurfaceEnds: 1
   isReachingDoor: 0
@@ -2220,6 +2227,7 @@ MonoBehaviour:
   enteredDoorLastTimeRot: {x: 0, y: 0, z: 0, w: 0}
   doorEnteredID: 
   aiwuhje: 
+  forceRagdollEveryFrame: 0
   mountUsingPreviously: {fileID: 0}
   toDoorTransform: {fileID: 0}
   followTargetOutsideOfCell: 0
