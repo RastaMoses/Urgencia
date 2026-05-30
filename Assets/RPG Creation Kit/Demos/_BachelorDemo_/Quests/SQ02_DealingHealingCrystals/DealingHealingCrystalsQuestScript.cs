@@ -29,12 +29,6 @@ namespace RPGCreationKit.Quests
                 RCKFunctions.SetQuestStage("SQ_DealingHealingCrystals", 40);
             }
             
-            if (RCKFunctions.GetStage("SQ_DealingHealingCrystals") == 50)
-            {
-                CellInformation.TryToGetAI("MagicMerchant001", out RckAI merchant);
-                if (merchant != null) { merchant.DestroyThis(); }
-                RCKFunctions.MutateMutable("Mutable_MagicMerchantFailedQuest", false);
-            }
         }
     }
 }

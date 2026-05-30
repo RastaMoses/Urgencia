@@ -11,7 +11,6 @@ namespace RPGCreationKit.Quests
         private void Start()
         {
             // Your code here
-            RCKFunctions.SetQuestStage("SQ_DealingHealingCrystals", 50);
             // Use this line to destroy the script if it is not longer needed.
             Destroy(this);
         }

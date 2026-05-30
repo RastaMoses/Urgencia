@@ -1,7 +1,9 @@
-﻿using System.Collections;
+﻿using RPGCreationKit;
+using RPGCreationKit.AI;
+using RPGCreationKit.CellsSystem;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using RPGCreationKit;
 
 namespace RPGCreationKit.Game.ResultScripts
 {
@@ -20,7 +22,9 @@ namespace RPGCreationKit.Game.ResultScripts
             {
                 RCKFunctions.FailQuestStage("SQ_DealingHealingCrystals", RCKFunctions.GetStage("SQ_DealingHealingCrystals"));
                 RCKFunctions.SetQuestStage("SQDealingHealingCrystals", 50);
-
+                CellInformation.TryToGetAI("MagicMerchant001", out RckAI merchant);
+                if (merchant != null) { merchant.DestroyThis(); }
+                RCKFunctions.MutateMutable("Mutable_MagicMerchantFailedQuest", false);
             }
             
 
