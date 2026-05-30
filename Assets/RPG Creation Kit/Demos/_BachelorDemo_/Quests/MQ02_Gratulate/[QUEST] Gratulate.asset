@@ -10,16 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 45ee663e38452994ab2f4a05886c81ed, type: 3}
-  m_Name: '[QUEST] Dealing Healing Crystals'
+  m_Name: '[QUEST] Gratulate'
   m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.Quest
   _IS_DEMO_FILE: 1
-  questID: SQ_DealingHealingCrystals
-  questName: '[TIME SENSITIVE] Dealing Healing Crystals'
-  questDescription: A merchant will trade me a very useful spell book if I can get
-    some mana crystals for her.
+  questID: MQ_Gratulate
+  questName: '[TIME SENSITIVE] Gratulate'
+  questDescription: Insert the quest description...
   questStages:
   - index: 10
-    description: Talk to a "Dellan" in the Tavern
+    description: Wait for the bells to ring
     stageConditions: []
     resultScript: 
     completeQuest: 0
@@ -28,7 +27,7 @@ MonoBehaviour:
     stageCompleted: 0
     stageFailed: 0
   - index: 20
-    description: Go to the cave South-West of the city
+    description: Hurry to the Academy in the town square
     stageConditions: []
     resultScript: 
     completeQuest: 0
@@ -37,7 +36,7 @@ MonoBehaviour:
     stageCompleted: 0
     stageFailed: 0
   - index: 30
-    description: Collect 5 mana crystals
+    description: Search for your papers in the tavern
     stageConditions: []
     resultScript: 
     completeQuest: 0
@@ -46,20 +45,11 @@ MonoBehaviour:
     stageCompleted: 0
     stageFailed: 0
   - index: 40
-    description: Bring the mana crystals to the merchant
-    stageConditions: []
-    resultScript: RPGCreationKit.Quests.DealingHealingCrystalsStage40StageScript
-    completeQuest: 1
-    failQuest: 0
-    displayLogEntry: 0
-    stageCompleted: 0
-    stageFailed: 0
-  - index: 50
-    description: Check on the merchant
+    description: Find the papers in the taverns cellar.
     stageConditions: []
     resultScript: 
     completeQuest: 0
-    failQuest: 1
+    failQuest: 0
     displayLogEntry: 0
     stageCompleted: 0
     stageFailed: 0
@@ -67,7 +57,7 @@ MonoBehaviour:
   allStagesCompleted: 
   allStagesFailed: 
   questPriority: 50
-  questScript: RPGCreationKit.Quests.DealingHealingCrystalsQuestScript
+  questScript: 
   allowRepeatedStages: 0
   firstStageIsDefaultStage: 1
   questScriptExecutionDelay: 5

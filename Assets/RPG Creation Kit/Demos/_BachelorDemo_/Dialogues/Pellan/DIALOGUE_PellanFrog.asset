@@ -114,6 +114,86 @@ MonoBehaviour:
     propertyType: 0
     propertyIntValue: 0
     propertyFloatValue: 0
+--- !u!114 &-5830624281706830539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64dabeeffd654d647b28c9d2a1955505, type: 3}
+  m_Name: Player Questions
+  m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.PlayerQuestionsNode
+  graph: {fileID: 11400000}
+  position: {x: 696, y: -360}
+  ports:
+    keys:
+    - playerQuestions
+    - input
+    - output
+    - playerQuestions 0
+    values:
+    - _fieldName: playerQuestions
+      _node: {fileID: -5830624281706830539}
+      _typeQualifiedName: System.Collections.Generic.List`1[[RPGCreationKit.PlayerQuestion,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: input
+      _node: {fileID: -5830624281706830539}
+      _typeQualifiedName: RPGCreationKit.DialogueSystem.DialogueNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: nextLine
+        node: {fileID: 1625549302915056754}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: -5830624281706830539}
+      _typeQualifiedName: RPGCreationKit.DialogueSystem.DialogueNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: playerQuestions 0
+      _node: {fileID: -5830624281706830539}
+      _typeQualifiedName: RPGCreationKit.PlayerQuestion, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: endNode
+        node: {fileID: 4354288031633276667}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+  guidStr: a9d058ad-1bef-404a-87f1-4e28821e6b3a
+  input: {fileID: 0}
+  output: {fileID: 0}
+  resultScript: 
+  events:
+    questDealers: []
+    questUpdaters: []
+    consequences: []
+  dialogueAnimationListeningStr: 
+  removePreviousQuestions: 0
+  questionsToRemove: []
+  playerQuestions:
+  - Question: I'm sorry, Pellan.
+    qID: 
+    Position: 0
+    DeleteAfterAnswer: 0
 --- !u!114 &-3734644073946773325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127,7 +207,7 @@ MonoBehaviour:
   m_Name: NPC Dialogue Line
   m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.NPCDialogueLineNode
   graph: {fileID: 11400000}
-  position: {x: 200, y: -72}
+  position: {x: -72, y: 72}
   ports:
     keys:
     - nextLine
@@ -214,6 +294,8 @@ MonoBehaviour:
   - {fileID: 1625549302915056754}
   - {fileID: -8072853510990560780}
   - {fileID: -3734644073946773325}
+  - {fileID: -5830624281706830539}
+  - {fileID: 4354288031633276667}
   _IS_DEMO_FILE: 1
   ID: DIALOGUE_PellanFrog
 --- !u!114 &1625549302915056754
@@ -229,7 +311,7 @@ MonoBehaviour:
   m_Name: NPC Dialogue Line
   m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.NPCDialogueLineNode
   graph: {fileID: 11400000}
-  position: {x: 184, y: -344}
+  position: {x: 184, y: -504}
   ports:
     keys:
     - nextLine
@@ -241,7 +323,10 @@ MonoBehaviour:
       _node: {fileID: 1625549302915056754}
       _typeQualifiedName: RPGCreationKit.DialogueSystem.NPCDialogueLineNode, Assembly-CSharp,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: input
+        node: {fileID: -5830624281706830539}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -291,13 +376,13 @@ MonoBehaviour:
     consequences: []
   speakerID: 0
   line: Quaaaaaack!
-  plainLine: 1
+  plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
-  lineTime: 5
+  lineTime: 120
   dialogueAnimationStr: 
   dialogueAnimationListeningStr: 
-  afterLine: 2
+  afterLine: 0
   nextLine: {fileID: 0}
   removePreviousQuestions: 0
   questionsToRemove: []
@@ -362,3 +447,62 @@ MonoBehaviour:
     consequences: []
   isNpcToNpcDialogue: 0
   firstNode: {fileID: 0}
+--- !u!114 &4354288031633276667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7f1357e040b05c40a508fee3349882a, type: 3}
+  m_Name: End
+  m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.EndNode
+  graph: {fileID: 11400000}
+  position: {x: 1032, y: -328}
+  ports:
+    keys:
+    - endNode
+    - input
+    - output
+    values:
+    - _fieldName: endNode
+      _node: {fileID: 4354288031633276667}
+      _typeQualifiedName: RPGCreationKit.DialogueSystem.EndNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: playerQuestions 0
+        node: {fileID: -5830624281706830539}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: input
+      _node: {fileID: 4354288031633276667}
+      _typeQualifiedName: RPGCreationKit.DialogueSystem.DialogueNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: 4354288031633276667}
+      _typeQualifiedName: RPGCreationKit.DialogueSystem.DialogueNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  guidStr: ad10e3cf-291e-4858-9160-da15e95cdb51
+  input: {fileID: 0}
+  output: {fileID: 0}
+  resultScript: 
+  events:
+    questDealers: []
+    questUpdaters: []
+    consequences: []
+  endNode: {fileID: 0}

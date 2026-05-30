@@ -121,6 +121,82 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &9676749
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9676750}
+  - component: {fileID: 9676753}
+  - component: {fileID: 9676752}
+  - component: {fileID: 9676751}
+  m_Layer: 0
+  m_Name: CityExit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9676750
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9676749}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 43.02, y: 0, z: 51.15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 737516730}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9676751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9676749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8216c3560b3b1cd4d844339e8ce19c12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.QuestStageTarget
+  quest: {fileID: 11400000, guid: 3937b210d0613364fbd094da8b1a76b0, type: 2}
+  questStageIndex: 40
+--- !u!114 &9676752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9676749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8216c3560b3b1cd4d844339e8ce19c12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.QuestStageTarget
+  quest: {fileID: 11400000, guid: 3937b210d0613364fbd094da8b1a76b0, type: 2}
+  questStageIndex: 30
+--- !u!114 &9676753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9676749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8216c3560b3b1cd4d844339e8ce19c12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.QuestStageTarget
+  quest: {fileID: 11400000, guid: 3937b210d0613364fbd094da8b1a76b0, type: 2}
+  questStageIndex: 20
 --- !u!1001 &13977270
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5219,6 +5295,67 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 257703455}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &259455377
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 259455378}
+  - component: {fileID: 259455380}
+  - component: {fileID: 259455379}
+  m_Layer: 0
+  m_Name: Merchant
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &259455378
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259455377}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 32.07, y: 3.421, z: 6.129}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 384207556}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &259455379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259455377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8216c3560b3b1cd4d844339e8ce19c12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.QuestStageTarget
+  quest: {fileID: 11400000, guid: ffedcb9a418bf144d837c5eab00195d5, type: 2}
+  questStageIndex: 50
+--- !u!114 &259455380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259455377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8216c3560b3b1cd4d844339e8ce19c12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.QuestStageTarget
+  quest: {fileID: 11400000, guid: ffedcb9a418bf144d837c5eab00195d5, type: 2}
+  questStageIndex: 40
 --- !u!1001 &261105170
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8248,6 +8385,39 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 383656434}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &384207555
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 384207556}
+  m_Layer: 0
+  m_Name: '[Quest] DealingHealingCrystals'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &384207556
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 384207555}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -40.82, y: 0, z: 1.58}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 259455378}
+  - {fileID: 1779133849}
+  m_Father: {fileID: 1125340670}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &391585796
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15353,6 +15523,52 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -7983031789849231832, guid: 02141a63dd7dadc4e837825d5a53feb8, type: 3}
+--- !u!1 &631394583
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 631394584}
+  - component: {fileID: 631394585}
+  m_Layer: 0
+  m_Name: Tavern
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &631394584
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631394583}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.12, y: 0, z: 0.11}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1722593165}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &631394585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631394583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8216c3560b3b1cd4d844339e8ce19c12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.QuestStageTarget
+  quest: {fileID: 11400000, guid: 2d775c84972719349af7d51acc241072, type: 2}
+  questStageIndex: 40
 --- !u!1001 &635958297
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17130,6 +17346,39 @@ MonoBehaviour:
     questUpdaters: []
     consequences: []
   resultScript: 
+--- !u!1 &737516729
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 737516730}
+  m_Layer: 0
+  m_Name: '[Quest] QuackActionRequired'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &737516730
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737516729}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -40.82, y: 0, z: 1.58}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1383513336}
+  - {fileID: 9676750}
+  m_Father: {fileID: 1125340670}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &752277832
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25853,6 +26102,39 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1086657729}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1086923069
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1086923070}
+  m_Layer: 0
+  m_Name: '[Quest] Gratulate'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1086923070
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086923069}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -40.82, y: 0, z: 1.58}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2120845664}
+  - {fileID: 1291450165}
+  m_Father: {fileID: 1125340670}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1088190951
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27102,6 +27384,41 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1121617656}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1125340669
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1125340670}
+  m_Layer: 0
+  m_Name: QuestMarker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1125340670
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125340669}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1722593165}
+  - {fileID: 1086923070}
+  - {fileID: 737516730}
+  - {fileID: 384207556}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1126985951
 GameObject:
   m_ObjectHideFlags: 0
@@ -31415,6 +31732,52 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1291251479}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1291450164
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1291450165}
+  - component: {fileID: 1291450166}
+  m_Layer: 0
+  m_Name: AcademyGates
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1291450165
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291450164}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 43.81, y: 0, z: -22.37}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1086923070}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1291450166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291450164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8216c3560b3b1cd4d844339e8ce19c12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.QuestStageTarget
+  quest: {fileID: 11400000, guid: 8c8e939e4e313b9488bd5da3d84ee154, type: 2}
+  questStageIndex: 20
 --- !u!1001 &1292278600
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33534,6 +33897,82 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1378299367}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1383513335
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1383513336}
+  - component: {fileID: 1383513337}
+  - component: {fileID: 1383513339}
+  - component: {fileID: 1383513338}
+  m_Layer: 0
+  m_Name: Tavern
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1383513336
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383513335}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.32, y: 0, z: 0.19}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 737516730}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1383513337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383513335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8216c3560b3b1cd4d844339e8ce19c12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.QuestStageTarget
+  quest: {fileID: 11400000, guid: 3937b210d0613364fbd094da8b1a76b0, type: 2}
+  questStageIndex: 10
+--- !u!114 &1383513338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383513335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8216c3560b3b1cd4d844339e8ce19c12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.QuestStageTarget
+  quest: {fileID: 11400000, guid: 3937b210d0613364fbd094da8b1a76b0, type: 2}
+  questStageIndex: 50
+--- !u!114 &1383513339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383513335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8216c3560b3b1cd4d844339e8ce19c12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.QuestStageTarget
+  quest: {fileID: 11400000, guid: 3937b210d0613364fbd094da8b1a76b0, type: 2}
+  questStageIndex: 60
 --- !u!1 &1384653246
 GameObject:
   m_ObjectHideFlags: 0
@@ -37340,6 +37779,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: '[AI] MagicMerchant001'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7528602766291453641, guid: 0b0d818a29be89f4383c4b3ad26f84a2,
+        type: 3}
+      propertyPath: entityName
+      value: Gerta the Wandering Merchant
       objectReference: {fileID: 0}
     - target: {fileID: 7528602766291453641, guid: 0b0d818a29be89f4383c4b3ad26f84a2,
         type: 3}
@@ -41688,6 +42132,38 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1719378394}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1722593164
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1722593165}
+  m_Layer: 0
+  m_Name: '[Quest] LateNightEarlyMorning'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1722593165
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1722593164}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -40.82, y: 0, z: 1.58}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 631394584}
+  m_Father: {fileID: 1125340670}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1728617246
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42836,6 +43312,67 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   owner: {fileID: 1719378396}
+--- !u!1 &1779133848
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1779133849}
+  - component: {fileID: 1779133851}
+  - component: {fileID: 1779133850}
+  m_Layer: 0
+  m_Name: CityExit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1779133849
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779133848}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 42.84, y: 0.01, z: 51.03}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 384207556}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1779133850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779133848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8216c3560b3b1cd4d844339e8ce19c12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.QuestStageTarget
+  quest: {fileID: 11400000, guid: ffedcb9a418bf144d837c5eab00195d5, type: 2}
+  questStageIndex: 30
+--- !u!114 &1779133851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779133848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8216c3560b3b1cd4d844339e8ce19c12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.QuestStageTarget
+  quest: {fileID: 11400000, guid: ffedcb9a418bf144d837c5eab00195d5, type: 2}
+  questStageIndex: 20
 --- !u!1001 &1779546420
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51314,6 +51851,67 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2117760322}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2120845663
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2120845664}
+  - component: {fileID: 2120845665}
+  - component: {fileID: 2120845666}
+  m_Layer: 0
+  m_Name: Tavern
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2120845664
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120845663}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.12, y: 0, z: 0.11}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1086923070}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2120845665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120845663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8216c3560b3b1cd4d844339e8ce19c12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.QuestStageTarget
+  quest: {fileID: 11400000, guid: 8c8e939e4e313b9488bd5da3d84ee154, type: 2}
+  questStageIndex: 30
+--- !u!114 &2120845666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120845663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8216c3560b3b1cd4d844339e8ce19c12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.QuestStageTarget
+  quest: {fileID: 11400000, guid: 8c8e939e4e313b9488bd5da3d84ee154, type: 2}
+  questStageIndex: 40
 --- !u!1001 &2129271824
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -58520,3 +59118,4 @@ SceneRoots:
   - {fileID: 172086785}
   - {fileID: 369012078}
   - {fileID: 2097322519}
+  - {fileID: 1125340670}
