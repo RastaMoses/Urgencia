@@ -252,9 +252,9 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 8645394728797793899, guid: 49a3af4cde1291e4b98a8c42a19c66ec, type: 3}
-  - {fileID: -5472452769881979901, guid: 49a3af4cde1291e4b98a8c42a19c66ec, type: 3}
-  - {fileID: -8848810374240701247, guid: 49a3af4cde1291e4b98a8c42a19c66ec, type: 3}
+  - {fileID: 2100000, guid: ad021227fe59d3c478cba07a7a0f904d, type: 2}
+  - {fileID: 2100000, guid: 51c59608fed535a4d96a5f8ad409b48f, type: 2}
+  - {fileID: 2100000, guid: 7ad778d7da784fa4399fee9383d317e8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -443,9 +443,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6470048175824069588}
-  m_Layer: 0
+  - component: {fileID: 7946083165685340904}
+  - component: {fileID: 7715864188727067663}
+  - component: {fileID: 1625577651735124188}
+  m_Layer: 13
   m_Name: GFX
-  m_TagString: Untagged
+  m_TagString: RPG Creation Kit/BodyPart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -468,6 +471,67 @@ Transform:
   - {fileID: 3671559179660583083}
   m_Father: {fileID: 3708520454584153229}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7946083165685340904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2907702002386766784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b71667b839d325a4ba5250522712efe7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.BodyData
+  isMale: 1
+  myAvatar: {fileID: 9000000, guid: 49a3af4cde1291e4b98a8c42a19c66ec, type: 3}
+  head: {fileID: 0}
+  eyes: {fileID: 4698735329548586463}
+  upperbody: {fileID: 0}
+  arms: {fileID: 0}
+  hands: {fileID: 0}
+  lowerbody: {fileID: 0}
+  feet: {fileID: 0}
+  hairIndex: -1
+  eyeIndex: 0
+  hair: {fileID: 0}
+  rHand: {fileID: 4725663034807184118}
+  lHand: {fileID: 7309424724578288797}
+  upperChest: {fileID: 0}
+  hips: {fileID: 0}
+  defaultUpperbody: {fileID: 0}
+  defaultLowerbody: {fileID: 0}
+--- !u!114 &7715864188727067663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2907702002386766784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1aec040ec5aa86419e1ac673751f756, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.Ragdoll
+  animator: {fileID: 0}
+  rigidbodies: []
+  colliders: []
+  rotations: []
+--- !u!114 &1625577651735124188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2907702002386766784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0073c319bd0232e478154061e615939c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.AI.AISounds
+  takeDamageSounds: []
+  deathSounds: []
+  onEnterInCombatLines: []
 --- !u!1 &3333926636007676066
 GameObject:
   m_ObjectHideFlags: 0
@@ -823,9 +887,9 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -2427113516726275557, guid: 49a3af4cde1291e4b98a8c42a19c66ec, type: 3}
-  - {fileID: -2252796300998073336, guid: 49a3af4cde1291e4b98a8c42a19c66ec, type: 3}
-  - {fileID: 5481873249838014398, guid: 49a3af4cde1291e4b98a8c42a19c66ec, type: 3}
+  - {fileID: 2100000, guid: 7ad778d7da784fa4399fee9383d317e8, type: 2}
+  - {fileID: 2100000, guid: d3e7821fa8dd73a46948d6c0038a2eb0, type: 2}
+  - {fileID: 2100000, guid: 836422503cb2e5640b42ef18f5ca1871, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1658,7 +1722,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FP_Arms: {fileID: 0}
-  characterModel: {fileID: 0}
+  characterModel: {fileID: 7946083165685340904}
   inv: {fileID: 8617898016703503100}
   itemsEquipped:
   - externalItemID: 
@@ -1887,7 +1951,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f1567f400e48e1b48bcb6c63aebeed45, type: 2}
   iGUIDReferences: {fileID: 6021641297403897944}
   audioSource: {fileID: 7467532154155620063}
-  aiSounds: {fileID: 0}
+  aiSounds: {fileID: 1625577651735124188}
   m_Anim: {fileID: 8027102628228945687}
   enableDebugInEditor: 0
   isAlive: 1
@@ -1902,7 +1966,7 @@ MonoBehaviour:
   canBePickPocketed: 1
   isEssential: 1
   attributes: {fileID: 2025976131815138517}
-  usesRagdoll: 1
+  usesRagdoll: 0
   ragdoll: {fileID: 0}
   onDeathEvents:
     questDealers: []
@@ -2129,7 +2193,7 @@ MonoBehaviour:
       intData: 0
       floatData: 0
     nextPurposeBehaviourID: 
-  useBT: 1
+  useBT: 0
   pauseBT: 0
   pauseBT2: 0
   pauseBT3: 0

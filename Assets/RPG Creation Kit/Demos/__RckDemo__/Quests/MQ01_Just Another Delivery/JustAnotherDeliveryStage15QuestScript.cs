@@ -11,7 +11,7 @@ namespace RPGCreationKit.Quests
         private void Start()
         {
             // Your code here
-            InGameHelpUI.instance.TriggerDiaryHelp();
+            
 
             // Use this line to destroy the script if it is not longer needed.
             Destroy(this);

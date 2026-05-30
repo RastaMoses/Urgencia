@@ -14,14 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.Quest
   _IS_DEMO_FILE: 1
   questID: SQ_QuackActionRequired
-  questName: '[TIME SENSITIVE] Quack Action Required'
+  questName: '[URGENT] Quack Action Required'
   questDescription: Pellan accidentally drank a frog transformation potion and I
     need to find an antidote before it's too late.
   questStages:
   - index: 10
     description: Talk to the wandering merchant
     stageConditions: []
-    resultScript: RPGCreationKit.Quests.QuackActionRequiredQuestStage10Script
+    resultScript: 
     completeQuest: 0
     failQuest: 0
     displayLogEntry: 0

@@ -3658,38 +3658,6 @@ MonoBehaviour:
     questUpdaters: []
     consequences: []
   resultScript: 
---- !u!1 &172086784
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 172086785}
-  m_Layer: 0
-  m_Name: GOTO
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &172086785
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 172086784}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1458673466}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &203398318
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4313,6 +4281,8 @@ Transform:
   m_Children:
   - {fileID: 2011834151}
   - {fileID: 1387386186}
+  - {fileID: 693468644}
+  - {fileID: 1547840105}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &234379491
@@ -7423,248 +7393,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 355487541}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &356047620
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 356047621}
-  - component: {fileID: 356047623}
-  - component: {fileID: 356047622}
-  m_Layer: 0
-  m_Name: Cube
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &356047621
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 356047620}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.75, y: 2.56, z: 31.44}
-  m_LocalScale: {x: 15.024, y: 4.744, z: 12.669}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1458673466}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &356047622
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 356047620}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0ae1b9101955ed4b9893f43d40cb60e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onEnterResultScript: 
-  onExitResultScript: 
-  onEnterEvents:
-    questDealers: []
-    questUpdaters: []
-    consequences:
-    - type: 39
-      gameObjects: []
-      toInstantiate: []
-      toTeleport: []
-      npcsToChangePath: []
-      npcsToChangeDialogue: []
-      npcsToSendToSpeakToThePlayer: []
-      npcsToSetHostility: []
-      npcsToFollowCurPath: []
-      npcsToSpeakToNPC: []
-      itemsToModifyInInventory: []
-      itemToModifyInInventory:
-        isPlayerInventory: 0
-        inventoryID: 
-        item: {fileID: 0}
-        metadata:
-          isOwned: 0
-          ownerID: 
-          intProperty1: 0
-        amount: 0
-      m_Parent: {fileID: 0}
-      delay: 0
-      mustRun: 0
-      Questions: []
-      newUseLengtOfClip: 0
-      newAudioClip: {fileID: 0}
-      newLineTime: 0
-      newLine: 
-      question:
-        Question: 
-        qID: 
-        Position: 0
-        DeleteAfterAnswer: 0
-      setAsHostile: 0
-      isPlayer: 0
-      sceneIndex: 0
-      coordinates: {x: 0, y: 0, z: 0}
-      gameObject: {fileID: 0}
-      newPath: {fileID: 0}
-      shouldFollowNewPath: 0
-      pathStartIndex: 0
-      AlertMessage: 
-      duration: 0
-      resetType: 0
-      gotoObject: {fileID: 0}
-      interactiveObject: {fileID: 0}
-      interactiveOption: 0
-      removeAtIndex: 0
-      questDealer:
-        newQuest: {fileID: 0}
-        atIndex: 0
-        hideAlert: 0
-      questUpdater:
-        questToUpdate: {fileID: 0}
-        completed: 0
-        questStage: 0
-        hideLog: 0
-      targetTransform: {fileID: 0}
-      inventory: {fileID: 0}
-      isPlayerInventory: 0
-      itemInInventory: {fileID: 0}
-      itemAmount: 0
-      radius: 0
-      isMerchant: 0
-      merchant: {fileID: 0}
-      mutableID: 
-      restoreMutable: 0
-      rckAID: MurieldeAyala
-      dialogueGraph: {fileID: 0}
-      immediatlySwitchToBehaviour: 1
-      behaviourTree: {fileID: 11400000, guid: 5cd219c4081da904fb437df6bd278760, type: 2}
-      factionID: 
-      doorID: 
-      lockLevel: 0
-      spellToLearn: {fileID: 0}
-      speakLineID: 
-      speakLineDisplayAsHeard: 0
-    - type: 37
-      gameObjects: []
-      toInstantiate: []
-      toTeleport: []
-      npcsToChangePath: []
-      npcsToChangeDialogue: []
-      npcsToSendToSpeakToThePlayer: []
-      npcsToSetHostility: []
-      npcsToFollowCurPath: []
-      npcsToSpeakToNPC: []
-      itemsToModifyInInventory: []
-      itemToModifyInInventory:
-        isPlayerInventory: 0
-        inventoryID: 
-        item: {fileID: 0}
-        metadata:
-          isOwned: 0
-          ownerID: 
-          intProperty1: 0
-        amount: 0
-      m_Parent: {fileID: 0}
-      delay: 0
-      mustRun: 0
-      Questions: []
-      newUseLengtOfClip: 0
-      newAudioClip: {fileID: 0}
-      newLineTime: 0
-      newLine: 
-      question:
-        Question: 
-        qID: 
-        Position: 0
-        DeleteAfterAnswer: 0
-      setAsHostile: 0
-      isPlayer: 0
-      sceneIndex: 0
-      coordinates: {x: 0, y: 0, z: 0}
-      gameObject: {fileID: 0}
-      newPath: {fileID: 0}
-      shouldFollowNewPath: 0
-      pathStartIndex: 0
-      AlertMessage: 
-      duration: 0
-      resetType: 0
-      gotoObject: {fileID: 0}
-      interactiveObject: {fileID: 0}
-      interactiveOption: 0
-      removeAtIndex: 0
-      questDealer:
-        newQuest: {fileID: 0}
-        atIndex: 0
-        hideAlert: 0
-      questUpdater:
-        questToUpdate: {fileID: 0}
-        completed: 0
-        questStage: 0
-        hideLog: 0
-      targetTransform: {fileID: 0}
-      inventory: {fileID: 0}
-      isPlayerInventory: 0
-      itemInInventory: {fileID: 0}
-      itemAmount: 0
-      radius: 0
-      isMerchant: 0
-      merchant: {fileID: 0}
-      mutableID: LaniusMurielDialogueGotoMutable
-      restoreMutable: 0
-      rckAID: MurieldeAyala
-      dialogueGraph: {fileID: 0}
-      immediatlySwitchToBehaviour: 1
-      behaviourTree: {fileID: 11400000, guid: 5cd219c4081da904fb437df6bd278760, type: 2}
-      factionID: 
-      doorID: 
-      lockLevel: 0
-      spellToLearn: {fileID: 0}
-      speakLineID: 
-      speakLineDisplayAsHeard: 0
-  onExitEvents:
-    questDealers: []
-    questUpdaters: []
-    consequences: []
-  collisionTarget: 0
-  OnEnterDelayActivation: 0
-  OnExitDelayActivation: 0
-  OnEnterAlreadyTriggered: 0
-  OnExitAlreadyTriggered: 0
-  AllowMultipleOnEnterTriggering: 0
-  AllowMultipleOnExitTriggering: 0
-  DestroyAfterOnEnter: 0
-  DestroyDelayOnEnter: 0
-  DestroyAfterOnExit: 0
-  DestroyDelayOnExit: 0
-  TriggerGameObject: {fileID: 0}
---- !u!65 &356047623
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 356047620}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &356268564
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8416,6 +8144,7 @@ Transform:
   m_Children:
   - {fileID: 259455378}
   - {fileID: 1779133849}
+  - {fileID: 1403341446}
   m_Father: {fileID: 1125340670}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &391585796
@@ -16816,6 +16545,94 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 686381056}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &693468643
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 693468644}
+  - component: {fileID: 693468646}
+  - component: {fileID: 693468645}
+  m_Layer: 0
+  m_Name: GOTO_TriggerDiary
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &693468644
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 693468643}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 59.75, y: 1.97, z: -38.29}
+  m_LocalScale: {x: 10.891, y: 10.891, z: 10.891}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 231225926}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &693468645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 693468643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0ae1b9101955ed4b9893f43d40cb60e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.Goto
+  onEnterResultScript: RPGCreationKit.Game.ResultScripts.DiaryTriggerResultScript
+  onExitResultScript: 
+  onEnterEvents:
+    questDealers: []
+    questUpdaters: []
+    consequences: []
+  onExitEvents:
+    questDealers: []
+    questUpdaters: []
+    consequences: []
+  collisionTarget: 0
+  OnEnterDelayActivation: 0
+  OnExitDelayActivation: 0
+  OnEnterAlreadyTriggered: 0
+  OnExitAlreadyTriggered: 0
+  AllowMultipleOnEnterTriggering: 0
+  AllowMultipleOnExitTriggering: 0
+  DestroyAfterOnEnter: 1
+  DestroyDelayOnEnter: 0
+  DestroyAfterOnExit: 0
+  DestroyDelayOnExit: 0
+  TriggerGameObject: {fileID: 0}
+--- !u!65 &693468646
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 693468643}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &695143099
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17376,6 +17193,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1383513336}
+  - {fileID: 1477361871}
   - {fileID: 9676750}
   m_Father: {fileID: 1125340670}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -23172,22 +22990,22 @@ PrefabInstance:
     - target: {fileID: 3629835916041746528, guid: a6357094f56f9ff47896d044ccbfedee,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 24.99
+      value: -6.974
       objectReference: {fileID: 0}
     - target: {fileID: 3629835916041746528, guid: a6357094f56f9ff47896d044ccbfedee,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.271
+      value: 0.2709999
       objectReference: {fileID: 0}
     - target: {fileID: 3629835916041746528, guid: a6357094f56f9ff47896d044ccbfedee,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 18.44
+      value: 10.938
       objectReference: {fileID: 0}
     - target: {fileID: 3629835916041746528, guid: a6357094f56f9ff47896d044ccbfedee,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.649083
+      value: 0.4153722
       objectReference: {fileID: 0}
     - target: {fileID: 3629835916041746528, guid: a6357094f56f9ff47896d044ccbfedee,
         type: 3}
@@ -23197,7 +23015,7 @@ PrefabInstance:
     - target: {fileID: 3629835916041746528, guid: a6357094f56f9ff47896d044ccbfedee,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.7607176
+      value: -0.9096516
       objectReference: {fileID: 0}
     - target: {fileID: 3629835916041746528, guid: a6357094f56f9ff47896d044ccbfedee,
         type: 3}
@@ -23212,7 +23030,7 @@ PrefabInstance:
     - target: {fileID: 3629835916041746528, guid: a6357094f56f9ff47896d044ccbfedee,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -99.055
+      value: -130.915
       objectReference: {fileID: 0}
     - target: {fileID: 3629835916041746528, guid: a6357094f56f9ff47896d044ccbfedee,
         type: 3}
@@ -23263,7 +23081,7 @@ PrefabInstance:
         type: 3}
       propertyPath: currentDialogueGraph
       value: 
-      objectReference: {fileID: 11400000, guid: 5af11a26623843d43897bae70cf56c6e,
+      objectReference: {fileID: 11400000, guid: 47e705413f8312140b5e24fbb1ebe631,
         type: 2}
     - target: {fileID: 7127207177759816267, guid: a6357094f56f9ff47896d044ccbfedee,
         type: 3}
@@ -28126,13 +27944,13 @@ PrefabInstance:
     - target: {fileID: 1770464210722797206, guid: 96ea7e886bf05fc4694552c20bd9415e,
         type: 3}
       propertyPath: locked
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1770464210722797206, guid: 96ea7e886bf05fc4694552c20bd9415e,
         type: 3}
       propertyPath: toCell
       value: 
-      objectReference: {fileID: 11400000, guid: aa32a05840f278c41b8ab297553ea51b,
+      objectReference: {fileID: 11400000, guid: a2a7541349a434c4c9d231d0ae4d7d64,
         type: 2}
     - target: {fileID: 1770464210722797206, guid: 96ea7e886bf05fc4694552c20bd9415e,
         type: 3}
@@ -28157,12 +27975,12 @@ PrefabInstance:
     - target: {fileID: 1770464210722797206, guid: 96ea7e886bf05fc4694552c20bd9415e,
         type: 3}
       propertyPath: objReference
-      value: CityInteriorToMurieldeAyalaHouse
+      value: AcademyCityToFranksBude
       objectReference: {fileID: 0}
     - target: {fileID: 1770464210722797206, guid: 96ea7e886bf05fc4694552c20bd9415e,
         type: 3}
       propertyPath: linkedDoorObjRef
-      value: MurieldeAyalaHouseToCityExterior
+      value: FranksBudeToAcademyCity
       objectReference: {fileID: 0}
     - target: {fileID: 1770464210722797206, guid: 96ea7e886bf05fc4694552c20bd9415e,
         type: 3}
@@ -28177,12 +27995,17 @@ PrefabInstance:
     - target: {fileID: 1770464210722797206, guid: 96ea7e886bf05fc4694552c20bd9415e,
         type: 3}
       propertyPath: allDoors.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1770464210722797206, guid: 96ea7e886bf05fc4694552c20bd9415e,
         type: 3}
       propertyPath: 'allDoors.Array.data[0]'
-      value: MurieldeAyalaHouseToCityExterior
+      value: FranksBudeToAcademyCity
+      objectReference: {fileID: 0}
+    - target: {fileID: 1770464210722797206, guid: 96ea7e886bf05fc4694552c20bd9415e,
+        type: 3}
+      propertyPath: 'allDoors.Array.data[1]'
+      value: FranksBudeToUrgenciaTutorialCave002
       objectReference: {fileID: 0}
     - target: {fileID: 6767581063931307240, guid: 96ea7e886bf05fc4694552c20bd9415e,
         type: 3}
@@ -33906,7 +33729,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1383513336}
-  - component: {fileID: 1383513337}
   - component: {fileID: 1383513339}
   - component: {fileID: 1383513338}
   m_Layer: 0
@@ -33931,20 +33753,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 737516730}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1383513337
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1383513335}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8216c3560b3b1cd4d844339e8ce19c12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.QuestStageTarget
-  quest: {fileID: 11400000, guid: 3937b210d0613364fbd094da8b1a76b0, type: 2}
-  questStageIndex: 10
 --- !u!114 &1383513338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34326,6 +34134,52 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1391335729}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1403341445
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1403341446}
+  - component: {fileID: 1403341447}
+  m_Layer: 0
+  m_Name: Tavern
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1403341446
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403341445}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.64, y: 0.01, z: -1.07}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 384207556}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1403341447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403341445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8216c3560b3b1cd4d844339e8ce19c12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.QuestStageTarget
+  quest: {fileID: 11400000, guid: ffedcb9a418bf144d837c5eab00195d5, type: 2}
+  questStageIndex: 10
 --- !u!1001 &1403456380
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35242,55 +35096,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1457543301}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1458673465
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1458673466}
-  - component: {fileID: 1458673467}
-  m_Layer: 0
-  m_Name: LaniusMurielMutable
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1458673466
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458673465}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 356047621}
-  m_Father: {fileID: 172086785}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1458673467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458673465}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41834befbcc50b0409f82f6102118de9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GUIDStr: LaniusMurielDialogueGotoMutable
-  normalObject: {fileID: 356047620}
-  mutatedObject: {fileID: 0}
-  isMutated: 0
 --- !u!1001 &1462684014
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35831,6 +35636,52 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1473132096}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1477361870
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1477361871}
+  - component: {fileID: 1477361872}
+  m_Layer: 0
+  m_Name: Merchant
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1477361871
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1477361870}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 32.16, y: 0, z: 6.6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 737516730}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1477361872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1477361870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8216c3560b3b1cd4d844339e8ce19c12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.QuestStageTarget
+  quest: {fileID: 11400000, guid: 3937b210d0613364fbd094da8b1a76b0, type: 2}
+  questStageIndex: 10
 --- !u!1001 &1477749799
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37652,6 +37503,94 @@ MonoBehaviour:
     questUpdaters: []
     consequences: []
   resultScript: 
+--- !u!1 &1547840104
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1547840105}
+  - component: {fileID: 1547840107}
+  - component: {fileID: 1547840106}
+  m_Layer: 0
+  m_Name: GOTO_TriggerMerchantDistractionGone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1547840105
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547840104}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -37.14, y: 1.97, z: -41.97}
+  m_LocalScale: {x: 10.891, y: 10.891, z: 10.891}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 231225926}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1547840106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547840104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0ae1b9101955ed4b9893f43d40cb60e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.Goto
+  onEnterResultScript: RPGCreationKit.Game.ResultScripts.DisableMerchantDistractionResultScript
+  onExitResultScript: 
+  onEnterEvents:
+    questDealers: []
+    questUpdaters: []
+    consequences: []
+  onExitEvents:
+    questDealers: []
+    questUpdaters: []
+    consequences: []
+  collisionTarget: 0
+  OnEnterDelayActivation: 0
+  OnExitDelayActivation: 0
+  OnEnterAlreadyTriggered: 0
+  OnExitAlreadyTriggered: 0
+  AllowMultipleOnEnterTriggering: 1
+  AllowMultipleOnExitTriggering: 0
+  DestroyAfterOnEnter: 0
+  DestroyDelayOnEnter: 0
+  DestroyAfterOnExit: 0
+  DestroyDelayOnExit: 0
+  TriggerGameObject: {fileID: 0}
+--- !u!65 &1547840107
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547840104}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1549083212
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37794,13 +37733,13 @@ PrefabInstance:
         type: 3}
       propertyPath: currentDialogueGraph
       value: 
-      objectReference: {fileID: 11400000, guid: 0e3f1ec8cdbe0504482752c544f04c1d,
+      objectReference: {fileID: 11400000, guid: 840109db87128b3458bb0b6f30cf3c52,
         type: 2}
     - target: {fileID: 7528602766291453641, guid: 0b0d818a29be89f4383c4b3ad26f84a2,
         type: 3}
       propertyPath: defaultDialogueGraph
       value: 
-      objectReference: {fileID: 11400000, guid: 0e3f1ec8cdbe0504482752c544f04c1d,
+      objectReference: {fileID: 11400000, guid: 840109db87128b3458bb0b6f30cf3c52,
         type: 2}
     - target: {fileID: 8916390497302543287, guid: 0b0d818a29be89f4383c4b3ad26f84a2,
         type: 3}
@@ -44710,7 +44649,7 @@ MonoBehaviour:
     _HashCodes: da372e5c5cd0cf7700000000
     _Next: ffffffffffffffff00000000
     _Count: 2
-    _Version: 100
+    _Version: 115
     _FreeList: -1
     _FreeCount: 0
     _Keys:
@@ -44722,11 +44661,11 @@ MonoBehaviour:
     - {fileID: 1903945401}
     - {fileID: 0}
   allDoors:
-    _Buckets: ffffffffffffffffffffffff0600000004000000ffffffff07000000ffffffff16000000ffffffff0c000000ffffffff13000000ffffffffffffffff0a000000ffffffff05000000ffffffffffffffff1200000011000000ffffffffffffffff14000000ffffffff10000000150000000e000000090000000000000003000000ffffffff0b000000ffffffff080000000f000000
-    _HashCodes: 04b05126bc0674525512d67c356f5f65ee5f7a0a1c050507b3120d71a1f0780416aeae138aa2cb03bc2699222495520f5f19ed4e71dd210f72d9cf463b514439190c75028aee38574aa2f17e2bfcb95b6411697dbe1e3469327105280000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-    _Next: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff02000000ffffffffffffffffffffffffffffffff01000000ffffffffffffffffffffffffffffffffffffffffffffffff0d0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    _Buckets: ffffffffffffffffffffffff0600000004000000ffffffff07000000ffffffff16000000ffffffffffffffffffffffff13000000ffffffffffffffff0a000000ffffffff05000000ffffffffffffffff1200000011000000ffffffffffffffff14000000ffffffff10000000150000000e0000000c0000000000000003000000ffffffff0b000000ffffffff080000000f000000
+    _HashCodes: 04b05126bc0674525512d67c356f5f65ee5f7a0a1c050507b3120d71a1f0780416aeae138aa2cb03bc2699222495520ff77f126471dd210f72d9cf463b514439190c75028aee38574aa2f17e2bfcb95b6411697dbe1e3469327105280000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    _Next: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff02000000ffffffff09000000ffffffffffffffff01000000ffffffffffffffffffffffffffffffffffffffffffffffff0d0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     _Count: 23
-    _Version: 701
+    _Version: 821
     _FreeList: -1
     _FreeCount: 0
     _Keys:
@@ -44742,7 +44681,7 @@ MonoBehaviour:
     - CityInteriorToLaniusHouse
     - CityInteriorToMackHouse
     - AcademyCityInteriorTomsTavern
-    - CityInteriorToMurieldeAyalaHouse
+    - AcademyCityToFranksBude
     - CityInteriorToGeneralGoodsStore
     - CityInteriorToVincentBergerHouse
     - CityInteriorToYvonneGrafHouse
@@ -44806,25 +44745,25 @@ MonoBehaviour:
     - {fileID: 0}
     - {fileID: 0}
   allMutables:
-    _Buckets: 02000000ffffffffffffffff01000000ffffffffffffffffffffffff
-    _HashCodes: 6bc3ba714f3c7202449eab0f00000000000000000000000000000000
-    _Next: ffffffffffffffff0000000000000000000000000000000000000000
-    _Count: 3
-    _Version: 79
+    _Buckets: 01000000ffffffffffffffffffffffffffffffffffffffffffffffff
+    _HashCodes: 449eab0f6bc3ba710000000000000000000000000000000000000000
+    _Next: ffffffff000000000000000000000000000000000000000000000000
+    _Count: 2
+    _Version: 96
     _FreeList: -1
     _FreeCount: 0
     _Keys:
-    - Mutable_MagicMerchantFailedQuest
-    - LaniusMurielDialogueGotoMutable
     - Mutable_PlayerHouseDoor
+    - Mutable_MagicMerchantFailedQuest
+    - 
     - 
     - 
     - 
     - 
     _Values:
-    - {fileID: 2011834150}
-    - {fileID: 1458673467}
     - {fileID: 1599520754}
+    - {fileID: 2011834150}
+    - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
@@ -44850,7 +44789,7 @@ MonoBehaviour:
     _HashCodes: be3cf460e6b8fd3621aef048924835455767277f97ce8134ca663a15884dac557024fd620000000000000000000000000000000000000000000000000000000000000000
     _Next: ffffffffffffffffffffffffffffffffffffffffffffffff0200000005000000ffffffff0000000000000000000000000000000000000000000000000000000000000000
     _Count: 9
-    _Version: 401
+    _Version: 451
     _FreeList: -1
     _FreeCount: 0
     _Keys:
@@ -59115,7 +59054,6 @@ SceneRoots:
   - {fileID: 862513803}
   - {fileID: 1238348632}
   - {fileID: 1900430418}
-  - {fileID: 172086785}
   - {fileID: 369012078}
   - {fileID: 2097322519}
   - {fileID: 1125340670}

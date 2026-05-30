@@ -13,7 +13,6 @@ namespace RPGCreationKit.Quests
         {
             // Your code here
             MutateGoto();
-            InGameHelpUI.instance.TriggerDiaryHelp();
 
             // Use this line to destroy the script if it is not longer needed.
             Destroy(this);
@@ -25,6 +24,7 @@ namespace RPGCreationKit.Quests
             {
                 mutable.Mutate();
             }
+            
             else // Update the save file directly
             {
                 var allMutables = SaveSystemManager.instance.saveFile.MutablesData.allMutables;
