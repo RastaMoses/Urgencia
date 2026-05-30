@@ -1317,13 +1317,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7714513597214848586}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.70559263, y: 0.06090081, z: 0.046231605, w: 0.7044805}
+  m_LocalPosition: {x: -1.3, y: -0.29, z: -1.32}
   m_LocalScale: {x: 0.8674352, y: 0.8674352, z: 0.8674352}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3708520454584153229}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 81.31, y: 91.191, z: 89.999}
 --- !u!136 &2131192594495171201
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1343,10 +1343,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2.9303515
+  m_Radius: 2.3400607
+  m_Height: 6.3381186
   m_Direction: 1
-  m_Center: {x: 0, y: 1.3895787, z: 0}
+  m_Center: {x: 1.4866967, y: 1.7222021, z: -0.35334828}
 --- !u!1 &8074320338261663610
 GameObject:
   m_ObjectHideFlags: 0
@@ -1449,7 +1449,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.095, y: 0.464, z: 84.275}
-  m_LocalScale: {x: 0.11611998, y: 0.11612, z: 0.11611998}
+  m_LocalScale: {x: 0.2547348, y: 0.25473484, z: 0.2547348}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 753307845560481344}
@@ -1930,7 +1930,7 @@ MonoBehaviour:
   inPersistentCellID: 
   persistentLifePulse: 5
   bodyData: {fileID: 0}
-  usesMovements: 1
+  usesMovements: 0
   usesOfflineMode: 1
   usesTlinkUnstuck: 1
   physicalCollider: {fileID: 3632732761950776838}
@@ -2034,7 +2034,7 @@ MonoBehaviour:
   isUsingMeleeWeapon: 0
   isUsingRangedWeapon: 0
   setInventoryOwnershipOnStart: 0
-  perceptionEnabled: 1
+  perceptionEnabled: 0
   headPos: {fileID: 0}
   viewAngle: 360
   lookAtDistance: 3.5
@@ -2064,7 +2064,8 @@ MonoBehaviour:
   currentLookingAt:
     tr: {fileID: 0}
     distance: 0
-  defaultAnimatorController: {fileID: 0}
+  defaultAnimatorController: {fileID: 9100000, guid: 317fd13edb6745248a4a66f0a76d3947,
+    type: 2}
   defaultWeapon: {fileID: 11400000, guid: 0547a73008bac55428c8d50805658ec8, type: 2}
   defaultWeaponOnHand: {fileID: 2013353260564493195}
   spellsKnowledge: {fileID: 0}

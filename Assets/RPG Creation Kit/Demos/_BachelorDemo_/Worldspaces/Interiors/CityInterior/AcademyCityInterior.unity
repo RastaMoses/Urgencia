@@ -4236,6 +4236,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2011834151}
+  - {fileID: 1387386186}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &234379491
@@ -33578,6 +33579,94 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   owner: {fileID: 579316326}
+--- !u!1 &1387386185
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1387386186}
+  - component: {fileID: 1387386188}
+  - component: {fileID: 1387386187}
+  m_Layer: 0
+  m_Name: GOTO_TriggerMarchantFail
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1387386186
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1387386185}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.5, y: 1.97, z: 0.06}
+  m_LocalScale: {x: 10.891, y: 10.891, z: 10.891}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 231225926}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1387386187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1387386185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0ae1b9101955ed4b9893f43d40cb60e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.Goto
+  onEnterResultScript: RPGCreationKit.Game.ResultScripts.GOTO_TriggerMerchantFailResultScript
+  onExitResultScript: 
+  onEnterEvents:
+    questDealers: []
+    questUpdaters: []
+    consequences: []
+  onExitEvents:
+    questDealers: []
+    questUpdaters: []
+    consequences: []
+  collisionTarget: 0
+  OnEnterDelayActivation: 0
+  OnExitDelayActivation: 0
+  OnEnterAlreadyTriggered: 0
+  OnExitAlreadyTriggered: 0
+  AllowMultipleOnEnterTriggering: 1
+  AllowMultipleOnExitTriggering: 0
+  DestroyAfterOnEnter: 0
+  DestroyDelayOnEnter: 0
+  DestroyAfterOnExit: 0
+  DestroyDelayOnExit: 0
+  TriggerGameObject: {fileID: 0}
+--- !u!65 &1387386188
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1387386185}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1390437674
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -792,7 +792,7 @@ namespace RPGCreationKit.Player
                     yield return null;
                 }
 
-                speakingToHeadBlendshapes.ResetMouthBlendshapes();
+                if (speakingToHeadBlendshapes != null) speakingToHeadBlendshapes.ResetMouthBlendshapes();
 
                 // Line has finished and player was teleported
                 if (WorldManager.instance.isLoading)
