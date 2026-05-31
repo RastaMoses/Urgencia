@@ -12,7 +12,7 @@ namespace RPGCreationKit.Game.ResultScripts
         {
             // Your code here
             InGameHelpUI.instance.TriggerDiaryHelp();
-            RckPlayer.instance.DisplayHeardLine("How is it so bright already?", 3f);
+            RckPlayer.instance.DisplayHeardLine("How is it so bright already?", 5f);
 
             // Destroy the script
             Destroy(this);

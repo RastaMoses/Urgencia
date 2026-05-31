@@ -1045,6 +1045,7 @@ MonoBehaviour:
   nextLvlXP: 60
   curAttributePoints: 0
   xpMultiplierOnDeath: 0.5
+  skipAttributesCalculationOnStart: 0
   activeEffects: []
 --- !u!114 &901314031506517047
 MonoBehaviour:
@@ -1261,9 +1262,11 @@ MonoBehaviour:
   currentWeaponAnimator: {fileID: 0}
   currentAmmo: {fileID: 0}
   currentAmmoObject: {fileID: 0}
+  preventShieldDrop: 0
   currentShield: {fileID: 0}
   currentShieldObject: {fileID: 0}
   currentFPShieldObject: {fileID: 0}
+  preventTorchDrop: 0
   currentTorch: {fileID: 0}
   currentTorchInHand: {fileID: 0}
 --- !u!114 &3025008839172245098
@@ -1651,7 +1654,7 @@ MonoBehaviour:
   pauseBT3: 0
   currentBehaviour: {fileID: 0}
   isUsingPurposeBehaviour: 1
-  purposeBehaviourTree: {fileID: 11400000, guid: f34460424bf805349b1a41220e26e11d,
+  purposeBehaviourTree: {fileID: 11400000, guid: 3b4fbed596a70bc479fd4491d5f038fe,
     type: 2}
   purposeNodesData:
     _Buckets: ffffffffffffffffffffffff
@@ -1796,6 +1799,7 @@ MonoBehaviour:
   isDismounting: 0
   isMounted: 0
   isMountedButUnloadedPREF: 0
+  goToSleepLogicEnabled: 0
   teleportIfUnloadedWhileGoingToDoor: 1
   teleportIfWalkableSurfaceEnds: 1
   isReachingDoor: 0

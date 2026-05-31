@@ -21,12 +21,14 @@ namespace RPGCreationKit.Game.ResultScripts
                 {
                     RCKFunctions.MakeAISpeakLine(bandit, "TUTORIAL_BANDIT_LINE_001");
                     RCKFunctions.DisplayHeardLine("Bandit: These fancy lookin' papers sure could be worth somethin'...", 4.5f);
+                    RCKFunctions.CompleteQuestStage("MQ_Gratulate", 40);
+                    RCKFunctions.SetQuestStage("MQ_Gratulate", 45);
                 }
             }
 
             RCKFunctions.MutateMutable("Mutable_TutorialDungeonBanditSaysLine", false);
 
-            InGameHelpUI.instance.TriggerSneakAttackHelp();
+            //InGameHelpUI.instance.TriggerSneakAttackHelp();
 
             // Destroy the script
             Destroy(this);
