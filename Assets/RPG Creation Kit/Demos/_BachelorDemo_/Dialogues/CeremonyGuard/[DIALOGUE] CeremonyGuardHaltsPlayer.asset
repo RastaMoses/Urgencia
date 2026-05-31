@@ -778,7 +778,7 @@ MonoBehaviour:
   m_Name: NPC Dialogue Line
   m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.NPCDialogueLineNode
   graph: {fileID: 11400000}
-  position: {x: -152, y: 328}
+  position: {x: -296, y: 296}
   ports:
     keys:
     - nextLine
@@ -832,7 +832,7 @@ MonoBehaviour:
   guidStr: 11f784cb-ba53-487c-8a77-8b6c0dad61e8
   input: {fileID: 0}
   output: {fileID: 0}
-  resultScript: 
+  resultScript: RPGCreationKit.Game.ResultScripts.StopGuardFollowResultScript
   events:
     questDealers: []
     questUpdaters:
@@ -1073,7 +1073,7 @@ MonoBehaviour:
   - Question: I'm supposed to graduate in the ceremony any minute now!
     qID: 
     Position: 0
-    DeleteAfterAnswer: 0
+    DeleteAfterAnswer: 1
 --- !u!114 &-438752290314918878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1359,7 +1359,7 @@ MonoBehaviour:
   m_Name: NPC Dialogue Line
   m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.NPCDialogueLineNode
   graph: {fileID: 11400000}
-  position: {x: 2920, y: 168}
+  position: {x: 2936, y: 168}
   ports:
     keys:
     - nextLine
@@ -1513,7 +1513,7 @@ MonoBehaviour:
     questUpdaters: []
     consequences: []
   dialogueAnimationListeningStr: 
-  removePreviousQuestions: 0
+  removePreviousQuestions: 1
   questionsToRemove: []
   playerQuestions:
   - Question: Shit, I'm pretty sure I still had it yesterday!

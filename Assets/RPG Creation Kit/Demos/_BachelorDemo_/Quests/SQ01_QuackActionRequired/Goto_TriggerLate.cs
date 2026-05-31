@@ -16,6 +16,7 @@ namespace RPGCreationKit.Game.ResultScripts
                 RckPlayer.instance.DisplayHeardLine("Such a stressful day...I gotta hurry up!", 5f);
                 var gotoComp = GetComponent<Goto>();
                 if (gotoComp != null) { gotoComp.AllowMultipleOnEnterTriggering = false; }
+                RCKFunctions.MutateMutable("Mutable_TriggerLate", false);
             }
 
             // Destroy the script

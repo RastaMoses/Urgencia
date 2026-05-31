@@ -15,6 +15,8 @@ namespace RPGCreationKit.Quests
             RCKFunctions.MutateMutable("Mutable_BellRingingTavern", true);
             RCKFunctions.MutateMutable("Mutable_BellRingingTavernCellar", true);
             RCKFunctions.MutateMutable("Mutable_BellRingingCityExterior", true);
+
+
             // Use this line to destroy the script if it is not longer needed.
             Destroy(this);
         }

@@ -40,7 +40,6 @@ namespace RPGCreationKit.Game.ResultScripts
                 mackData.currentDialogueID = "DIALOGUE_CeremonyGuardHaltsPlayer";
                 mackData.purposeBehaviourTreeID = "BTP_SpeakToPlayer";
                 mackData.curBehaviourTreeID = "BTP_SpeakToPlayer";
-                mackData.position = new Vector3(30f, 0.65f, 11.67f);
             }
 
 
