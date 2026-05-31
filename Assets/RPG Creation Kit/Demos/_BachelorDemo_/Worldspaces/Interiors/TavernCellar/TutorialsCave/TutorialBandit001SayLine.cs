@@ -20,7 +20,7 @@ namespace RPGCreationKit.Game.ResultScripts
                 if (!bandit.isInCombat && !bandit.isDrawingWeapon && bandit.isAlive)
                 {
                     RCKFunctions.MakeAISpeakLine(bandit, "TUTORIAL_BANDIT_LINE_001");
-                    RCKFunctions.DisplayHeardLine("Bandit: These fancy lookin' papers sure could be worth somethin'...", 4.5f);
+                    RCKFunctions.DisplayHeardLine("Bandit: ...fancy lookin' papers sure could be worth somethin'...", 6f);
                     RCKFunctions.CompleteQuestStage("MQ_Gratulate", 40);
                     RCKFunctions.SetQuestStage("MQ_Gratulate", 45);
                 }

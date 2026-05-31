@@ -18,7 +18,7 @@ namespace RPGCreationKit.Game.ResultScripts
             {
                 
 
-                mack.SetNewBehaviourTree(false, "BTP_EmptyStatePurpose");
+                mack.SetNewBehaviourTree(false, "SBTP_UseCurrentActionPoint");
                 mack.SwitchBehaviourTree(false);
 
                 // Move behind the house
@@ -33,8 +33,8 @@ namespace RPGCreationKit.Game.ResultScripts
             if (allAI.ContainsKey("CityGuard003"))
             {
                 SaveSystem.AISaveData mackData = allAI["CityGuard003"];
-                mackData.purposeBehaviourTreeID = "BTP_EmptyStatePurpose";
-                mackData.curBehaviourTreeID = "BTP_EmptyStatePurpose";
+                mackData.purposeBehaviourTreeID = "SBTP_UseCurrentActionPoint";
+                mackData.curBehaviourTreeID = "SBTP_UseCurrentActionPoint";
             }
 
             // Destroy the script
