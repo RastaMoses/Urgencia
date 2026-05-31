@@ -11,7 +11,7 @@ namespace RPGCreationKit.Game.ResultScripts
         void Start()
         {
             // Your code here
-            WaitUIManager.instance.OpenCloseWaitUIBySleeping();
+            RCKFunctions.DisplayHeardLine("I can't sleep now.", 2f);
 
             // Destroy the script
             Destroy(this);
