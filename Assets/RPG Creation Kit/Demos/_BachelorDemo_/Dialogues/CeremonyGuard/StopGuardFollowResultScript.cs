@@ -20,6 +20,7 @@ namespace RPGCreationKit.Game.ResultScripts
 
                 mack.SetNewBehaviourTree(false, "SBTP_UseCurrentActionPoint");
                 mack.SwitchBehaviourTree(false);
+                mack.followTargetOutsideOfCell = false;
 
                 // Move behind the house
                 //mack.transform.position = new Vector3(30f, 0.65f, 11.67f);

@@ -963,7 +963,7 @@ MonoBehaviour:
   m_Name: NPC Dialogue Line
   m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.NPCDialogueLineNode
   graph: {fileID: 11400000}
-  position: {x: 10280, y: -744}
+  position: {x: 10312, y: -1000}
   ports:
     keys:
     - nextLine
@@ -1020,93 +1020,8 @@ MonoBehaviour:
   resultScript: 
   events:
     questDealers: []
-    questUpdaters:
-    - questToUpdate: {fileID: 11400000, guid: 8c8e939e4e313b9488bd5da3d84ee154, type: 2}
-      completed: 1
-      questStage: 30
-      hideLog: 0
-    - questToUpdate: {fileID: 11400000, guid: 8c8e939e4e313b9488bd5da3d84ee154, type: 2}
-      completed: 0
-      questStage: 40
-      hideLog: 0
-    consequences:
-    - type: 32
-      gameObjects: []
-      toInstantiate: []
-      toTeleport: []
-      npcsToChangePath: []
-      npcsToChangeDialogue: []
-      npcsToSendToSpeakToThePlayer: []
-      npcsToSetHostility: []
-      npcsToFollowCurPath: []
-      npcsToSpeakToNPC: []
-      itemsToModifyInInventory: []
-      itemToModifyInInventory:
-        isPlayerInventory: 1
-        inventoryID: 
-        item: {fileID: 11400000, guid: 23532218032bbc84592a81b49acb097c, type: 2}
-        metadata:
-          isOwned: 0
-          ownerID: 
-          intProperty1: 0
-        amount: 1
-      m_Parent: {fileID: 0}
-      delay: 0
-      mustRun: 0
-      Questions: []
-      newUseLengtOfClip: 0
-      newAudioClip: {fileID: 0}
-      newLineTime: 0
-      newLine: 
-      question:
-        Question: 
-        qID: 
-        Position: 0
-        DeleteAfterAnswer: 0
-      setAsHostile: 0
-      isPlayer: 0
-      sceneIndex: 0
-      coordinates: {x: 0, y: 0, z: 0}
-      gameObject: {fileID: 0}
-      newPath: {fileID: 0}
-      shouldFollowNewPath: 0
-      pathStartIndex: 0
-      AlertMessage: 
-      duration: 0
-      resetType: 0
-      gotoObject: {fileID: 0}
-      interactiveObject: {fileID: 0}
-      interactiveOption: 0
-      removeAtIndex: 0
-      questDealer:
-        newQuest: {fileID: 0}
-        atIndex: 0
-        hideAlert: 0
-      questUpdater:
-        questToUpdate: {fileID: 0}
-        completed: 0
-        questStage: 0
-        hideLog: 0
-      targetTransform: {fileID: 0}
-      inventory: {fileID: 0}
-      isPlayerInventory: 0
-      itemInInventory: {fileID: 0}
-      itemAmount: 0
-      radius: 0
-      isMerchant: 0
-      merchant: {fileID: 0}
-      mutableID: 
-      restoreMutable: 0
-      rckAID: 
-      dialogueGraph: {fileID: 0}
-      immediatlySwitchToBehaviour: 0
-      behaviourTree: {fileID: 0}
-      factionID: 
-      doorID: 
-      lockLevel: 0
-      spellToLearn: {fileID: 0}
-      speakLineID: 
-      speakLineDisplayAsHeard: 0
+    questUpdaters: []
+    consequences: []
   speakerID: 0
   line: And you're coming here tomorrow to help rebuild that wall.
   plainLine: 0
@@ -2422,93 +2337,8 @@ MonoBehaviour:
   resultScript: 
   events:
     questDealers: []
-    questUpdaters:
-    - questToUpdate: {fileID: 11400000, guid: 8c8e939e4e313b9488bd5da3d84ee154, type: 2}
-      completed: 1
-      questStage: 30
-      hideLog: 0
-    - questToUpdate: {fileID: 11400000, guid: 8c8e939e4e313b9488bd5da3d84ee154, type: 2}
-      completed: 0
-      questStage: 40
-      hideLog: 0
-    consequences:
-    - type: 32
-      gameObjects: []
-      toInstantiate: []
-      toTeleport: []
-      npcsToChangePath: []
-      npcsToChangeDialogue: []
-      npcsToSendToSpeakToThePlayer: []
-      npcsToSetHostility: []
-      npcsToFollowCurPath: []
-      npcsToSpeakToNPC: []
-      itemsToModifyInInventory: []
-      itemToModifyInInventory:
-        isPlayerInventory: 1
-        inventoryID: 
-        item: {fileID: 11400000, guid: 23532218032bbc84592a81b49acb097c, type: 2}
-        metadata:
-          isOwned: 0
-          ownerID: 
-          intProperty1: 0
-        amount: 1
-      m_Parent: {fileID: 0}
-      delay: 0
-      mustRun: 0
-      Questions: []
-      newUseLengtOfClip: 0
-      newAudioClip: {fileID: 0}
-      newLineTime: 0
-      newLine: 
-      question:
-        Question: 
-        qID: 
-        Position: 0
-        DeleteAfterAnswer: 0
-      setAsHostile: 0
-      isPlayer: 0
-      sceneIndex: 0
-      coordinates: {x: 0, y: 0, z: 0}
-      gameObject: {fileID: 0}
-      newPath: {fileID: 0}
-      shouldFollowNewPath: 0
-      pathStartIndex: 0
-      AlertMessage: 
-      duration: 0
-      resetType: 0
-      gotoObject: {fileID: 0}
-      interactiveObject: {fileID: 0}
-      interactiveOption: 0
-      removeAtIndex: 0
-      questDealer:
-        newQuest: {fileID: 0}
-        atIndex: 0
-        hideAlert: 0
-      questUpdater:
-        questToUpdate: {fileID: 0}
-        completed: 0
-        questStage: 0
-        hideLog: 0
-      targetTransform: {fileID: 0}
-      inventory: {fileID: 0}
-      isPlayerInventory: 0
-      itemInInventory: {fileID: 0}
-      itemAmount: 0
-      radius: 0
-      isMerchant: 0
-      merchant: {fileID: 0}
-      mutableID: 
-      restoreMutable: 0
-      rckAID: 
-      dialogueGraph: {fileID: 0}
-      immediatlySwitchToBehaviour: 0
-      behaviourTree: {fileID: 0}
-      factionID: 
-      doorID: 
-      lockLevel: 0
-      spellToLearn: {fileID: 0}
-      speakLineID: 
-      speakLineDisplayAsHeard: 0
+    questUpdaters: []
+    consequences: []
   speakerID: 0
   line: But here take the key and hopefully you don't see any bandits down there.
   plainLine: 0
@@ -3238,8 +3068,170 @@ MonoBehaviour:
   resultScript: 
   events:
     questDealers: []
-    questUpdaters: []
-    consequences: []
+    questUpdaters:
+    - questToUpdate: {fileID: 11400000, guid: 8c8e939e4e313b9488bd5da3d84ee154, type: 2}
+      completed: 1
+      questStage: 30
+      hideLog: 0
+    - questToUpdate: {fileID: 11400000, guid: 8c8e939e4e313b9488bd5da3d84ee154, type: 2}
+      completed: 0
+      questStage: 40
+      hideLog: 0
+    consequences:
+    - type: 32
+      gameObjects: []
+      toInstantiate: []
+      toTeleport: []
+      npcsToChangePath: []
+      npcsToChangeDialogue: []
+      npcsToSendToSpeakToThePlayer: []
+      npcsToSetHostility: []
+      npcsToFollowCurPath: []
+      npcsToSpeakToNPC: []
+      itemsToModifyInInventory: []
+      itemToModifyInInventory:
+        isPlayerInventory: 1
+        inventoryID: 
+        item: {fileID: 11400000, guid: 23532218032bbc84592a81b49acb097c, type: 2}
+        metadata:
+          isOwned: 0
+          ownerID: 
+          intProperty1: 0
+        amount: 1
+      m_Parent: {fileID: 0}
+      delay: 0
+      mustRun: 0
+      Questions: []
+      newUseLengtOfClip: 0
+      newAudioClip: {fileID: 0}
+      newLineTime: 0
+      newLine: 
+      question:
+        Question: 
+        qID: 
+        Position: 0
+        DeleteAfterAnswer: 0
+      setAsHostile: 0
+      isPlayer: 0
+      sceneIndex: 0
+      coordinates: {x: 0, y: 0, z: 0}
+      gameObject: {fileID: 0}
+      newPath: {fileID: 0}
+      shouldFollowNewPath: 0
+      pathStartIndex: 0
+      AlertMessage: 
+      duration: 0
+      resetType: 0
+      gotoObject: {fileID: 0}
+      interactiveObject: {fileID: 0}
+      interactiveOption: 0
+      removeAtIndex: 0
+      questDealer:
+        newQuest: {fileID: 0}
+        atIndex: 0
+        hideAlert: 0
+      questUpdater:
+        questToUpdate: {fileID: 0}
+        completed: 0
+        questStage: 0
+        hideLog: 0
+      targetTransform: {fileID: 0}
+      inventory: {fileID: 0}
+      isPlayerInventory: 0
+      itemInInventory: {fileID: 0}
+      itemAmount: 0
+      radius: 0
+      isMerchant: 0
+      merchant: {fileID: 0}
+      mutableID: 
+      restoreMutable: 0
+      rckAID: 
+      dialogueGraph: {fileID: 0}
+      immediatlySwitchToBehaviour: 0
+      behaviourTree: {fileID: 0}
+      factionID: 
+      doorID: 
+      lockLevel: 0
+      spellToLearn: {fileID: 0}
+      speakLineID: 
+      speakLineDisplayAsHeard: 0
+    - type: 17
+      gameObjects: []
+      toInstantiate: []
+      toTeleport: []
+      npcsToChangePath: []
+      npcsToChangeDialogue: []
+      npcsToSendToSpeakToThePlayer: []
+      npcsToSetHostility: []
+      npcsToFollowCurPath: []
+      npcsToSpeakToNPC: []
+      itemsToModifyInInventory: []
+      itemToModifyInInventory:
+        isPlayerInventory: 1
+        inventoryID: 
+        item: {fileID: 11400000, guid: 23532218032bbc84592a81b49acb097c, type: 2}
+        metadata:
+          isOwned: 0
+          ownerID: 
+          intProperty1: 0
+        amount: 1
+      m_Parent: {fileID: 0}
+      delay: 0
+      mustRun: 0
+      Questions: []
+      newUseLengtOfClip: 0
+      newAudioClip: {fileID: 0}
+      newLineTime: 0
+      newLine: 
+      question:
+        Question: 
+        qID: 
+        Position: 0
+        DeleteAfterAnswer: 0
+      setAsHostile: 0
+      isPlayer: 0
+      sceneIndex: 0
+      coordinates: {x: 0, y: 0, z: 0}
+      gameObject: {fileID: 0}
+      newPath: {fileID: 0}
+      shouldFollowNewPath: 0
+      pathStartIndex: 0
+      AlertMessage: Tavern Cellar Key Added
+      duration: 3
+      resetType: 0
+      gotoObject: {fileID: 0}
+      interactiveObject: {fileID: 0}
+      interactiveOption: 0
+      removeAtIndex: 0
+      questDealer:
+        newQuest: {fileID: 0}
+        atIndex: 0
+        hideAlert: 0
+      questUpdater:
+        questToUpdate: {fileID: 0}
+        completed: 0
+        questStage: 0
+        hideLog: 0
+      targetTransform: {fileID: 0}
+      inventory: {fileID: 0}
+      isPlayerInventory: 0
+      itemInInventory: {fileID: 0}
+      itemAmount: 0
+      radius: 0
+      isMerchant: 0
+      merchant: {fileID: 0}
+      mutableID: 
+      restoreMutable: 0
+      rckAID: 
+      dialogueGraph: {fileID: 0}
+      immediatlySwitchToBehaviour: 0
+      behaviourTree: {fileID: 0}
+      factionID: 
+      doorID: 
+      lockLevel: 0
+      spellToLearn: {fileID: 0}
+      speakLineID: 
+      speakLineDisplayAsHeard: 0
   endNode: {fileID: 0}
 --- !u!114 &6160400795008230662
 MonoBehaviour:

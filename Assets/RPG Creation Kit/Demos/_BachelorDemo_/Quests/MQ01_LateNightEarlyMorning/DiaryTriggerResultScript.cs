@@ -10,9 +10,10 @@ namespace RPGCreationKit.Game.ResultScripts
     {
         void Start()
         {
+            if (RCKFunctions.GetStage("MQ_LateNightEarlyMorning") != 40 || RCKFunctions.IsQuestCompleted("MQ_LateNightEarlyMorning") == true) { Destroy(this); return; }
             // Your code here
             InGameHelpUI.instance.TriggerDiaryHelp();
-            RckPlayer.instance.DisplayHeardLine("How is it so bright already?", 5f);
+            
 
             // Destroy the script
             Destroy(this);

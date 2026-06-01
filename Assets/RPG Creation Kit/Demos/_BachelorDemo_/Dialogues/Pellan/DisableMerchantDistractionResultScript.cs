@@ -13,7 +13,7 @@ namespace RPGCreationKit.Game.ResultScripts
         void Start()
         {
             // Your code here
-            if (RCKFunctions.IsQuestCompleted("LateNightEarlyMorning")==true);
+            if (RCKFunctions.IsQuestCompleted("LateNightEarlyMorning"));
             {
                 CellInformation.TryToGetAI("Lanius001", out RckAI lanius);
                 if (lanius != null) { lanius.DestroyThis(); }

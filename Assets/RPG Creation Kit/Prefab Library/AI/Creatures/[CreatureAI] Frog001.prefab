@@ -485,20 +485,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.BodyData
   isMale: 1
   myAvatar: {fileID: 9000000, guid: 49a3af4cde1291e4b98a8c42a19c66ec, type: 3}
-  head: {fileID: 0}
+  head: {fileID: 3360376016713728217}
   eyes: {fileID: 4698735329548586463}
-  upperbody: {fileID: 0}
-  arms: {fileID: 0}
-  hands: {fileID: 0}
-  lowerbody: {fileID: 0}
-  feet: {fileID: 0}
+  upperbody: {fileID: 3360376016713728217}
+  arms: {fileID: 3360376016713728217}
+  hands: {fileID: 3360376016713728217}
+  lowerbody: {fileID: 3360376016713728217}
+  feet: {fileID: 3360376016713728217}
   hairIndex: -1
   eyeIndex: 0
   hair: {fileID: 0}
   rHand: {fileID: 4725663034807184118}
   lHand: {fileID: 7309424724578288797}
-  upperChest: {fileID: 0}
-  hips: {fileID: 0}
+  upperChest: {fileID: 3317772642383132789}
+  hips: {fileID: 3317772642383132789}
   defaultUpperbody: {fileID: 0}
   defaultLowerbody: {fileID: 0}
 --- !u!114 &7715864188727067663
@@ -1512,7 +1512,7 @@ Transform:
   m_GameObject: {fileID: 8420971020764054576}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.095, y: 0.464, z: 84.275}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.2547348, y: 0.25473484, z: 0.2547348}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -1609,13 +1609,13 @@ NavMeshAgent:
   avoidancePriority: 50
   m_AngularSpeed: 380
   m_StoppingDistance: 1
-  m_AutoTraverseOffMeshLink: 0
+  m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
-  m_AutoRepath: 1
+  m_AutoRepath: 0
   m_Height: 2
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
+  m_ObstacleAvoidanceType: 0
 --- !u!114 &2025976131815138517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1692,7 +1692,7 @@ MonoBehaviour:
   target: {fileID: 0}
   previousTarget: {fileID: 0}
   rotSpeed: 1
-  bodyWeight: 1
+  bodyWeight: 0
   shouldLook: 0
 --- !u!114 &8617898016703503100
 MonoBehaviour:
@@ -1945,7 +1945,7 @@ MonoBehaviour:
   entityName: Frog-Pellan
   serializedGuid: 
   myCellInfo: {fileID: 0}
-  entityFocusPart: {fileID: 0}
+  entityFocusPart: {fileID: 3317772642383132789}
   isLoaded: 0
   belongsToFactions:
   - {fileID: 11400000, guid: f1567f400e48e1b48bcb6c63aebeed45, type: 2}
@@ -1993,7 +1993,7 @@ MonoBehaviour:
   inPersistentWorldspaceID: 
   inPersistentCellID: 
   persistentLifePulse: 5
-  bodyData: {fileID: 0}
+  bodyData: {fileID: 7946083165685340904}
   usesMovements: 0
   usesOfflineMode: 1
   usesTlinkUnstuck: 1
@@ -2092,8 +2092,8 @@ MonoBehaviour:
   inventory: {fileID: 8617898016703503100}
   equipment: {fileID: 6175785056795015882}
   lootingPoint: {fileID: 0}
-  allowsLootWhenDead: 1
-  allowsLootOfEquipment: 1
+  allowsLootWhenDead: 0
+  allowsLootOfEquipment: 0
   currentWeaponOnHand: {fileID: 2013353260564493195}
   isUsingMeleeWeapon: 0
   isUsingRangedWeapon: 0
