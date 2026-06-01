@@ -37,7 +37,7 @@ namespace RPGCreationKit.Game.ResultScripts
                 CellInformation.TryToGetAI("Pellan001", out pellan);
                 if (pellan != null)
                 {
-                    pellan.DestroyThis();
+                    RCKFunctions.SendIntoOblivion("Pellan001");
                 }
                 RCKFunctions.MutateMutable("Mutable_FrogQuestFail", false);
             }

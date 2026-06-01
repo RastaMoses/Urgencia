@@ -34,7 +34,7 @@ namespace RPGCreationKit.AI
         public void OnGoingOffline()
         {
             ai.pauseBT = true;
-            GFX.SetActive(false);
+            if (GFX !=null) GFX.SetActive(false);
 
             rigidbody.isKinematic = true;
 
@@ -56,7 +56,7 @@ namespace RPGCreationKit.AI
         /// </summary>
         public void OnGoingOnline()
         {
-            GFX.SetActive(true);
+            if (GFX != null) GFX.SetActive(true);
 
             if (ai.isPersistentReference && !ai.isAlive)
             {
