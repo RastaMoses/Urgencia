@@ -1,6 +1,7 @@
 ﻿using RPGCreationKit;
 using RPGCreationKit.AI;
 using RPGCreationKit.CellsSystem;
+using RPGCreationKit.PersistentReferences;
 using RPGCreationKit.Quests;
 using RPGCreationKit.SaveSystem;
 using UnityEngine;
@@ -17,6 +18,15 @@ namespace RPGCreationKit.Quests
 
             // Deactivate Mutable Goto so this can never be triggered again
             MutateGoto();
+
+            var demoItemAdder = FindAnyObjectByType<DemoItemAdder>();
+            //Add Demo Item
+            if (demoItemAdder.addDemoItem == true)
+            {
+                Inventory.PlayerInventory.AddItem("DemoItem", 1, false);
+                Debug.Log("Added Demo Item to inventory");
+                Destroy(demoItemAdder);
+            }
 
             //Set Equipment and Spells according to the class chosen by the player at the beginning of the game
             switch (SaveSystemManager.instance.saveFile.PlayerData.selectedClass)

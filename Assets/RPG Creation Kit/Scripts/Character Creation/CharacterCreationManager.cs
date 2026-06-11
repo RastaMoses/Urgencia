@@ -1,4 +1,5 @@
 using RPGCreationKit;
+using RPGCreationKit.PersistentReferences;
 using RPGCreationKit.Player;
 using RPGCreationKit.SaveSystem;
 using System.Collections;
@@ -93,6 +94,8 @@ public class CharacterCreationManager : MonoBehaviour
     [SerializeField] private List<Item> _ranItems;
     [SerializeField] private List<Item> _magItems;
 
+    public bool startWithDemoItem = false;
+    public Item demoItem;
     public enum StartClassess
     {
         Warrior = 0,
@@ -285,9 +288,10 @@ public class CharacterCreationManager : MonoBehaviour
         Savegame newSave = SaveSystemManager.instance.CreateNewCharacter(characterNameField.text, !isCreatingMale, selectedRace.ID, GenerateFaceBlendshapeSaveData(), selectedHair, selectedEyes, (int)curClass, creationAttributes);
         messageBoxConfirmation.SetActive(false);
         messagePanel.SetActive(false);
-
         // Load new character
         SaveSystemManager.instance.LoadSaveGame(newSave.fileInfo, newSave.saveFile);
+
+        
     }
 
     public void StartDemoTwo()
@@ -677,5 +681,13 @@ public class CharacterCreationManager : MonoBehaviour
 
         m_Animator.SetBool("isUsingTorch", equipment.isUsingTorch);
 
+    }
+
+
+    public void SetDemoItem()
+    {
+        startWithDemoItem = true;
+        FindAnyObjectByType<DemoItemAdder>().addDemoItem = true;
+        GoToClassSelection();
     }
 }
