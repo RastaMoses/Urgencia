@@ -13,6 +13,7 @@ namespace RPGCreationKit.Quests
         {
             // Your code here
             MutateGoto();
+            TimeOfDayManager.instance.SetTime(12.0f);
 
             // Use this line to destroy the script if it is not longer needed.
             Destroy(this);

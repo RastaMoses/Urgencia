@@ -15,6 +15,7 @@ namespace RPGCreationKit.Quests
         {
             quest.questScriptExecutionDelay = 1f;
             RunQuestScript();
+            
         }
 
         // CustomUpdate runs once every (quest.questScriptExecutionDelay) seconds
