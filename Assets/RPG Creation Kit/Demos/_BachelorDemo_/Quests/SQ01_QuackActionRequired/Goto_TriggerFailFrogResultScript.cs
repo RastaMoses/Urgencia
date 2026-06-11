@@ -11,7 +11,7 @@ namespace RPGCreationKit.Game.ResultScripts
         void Start()
         {
             // Your code here
-            if (RCKFunctions.GetStage("SQ_DealingHealingCrystals") == 40) 
+            if (RCKFunctions.GetStage("SQ_DealingHealingCrystals") == 40 && RCKFunctions.IsQuestCompleted("SQ_QuackActionRequired") == false) 
             {
                 //RckPlayer.instance.DisplayHeardLine("I don't think Pellan has a lot more time...", 5f);
                 AlertMessage.instance.InitAlertMessage("I don't think Pellan has a lot more time...", 5f);

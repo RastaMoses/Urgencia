@@ -11,7 +11,7 @@ namespace RPGCreationKit.Game.ResultScripts
         void Start()
         {
             // Your code here
-            if (RCKFunctions.GetStage("SQ_QuackActionRequired") == 40)
+            if (RCKFunctions.GetStage("SQ_QuackActionRequired") == 40 && RCKFunctions.IsQuestCompleted("SQ_DealingHealingCrystals") == false)
             {
                 //RckPlayer.instance.DisplayHeardLine("That merchant won't be there for long...", 5f);
                 AlertMessage.instance.InitAlertMessage("That merchant won't be there for long...", 5f);
