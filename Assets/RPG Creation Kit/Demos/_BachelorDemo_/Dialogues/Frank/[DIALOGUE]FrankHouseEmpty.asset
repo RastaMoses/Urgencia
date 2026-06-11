@@ -1,0 +1,224 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6963147529789588539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50263695e5376674192cc0b16b6ceed2, type: 3}
+  m_Name: NPC Dialogue Line
+  m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.NPCDialogueLineNode
+  graph: {fileID: 11400000}
+  position: {x: -88, y: -216}
+  ports:
+    keys:
+    - nextLine
+    - playerQuestions
+    - input
+    - output
+    values:
+    - _fieldName: nextLine
+      _node: {fileID: -6963147529789588539}
+      _typeQualifiedName: RPGCreationKit.DialogueSystem.NPCDialogueLineNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: endNode
+        node: {fileID: -2021796826064513567}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: playerQuestions
+      _node: {fileID: -6963147529789588539}
+      _typeQualifiedName: System.Collections.Generic.List`1[[RPGCreationKit.PlayerQuestion,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: input
+      _node: {fileID: -6963147529789588539}
+      _typeQualifiedName: RPGCreationKit.DialogueSystem.DialogueNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: firstNode
+        node: {fileID: -293981010949319691}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: -6963147529789588539}
+      _typeQualifiedName: RPGCreationKit.DialogueSystem.DialogueNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  guidStr: 01c04443-af38-429f-9cd2-7a274281e7ed
+  input: {fileID: 0}
+  output: {fileID: 0}
+  resultScript: 
+  events:
+    questDealers: []
+    questUpdaters: []
+    consequences: []
+  speakerID: 0
+  line: Please Leave!
+  plainLine: 1
+  useLenghtOfClip: 0
+  audioClip: {fileID: 0}
+  lineTime: 3
+  dialogueAnimationStr: 
+  dialogueAnimationListeningStr: 
+  afterLine: 0
+  nextLine: {fileID: 0}
+  removePreviousQuestions: 0
+  questionsToRemove: []
+  playerQuestions: []
+  lookAtEntityID: 0
+--- !u!114 &-2021796826064513567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7f1357e040b05c40a508fee3349882a, type: 3}
+  m_Name: End
+  m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.EndNode
+  graph: {fileID: 11400000}
+  position: {x: 456, y: -136}
+  ports:
+    keys:
+    - endNode
+    - input
+    - output
+    values:
+    - _fieldName: endNode
+      _node: {fileID: -2021796826064513567}
+      _typeQualifiedName: RPGCreationKit.DialogueSystem.EndNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: nextLine
+        node: {fileID: -6963147529789588539}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: input
+      _node: {fileID: -2021796826064513567}
+      _typeQualifiedName: RPGCreationKit.DialogueSystem.DialogueNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: -2021796826064513567}
+      _typeQualifiedName: RPGCreationKit.DialogueSystem.DialogueNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  guidStr: b44bae9b-dfac-4d2b-89d0-5fdda4d4898a
+  input: {fileID: 0}
+  output: {fileID: 0}
+  resultScript: 
+  events:
+    questDealers: []
+    questUpdaters: []
+    consequences: []
+  endNode: {fileID: 0}
+--- !u!114 &-293981010949319691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 790f84322cdc6854dbf835b99e7709e3, type: 3}
+  m_Name: Entry
+  m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.EntryNode
+  graph: {fileID: 11400000}
+  position: {x: -408, y: -184}
+  ports:
+    keys:
+    - firstNode
+    - input
+    - output
+    values:
+    - _fieldName: firstNode
+      _node: {fileID: -293981010949319691}
+      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: input
+        node: {fileID: -6963147529789588539}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: input
+      _node: {fileID: -293981010949319691}
+      _typeQualifiedName: RPGCreationKit.DialogueSystem.DialogueNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: -293981010949319691}
+      _typeQualifiedName: RPGCreationKit.DialogueSystem.DialogueNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  guidStr: 88ca97f8-bd4e-4c07-b434-a0a6cc707162
+  input: {fileID: 0}
+  output: {fileID: 0}
+  resultScript: 
+  events:
+    questDealers: []
+    questUpdaters: []
+    consequences: []
+  isNpcToNpcDialogue: 0
+  firstNode: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3617e7309ebdc8e4fb21eacbf4cfee45, type: 3}
+  m_Name: '[DIALOGUE]FrankHouseEmpty'
+  m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.DialogueGraph
+  nodes:
+  - {fileID: -293981010949319691}
+  - {fileID: -6963147529789588539}
+  - {fileID: -2021796826064513567}
+  _IS_DEMO_FILE: 1
+  ID: DIALOGUE_FrankHouseEmpty
