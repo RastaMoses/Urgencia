@@ -12,6 +12,7 @@ namespace RPGCreationKit.Quests
         public void Start()
         {
             RunQuestScript();
+            quest.questScriptExecutionDelay = 1f; // Set the delay between each CustomUpdate execution to 1 second.
         }
 
         // CustomUpdate runs once every (quest.questScriptExecutionDelay) seconds
@@ -20,8 +21,16 @@ namespace RPGCreationKit.Quests
             base.CustomUpdate();
 
             // Your code here
-            
-            
+
+            //If looking for flower then advance time to a certain point unless time already evening
+            if (RCKFunctions.GetStage("SQ_QuackActionRequired") >= 10)
+            {
+                if(TimeOfDayManager.instance.GetCurrentTime() >= 18f && TimeOfDayManager.instance.currentTimeScale != 0)
+                {
+                    TimeOfDayManager.instance.currentTimeScale = 0;
+                }
+
+            }
         }
     }
 }

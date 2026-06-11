@@ -17,6 +17,8 @@ namespace RPGCreationKit.Quests
             RCKFunctions.MutateMutable("Mutable_BellRingingCityExterior", true);
 
             RCKFunctions.UnlockDoor("UrgenciaToTavernCellar");
+            TimeOfDayManager.instance.SetTime(22f);
+
             // Use this line to destroy the script if it is not longer needed.
             Destroy(this);
         }

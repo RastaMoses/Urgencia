@@ -97,7 +97,7 @@ namespace RPGCreationKit.Quests
                 default:
                     break;
             }
-            TimeOfDayManager.instance.SetTime(19.0f);
+            TimeOfDayManager.instance.SetTime(12.0f);
             InGameHelpUI.instance.StartTutorial();
 
             // Use this line to destroy the script if it is not longer needed.

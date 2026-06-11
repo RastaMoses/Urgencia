@@ -13,7 +13,8 @@ namespace RPGCreationKit.Game.ResultScripts
             // Your code here
             if (RCKFunctions.GetStage("SQ_QuackActionRequired") == 40)
             {
-                RckPlayer.instance.DisplayHeardLine("That merchant won't be there for long...", 5f);
+                //RckPlayer.instance.DisplayHeardLine("That merchant won't be there for long...", 5f);
+                AlertMessage.instance.InitAlertMessage("That merchant won't be there for long...", 5f);
                 var gotoComp = GetComponent<Goto>();
                 if (gotoComp != null) { gotoComp.AllowMultipleOnEnterTriggering = false; }
             }

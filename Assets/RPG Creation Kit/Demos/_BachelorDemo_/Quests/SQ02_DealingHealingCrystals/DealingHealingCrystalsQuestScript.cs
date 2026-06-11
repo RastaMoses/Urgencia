@@ -9,6 +9,7 @@ namespace RPGCreationKit.Quests
 {
     public class DealingHealingCrystalsQuestScript : QuestScript
     {
+
         // This will start running the CustomUpdate as soon as the quest starts.
         public void Start()
         {
@@ -28,7 +29,11 @@ namespace RPGCreationKit.Quests
                 RCKFunctions.CompleteQuestStage("SQ_DealingHealingCrystals", 30);
                 RCKFunctions.SetQuestStage("SQ_DealingHealingCrystals", 40);
             }
-            
+
+            if (TimeOfDayManager.instance.GetCurrentTime() >= 18f && TimeOfDayManager.instance.currentTimeScale != 0)
+            {
+                TimeOfDayManager.instance.currentTimeScale = 0;
+            }
         }
     }
 }

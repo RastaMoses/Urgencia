@@ -15,6 +15,9 @@ namespace RPGCreationKit.Quests
             RCKFunctions.MutateMutable("Mutable_BellRingingTavern", false);
             RCKFunctions.MutateMutable("Mutable_BellRingingTavernCellar", false); 
             RCKFunctions.MutateMutable("Mutable_BellRingingCityExterior", false);
+
+            TimeOfDayManager.instance.currentTimeScale = 0;
+            TimeOfDayManager.instance.SetTime(19f);
             // Use this line to destroy the script if it is not longer needed.
             Destroy(this);
         }
