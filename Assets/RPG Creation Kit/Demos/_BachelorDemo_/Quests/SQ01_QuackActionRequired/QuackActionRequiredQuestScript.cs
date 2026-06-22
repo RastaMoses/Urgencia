@@ -25,7 +25,7 @@ namespace RPGCreationKit.Quests
             //If looking for flower then advance time to a certain point unless time already evening
             if (RCKFunctions.GetStage("SQ_QuackActionRequired") >= 10)
             {
-                if(TimeOfDayManager.instance.GetCurrentTime() >= 18f && TimeOfDayManager.instance.currentTimeScale != 0)
+                if(TimeOfDayManager.instance.GetCurrentTime() >= 19f && TimeOfDayManager.instance.currentTimeScale != 0)
                 {
                     TimeOfDayManager.instance.currentTimeScale = 0;
                 }

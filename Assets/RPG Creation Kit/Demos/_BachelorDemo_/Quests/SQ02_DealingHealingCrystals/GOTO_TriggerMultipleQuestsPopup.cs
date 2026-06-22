@@ -11,7 +11,7 @@ namespace RPGCreationKit.Game.ResultScripts
         {
             // Your code here
             TutorialAlertMessage.instance.OpenMessage("You have multiple quests active at the same time.\n\n\nTo track them you can open your journal with J.\n");
-
+            RCKFunctions.MutateMutable("MutableTriggerMultipleQuests", true);
 
             // Destroy the script
             Destroy(this);

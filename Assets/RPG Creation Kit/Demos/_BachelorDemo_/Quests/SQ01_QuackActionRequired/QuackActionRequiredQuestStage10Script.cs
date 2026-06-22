@@ -11,8 +11,8 @@ namespace RPGCreationKit.Quests
         private void Start()
         {
             // Your code here
-            TimeOfDayManager.instance.SetTime(13.0f);
-            TimeOfDayManager.instance.currentTimeScale = 0.07f;
+            TimeOfDayManager.instance.SetTime(12.0f);
+            TimeOfDayManager.instance.currentTimeScale = 0.035f;
             // Use this line to destroy the script if it is not longer needed.
             Destroy(this);
         }
