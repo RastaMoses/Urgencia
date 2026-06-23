@@ -13,7 +13,7 @@ namespace RPGCreationKit.Quests
         private void Start()
         {
             // Your code here
-            TutorialAlertMessage.instance.OpenMessage("Ah, you're finally awake.\nAfter receiving your graduation notice from the Academy, you and your friend Pellan have been on a party bender until the official ceremony commences.\n\n[Insert important starting information here]\n\n");
+            TutorialAlertMessage.instance.OpenMessage("Ah, you're finally awake.\nAfter receiving your graduation notice from the Academy, you and your friend Pellan have been on a party bender until the official ceremony commences.\n\nYou should go find Pellan. He's usually in the Tavern. But where did you end up?\n");
 
 
             // Deactivate Mutable Goto so this can never be triggered again

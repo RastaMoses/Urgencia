@@ -1798,6 +1798,7 @@ MonoBehaviour:
   deathSounds:
   - {fileID: 8300000, guid: 2bd094b0c17491e4884ebf94cfce55cf, type: 3}
   - {fileID: 8300000, guid: f9e4f75eeca972c41b2431cc0ed5a8bd, type: 3}
+  onEnterInCombatLines: []
 --- !u!1 &2030339841249879041
 GameObject:
   m_ObjectHideFlags: 0
@@ -2500,7 +2501,8 @@ MonoBehaviour:
   curXP: 0
   nextLvlXP: 60
   curAttributePoints: 0
-  xpMultiplierOnDeath: 0.061
+  xpMultiplierOnDeath: 0
+  skipAttributesCalculationOnStart: 0
   activeEffects: []
 --- !u!114 &241798948254054486
 MonoBehaviour:
@@ -2709,9 +2711,11 @@ MonoBehaviour:
   currentWeaponAnimator: {fileID: 0}
   currentAmmo: {fileID: 0}
   currentAmmoObject: {fileID: 0}
+  preventShieldDrop: 0
   currentShield: {fileID: 0}
   currentShieldObject: {fileID: 0}
   currentFPShieldObject: {fileID: 0}
+  preventTorchDrop: 0
   currentTorch: {fileID: 0}
   currentTorchInHand: {fileID: 0}
 --- !u!114 &2373725836075107951
@@ -3226,6 +3230,8 @@ MonoBehaviour:
   keepTicking: 1
   forwardRckAI: {fileID: 0}
   ignoreVisionWhenAlertedKillNPC: 1
+  spawnOnAggroAlertEvent: 0
+  ignoreVisionWhenAlertedAggroNPC: 0
   hasARangedWeapon: 0
   hasAMeleeWeapon: 0
   distanceFromMainTarget: 0
@@ -3238,6 +3244,7 @@ MonoBehaviour:
   isDismounting: 0
   isMounted: 0
   isMountedButUnloadedPREF: 0
+  goToSleepLogicEnabled: 0
   teleportIfUnloadedWhileGoingToDoor: 1
   teleportIfWalkableSurfaceEnds: 1
   isReachingDoor: 0
@@ -3249,6 +3256,7 @@ MonoBehaviour:
   enteredDoorLastTimeRot: {x: 0, y: 0, z: 0, w: 0}
   doorEnteredID: 
   aiwuhje: 
+  forceRagdollEveryFrame: 0
   mountUsingPreviously: {fileID: 0}
   toDoorTransform: {fileID: 0}
   followTargetOutsideOfCell: 0

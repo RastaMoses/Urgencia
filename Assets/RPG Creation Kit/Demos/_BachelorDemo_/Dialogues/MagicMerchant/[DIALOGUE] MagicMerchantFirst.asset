@@ -48,10 +48,10 @@ MonoBehaviour:
       _typeQualifiedName: RPGCreationKit.DialogueSystem.DialogueNode, Assembly-CSharp,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
-      - fieldName: playerQuestions 1
+      - fieldName: playerQuestions 0
         node: {fileID: 2141748680470740104}
         reroutePoints: []
-      - fieldName: playerQuestions 0
+      - fieldName: playerQuestions 1
         node: {fileID: 2141748680470740104}
         reroutePoints: []
       _direction: 0
@@ -180,7 +180,7 @@ MonoBehaviour:
       itemToModifyInInventory:
         isPlayerInventory: 1
         inventoryID: 
-        item: {fileID: 11400000, guid: 894cf238ac2dabd4ba02db159552ba6d, type: 2}
+        item: {fileID: 11400000, guid: d07dcb6d9328e934f9f7b3d00178997f, type: 2}
         metadata:
           isOwned: 0
           ownerID: 
@@ -209,6 +209,83 @@ MonoBehaviour:
       pathStartIndex: 0
       AlertMessage: 
       duration: 0
+      resetType: 0
+      gotoObject: {fileID: 0}
+      interactiveObject: {fileID: 0}
+      interactiveOption: 0
+      removeAtIndex: 0
+      questDealer:
+        newQuest: {fileID: 0}
+        atIndex: 0
+        hideAlert: 0
+      questUpdater:
+        questToUpdate: {fileID: 0}
+        completed: 0
+        questStage: 0
+        hideLog: 0
+      targetTransform: {fileID: 0}
+      inventory: {fileID: 0}
+      isPlayerInventory: 0
+      itemInInventory: {fileID: 0}
+      itemAmount: 0
+      radius: 0
+      isMerchant: 0
+      merchant: {fileID: 0}
+      mutableID: 
+      restoreMutable: 0
+      rckAID: 
+      dialogueGraph: {fileID: 0}
+      immediatlySwitchToBehaviour: 0
+      behaviourTree: {fileID: 0}
+      factionID: 
+      doorID: 
+      lockLevel: 0
+      spellToLearn: {fileID: 0}
+      speakLineID: 
+      speakLineDisplayAsHeard: 0
+    - type: 17
+      gameObjects: []
+      toInstantiate: []
+      toTeleport: []
+      npcsToChangePath: []
+      npcsToChangeDialogue: []
+      npcsToSendToSpeakToThePlayer: []
+      npcsToSetHostility: []
+      npcsToFollowCurPath: []
+      npcsToSpeakToNPC: []
+      itemsToModifyInInventory: []
+      itemToModifyInInventory:
+        isPlayerInventory: 1
+        inventoryID: 
+        item: {fileID: 11400000, guid: d1816dd614f331840b6dfa347a3a744c, type: 2}
+        metadata:
+          isOwned: 0
+          ownerID: 
+          intProperty1: 0
+        amount: 1
+      m_Parent: {fileID: 0}
+      delay: 0
+      mustRun: 0
+      Questions: []
+      newUseLengtOfClip: 0
+      newAudioClip: {fileID: 0}
+      newLineTime: 0
+      newLine: 
+      question:
+        Question: 
+        qID: 
+        Position: 0
+        DeleteAfterAnswer: 0
+      setAsHostile: 0
+      isPlayer: 0
+      sceneIndex: 0
+      coordinates: {x: 0, y: 0, z: 0}
+      gameObject: {fileID: 0}
+      newPath: {fileID: 0}
+      shouldFollowNewPath: 0
+      pathStartIndex: 0
+      AlertMessage: Added Firebomb Spellbook
+      duration: 3
       resetType: 0
       gotoObject: {fileID: 0}
       interactiveObject: {fileID: 0}
@@ -956,7 +1033,7 @@ MonoBehaviour:
     questUpdaters: []
     consequences: []
   speakerID: 0
-  line: Still got that spell to sell...
+  line: Still got that killer spell to sell...
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
@@ -3219,11 +3296,11 @@ MonoBehaviour:
   removePreviousQuestions: 1
   questionsToRemove: []
   playerQuestions:
-  - Question: What are you getting at?
+  - Question: '[HURRY] Let''s get to it then.'
     qID: 
     Position: 0
     DeleteAfterAnswer: 0
-  - Question: '[HURRY] Let''s get to it then.'
+  - Question: What are you getting at?
     qID: 
     Position: 0
     DeleteAfterAnswer: 0
@@ -3794,7 +3871,7 @@ MonoBehaviour:
     consequences: []
   speakerID: 0
   line: Sure! It's a new spell developed by the institute, first edition. It can
-    heal any wound almost instantly. People have been flocking to get their hands
+    destroy any enemy almost instantly. People have been flocking to get their hands
     on it.
   plainLine: 0
   useLenghtOfClip: 0
@@ -3897,7 +3974,7 @@ MonoBehaviour:
   removePreviousQuestions: 1
   questionsToRemove: []
   playerQuestions:
-  - Question: I actually need to ask about a certain frog potion you sold my friend.
+  - Question: I need to ask about a certain frog potion you sold my friend.
     qID: 
     Position: 0
     DeleteAfterAnswer: 1
