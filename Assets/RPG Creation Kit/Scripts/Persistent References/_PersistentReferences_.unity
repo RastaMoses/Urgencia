@@ -562,6 +562,8 @@ GameObject:
   m_Component:
   - component: {fileID: 197531079}
   - component: {fileID: 197531080}
+  - component: {fileID: 197531081}
+  - component: {fileID: 197531082}
   m_Layer: 0
   m_Name: GameTimer
   m_TagString: Untagged
@@ -599,6 +601,35 @@ MonoBehaviour:
   totalPlayTimeSeconds: 0
   playerPrefsKey: TotalPlayTimeSeconds
   autoSave: 1
+--- !u!114 &197531081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197531078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d79f83a70b0ed5a40b77c7876c9f6a9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.PersistentReferences.PersistentReference
+  showHandle: 1
+  refID: GameTimerObj
+  isLoaded: 1
+  type: 3
+--- !u!114 &197531082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197531078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0b66f1f10b6d5f49aac3bef042ca32b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HurryCounter
+  hurryCount: 0
 --- !u!1 &205746842
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,7 +11,7 @@ namespace RPGCreationKit.Game.ResultScripts
         {
             // Your code here
 
-            TutorialAlertMessage.instance.OpenMessage("This is the end of the demo for now\n\nYou have played for exactly this amount of time \n" + FindAnyObjectByType<GameTimer>().GetFormattedTime());
+            TutorialAlertMessage.instance.OpenMessage("This is the end of the demo for now\n\nYou have played for exactly this amount of time \n" + FindAnyObjectByType<GameTimer>().GetFormattedTime() +"\n And you chose to [HURRY] "+ FindAnyObjectByType<HurryCounter>().hurryCount + " times in dialogues.");
 
 
             // Destroy the script

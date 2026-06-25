@@ -203,7 +203,7 @@ MonoBehaviour:
   guidStr: 09728db1-dfe7-4ec7-aef5-b74ad11d3cbe
   input: {fileID: 0}
   output: {fileID: 0}
-  resultScript: 
+  resultScript: RPGCreationKit.Game.ResultScripts.IncrementHurryCounterResultScript
   events:
     questDealers: []
     questUpdaters: []
@@ -1075,8 +1075,8 @@ MonoBehaviour:
   removePreviousQuestions: 1
   questionsToRemove: []
   playerQuestions:
-  - Question: 'Thanks and blessing to thee priest of...wait what is your goddess
-      again? '
+  - Question: Thanks and blessing to thee priest of...wait what is your goddess again?
+      Can she bless me with powers?
     qID: 
     Position: 0
     DeleteAfterAnswer: 0
@@ -1520,7 +1520,7 @@ MonoBehaviour:
   m_Name: NPC Dialogue Line
   m_EditorClassIdentifier: Assembly-CSharp::RPGCreationKit.DialogueSystem.NPCDialogueLineNode
   graph: {fileID: 11400000}
-  position: {x: 1992, y: -328}
+  position: {x: 1960, y: -360}
   ports:
     keys:
     - nextLine
@@ -1973,7 +1973,7 @@ MonoBehaviour:
     questUpdaters: []
     consequences: []
   speakerID: 0
-  line: Now stay here and meditate with me.
+  line: Now stay here and meditate with me and her wisdom will enhance you.
   plainLine: 0
   useLenghtOfClip: 0
   audioClip: {fileID: 0}
@@ -2843,7 +2843,7 @@ MonoBehaviour:
   removePreviousQuestions: 1
   questionsToRemove: []
   playerQuestions:
-  - Question: Oh yeah, absolutely, totally understood that.
+  - Question: Your poetics are inspiring as they are simpleminded.
     qID: 
     Position: 0
     DeleteAfterAnswer: 0
@@ -2984,7 +2984,7 @@ MonoBehaviour:
   guidStr: 6cfdfd67-f585-481c-aa0d-c76a43a23ffc
   input: {fileID: 0}
   output: {fileID: 0}
-  resultScript: 
+  resultScript: RPGCreationKit.Game.ResultScripts.IncrementHurryCounterResultScript
   events:
     questDealers: []
     questUpdaters: []
