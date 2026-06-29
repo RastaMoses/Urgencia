@@ -14,7 +14,8 @@ namespace RPGCreationKit.Quests
         {
             // Your code here
             TutorialAlertMessage.instance.OpenMessage("Ah, you're finally awake.\nAfter receiving your graduation notice from the Academy, you and your friend Pellan have been on a party bender until the official ceremony commences.\n\nYou should go find Pellan. He's usually in the Tavern. But where did you end up?\n");
-
+            TimeOfDayManager.instance.SetTime(12.0f);
+            TimeOfDayManager.instance.SetTimeScale(0f);
 
             // Deactivate Mutable Goto so this can never be triggered again
             MutateGoto();
@@ -107,7 +108,7 @@ namespace RPGCreationKit.Quests
                 default:
                     break;
             }
-            TimeOfDayManager.instance.SetTime(12.0f);
+            
             InGameHelpUI.instance.StartTutorial();
 
             // Use this line to destroy the script if it is not longer needed.
