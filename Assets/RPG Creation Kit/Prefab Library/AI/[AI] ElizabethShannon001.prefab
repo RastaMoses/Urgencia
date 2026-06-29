@@ -1230,7 +1230,7 @@ MonoBehaviour:
     crouchSpeed: 2.5
     rangedCombatAccuracy: 200
     rangedCombatPrediction: 70
-    firearmSpreadMultipier: 1
+    firearmSpreadMultiplier: 1
   bleeds: 1
   bloodPrefab: {fileID: 8045514887497637187, guid: 8469bb54d3584494ea6e0076635b4858,
     type: 3}
@@ -1238,6 +1238,8 @@ MonoBehaviour:
   curXP: 0
   nextLvlXP: 60
   curAttributePoints: 0
+  xpMultiplierOnDeath: 1
+  skipAttributesCalculationOnStart: 0
   activeEffects: []
 --- !u!114 &43287521384528558
 MonoBehaviour:
@@ -1454,9 +1456,11 @@ MonoBehaviour:
   currentWeaponAnimator: {fileID: 0}
   currentAmmo: {fileID: 0}
   currentAmmoObject: {fileID: 0}
+  preventShieldDrop: 0
   currentShield: {fileID: 0}
   currentShieldObject: {fileID: 0}
   currentFPShieldObject: {fileID: 0}
+  preventTorchDrop: 0
   currentTorch: {fileID: 0}
   currentTorchInHand: {fileID: 0}
 --- !u!114 &2427852926203225327
@@ -1794,9 +1798,9 @@ MonoBehaviour:
   helpsMembersOfSameFactions: 1
   wasWalkingBeforeEnteringCombat: 1
   mainTargetAttributes: {fileID: 0}
-  pdtEnabled: 0
+  pdtEnabled: 1
   pdtTimeslice: 120
-  pdtHitsBeforeAggro: 2
+  pdtHitsBeforeAggro: 100
   pdtCounting: 0
   pdtCurTimer: 0
   pdtCurCount: 0
@@ -1897,7 +1901,7 @@ MonoBehaviour:
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
-  combatBehaviourTree: {fileID: 11400000, guid: d038a2542b280be44b643e71f2cd3ecf,
+  combatBehaviourTree: {fileID: 11400000, guid: 3b4fbed596a70bc479fd4491d5f038fe,
     type: 2}
   combatNodesData:
     _Buckets: ffffffffffffffffffffffff
@@ -1969,6 +1973,9 @@ MonoBehaviour:
     xFrames: 8
   keepTicking: 1
   forwardRckAI: {fileID: 0}
+  ignoreVisionWhenAlertedKillNPC: 0
+  spawnOnAggroAlertEvent: 0
+  ignoreVisionWhenAlertedAggroNPC: 0
   hasARangedWeapon: 0
   hasAMeleeWeapon: 0
   distanceFromMainTarget: 0
@@ -1981,6 +1988,7 @@ MonoBehaviour:
   isDismounting: 0
   isMounted: 0
   isMountedButUnloadedPREF: 0
+  goToSleepLogicEnabled: 0
   teleportIfUnloadedWhileGoingToDoor: 1
   teleportIfWalkableSurfaceEnds: 1
   isReachingDoor: 0
@@ -1992,6 +2000,7 @@ MonoBehaviour:
   enteredDoorLastTimeRot: {x: 0, y: 0, z: 0, w: 0}
   doorEnteredID: 
   aiwuhje: 
+  forceRagdollEveryFrame: 0
   mountUsingPreviously: {fileID: 0}
   toDoorTransform: {fileID: 0}
   followTargetOutsideOfCell: 0
@@ -5310,6 +5319,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 4883fe836c470af40bfbe3d336eb29c2, type: 3}
   - {fileID: 8300000, guid: 8c3b21e45f0422243a057cf63c138c5d, type: 3}
   - {fileID: 8300000, guid: da30e710c747c1041b45378d66ff5df4, type: 3}
+  onEnterInCombatLines: []
 --- !u!1 &5299066932460483010
 GameObject:
   m_ObjectHideFlags: 0

@@ -442,7 +442,10 @@ MonoBehaviour:
       _node: {fileID: -6649215736768641607}
       _typeQualifiedName: RPGCreationKit.DialogueSystem.NPCDialogueLineNode, Assembly-CSharp,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: input
+        node: {fileID: -860623913673596714}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -1826,6 +1829,9 @@ MonoBehaviour:
       connections:
       - fieldName: playerQuestions 0
         node: {fileID: 3093214189102184230}
+        reroutePoints: []
+      - fieldName: nextLine
+        node: {fileID: -6649215736768641607}
         reroutePoints: []
       _direction: 0
       _connectionType: 0

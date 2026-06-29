@@ -25,6 +25,7 @@ namespace RPGCreationKit.Game.ResultScripts
                 CellInformation.TryToGetAI("MagicMerchant001", out RckAI merchant);
                 if (merchant != null) { merchant.DestroyThis(); }
                 RCKFunctions.MutateMutable("Mutable_MagicMerchantFailedQuest", false);
+                RCKFunctions.MutateMutable("TriggerFailQuest", false);
             }
             
 
